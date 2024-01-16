@@ -1,18 +1,19 @@
 //
-//  ViewController.m
+//  KeyWordViewController.m
 //  ios_study_bool
 //
-//  Created by xushihao on 2024/1/14.
+//  Created by xushihao on 2024/1/15.
 //
 
-#import "ViewController.h"
 #import "KeyWordViewController.h"
-@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
+
+
+@interface KeyWordViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray *functions;
 @end
 
-@implementation ViewController
+@implementation KeyWordViewController
 
 - (NSArray *) functions {
     if (_functions == nil) {
@@ -42,8 +43,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"点击了单元格");
-    KeyWordViewController *targetVC = [[KeyWordViewController alloc] init];
-    [self.navigationController pushViewController:targetVC animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -72,3 +71,4 @@
 
 
 @end
+

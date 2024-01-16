@@ -7,7 +7,7 @@
 
 #import "SceneDelegate.h"
 #import "AppDelegate.h"
-
+#import "ViewController.h"
 @interface SceneDelegate ()
 
 @end
@@ -16,9 +16,17 @@
 
 
 - (void)scene:(UIScene *)scene willConnectToSession:(UISceneSession *)session options:(UISceneConnectionOptions *)connectionOptions {
-    // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-    // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-    // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    // 获取当前的窗口场景对象
+    UIWindowScene *windowScene = (UIWindowScene *)scene;
+    // 创建一个新的窗口并设置根视图控制器
+    self.window = [[UIWindow alloc] initWithWindowScene:windowScene];
+    
+    
+    ViewController *rootVC = [[ViewController alloc] init];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:rootVC];
+        
+    self.window.rootViewController = navController;
+    [self.window makeKeyAndVisible];
 }
 
 

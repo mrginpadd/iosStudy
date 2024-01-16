@@ -18,6 +18,8 @@
 		A07DF4B32B5427EE00D0275E /* ios_study_boolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A07DF4B22B5427EE00D0275E /* ios_study_boolTests.m */; };
 		A07DF4BD2B5427EE00D0275E /* ios_study_boolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A07DF4BC2B5427EE00D0275E /* ios_study_boolUITests.m */; };
 		A07DF4BF2B5427EE00D0275E /* ios_study_boolUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A07DF4BE2B5427EE00D0275E /* ios_study_boolUITestsLaunchTests.m */; };
+		A0AE535D2B5572740075EAA4 /* KeyWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AE535C2B5572740075EAA4 /* KeyWordViewController.m */; };
+		A0AE53682B5573C20075EAA4 /* PartCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AE53672B5573C20075EAA4 /* PartCellModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		A07DF4B82B5427EE00D0275E /* ios_study_boolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ios_study_boolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07DF4BC2B5427EE00D0275E /* ios_study_boolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_study_boolUITests.m; sourceTree = "<group>"; };
 		A07DF4BE2B5427EE00D0275E /* ios_study_boolUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_study_boolUITestsLaunchTests.m; sourceTree = "<group>"; };
+		A0AE535B2B5572740075EAA4 /* KeyWordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyWordViewController.h; sourceTree = "<group>"; };
+		A0AE535C2B5572740075EAA4 /* KeyWordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyWordViewController.m; sourceTree = "<group>"; };
+		A0AE53662B5573C20075EAA4 /* PartCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartCellModel.h; sourceTree = "<group>"; };
+		A0AE53672B5573C20075EAA4 /* PartCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartCellModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,8 @@
 		A07DF4922B5427ED00D0275E /* ios_study_bool */ = {
 			isa = PBXGroup;
 			children = (
+				A0AE535E2B55731E0075EAA4 /* Common */,
+				A0AE535A2B5572270075EAA4 /* 语言基础 */,
 				A07DF4932B5427ED00D0275E /* AppDelegate.h */,
 				A07DF4942B5427ED00D0275E /* AppDelegate.m */,
 				A07DF4962B5427ED00D0275E /* SceneDelegate.h */,
@@ -137,6 +145,56 @@
 				A07DF4BE2B5427EE00D0275E /* ios_study_boolUITestsLaunchTests.m */,
 			);
 			path = ios_study_boolUITests;
+			sourceTree = "<group>";
+		};
+		A0AE535A2B5572270075EAA4 /* 语言基础 */ = {
+			isa = PBXGroup;
+			children = (
+				A0AE535B2B5572740075EAA4 /* KeyWordViewController.h */,
+				A0AE535C2B5572740075EAA4 /* KeyWordViewController.m */,
+			);
+			path = "语言基础";
+			sourceTree = "<group>";
+		};
+		A0AE535E2B55731E0075EAA4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A0AE535F2B55732D0075EAA4 /* 单元格 */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A0AE535F2B55732D0075EAA4 /* 单元格 */ = {
+			isa = PBXGroup;
+			children = (
+				A0AE53652B55737A0075EAA4 /* Controllers */,
+				A0AE53612B5573610075EAA4 /* Models */,
+				A0AE53602B5573570075EAA4 /* Views */,
+			);
+			path = "单元格";
+			sourceTree = "<group>";
+		};
+		A0AE53602B5573570075EAA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A0AE53612B5573610075EAA4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A0AE53662B5573C20075EAA4 /* PartCellModel.h */,
+				A0AE53672B5573C20075EAA4 /* PartCellModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A0AE53652B55737A0075EAA4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +330,9 @@
 				A07DF4A92B5427EE00D0275E /* main.m in Sources */,
 				A07DF49B2B5427ED00D0275E /* ViewController.m in Sources */,
 				A07DF4A12B5427ED00D0275E /* ios_study_bool.xcdatamodeld in Sources */,
+				A0AE53682B5573C20075EAA4 /* PartCellModel.m in Sources */,
 				A07DF4952B5427ED00D0275E /* AppDelegate.m in Sources */,
+				A0AE535D2B5572740075EAA4 /* KeyWordViewController.m in Sources */,
 				A07DF4982B5427ED00D0275E /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
