@@ -41,9 +41,52 @@
 # pragma-mark UITableView代理
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"点击了单元格");
-    KeyWordViewController *targetVC = [[KeyWordViewController alloc] init];
-    [self.navigationController pushViewController:targetVC animated:YES];
+  
+# pragma-mark 预定义宏的使用
+//    NSLog(@"预定义宏 _FILE_： 当前源文件的文件名%s ", __FILE__);
+//    NSLog(@"预定义宏 __LINE__： 当前代码行号%d ", __LINE__);
+//    NSLog(@"预定义宏 __FUNCTION__： 当前所在的函数名%s ", __FUNCTION__);
+//    NSLog(@"预定义宏 __PRETTY_FUNCTION__： 当前所在的函数名,更详细%s ", __PRETTY_FUNCTION__);
+//    NSLog(@"预定义宏 __IPHONE_OS_VERSION_MIN_REQUIRED: 标设备的最低iOS版本 %d ", __IPHONE_OS_VERSION_MIN_REQUIRED);
+//    NSLog(@"预定义宏 __IPHONE_OS_VERSION_MAX_ALLOWED: 当前编译环境支持的最高iOS版本%d  ", __IPHONE_OS_VERSION_MAX_ALLOWED);
+//    KeyWordViewController *targetVC = [[KeyWordViewController alloc] init];
+//    [self.navigationController pushViewController:targetVC animated:YES];
+
+# pragma-mark 字符串、数组、字典基本操作
+//    NSString *str = @"a string";
+//    //拼接
+//    str = [NSString stringWithFormat:@"b string %@", str];
+//    NSLog(@"%@", str);
+//    //子串
+//    NSLog(@"%@", [str substringFromIndex:1]);
+//    NSLog(@"%@", [str substringToIndex:5]);
+//    NSLog(@"%@", [str substringWithRange:NSMakeRange(1, 4)]);
+//    //访问
+//    NSLog(@"%c", [str characterAtIndex:0]);
+//    //反转
+//    //反转要自己实现
+//    NSLog(@"%@", [str uppercaseString]);
+//    NSLog(@"%@", [@"ABCdef" lowercaseString]);
+//    //比较
+//    NSLog(@"%@", [@"123" isEqualToString:@"123"] ? @"YES": @"NO");
+//
+//    //查找
+//    NSRange range = [@"123456789" rangeOfString:@"123"];
+//    if (range.location != NSNotFound) {
+//        NSLog(@"not found");
+//    } else {
+//        NSLog(@"found");
+//    }
+//
+//    //字符串分割
+//    NSArray *a = [@"1,2,3,4" componentsSeparatedByString:@","];
+//    for (NSString *str in a) {
+//        NSLog(@"%@", str);
+//    }
+//
+//    //字符串替换
+//    NSLog(@"%@", [@"12345678" stringByReplacingOccurrencesOfString:@"456" withString:@"AAA"]);
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
