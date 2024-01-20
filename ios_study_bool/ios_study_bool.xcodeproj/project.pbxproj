@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A076B27C2B5B732400AAE9C5 /* LangManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B27B2B5B732400AAE9C5 /* LangManager.m */; };
 		A07DF4952B5427ED00D0275E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A07DF4942B5427ED00D0275E /* AppDelegate.m */; };
 		A07DF4982B5427ED00D0275E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A07DF4972B5427ED00D0275E /* SceneDelegate.m */; };
 		A07DF49B2B5427ED00D0275E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07DF49A2B5427ED00D0275E /* ViewController.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A076B27A2B5B732400AAE9C5 /* LangManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LangManager.h; sourceTree = "<group>"; };
+		A076B27B2B5B732400AAE9C5 /* LangManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LangManager.m; sourceTree = "<group>"; };
 		A07DF4902B5427ED00D0275E /* ios_study_bool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_study_bool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07DF4932B5427ED00D0275E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A07DF4942B5427ED00D0275E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -89,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A076B2792B5B72E500AAE9C5 /* ToolBox */ = {
+			isa = PBXGroup;
+			children = (
+				A076B27A2B5B732400AAE9C5 /* LangManager.h */,
+				A076B27B2B5B732400AAE9C5 /* LangManager.m */,
+			);
+			path = ToolBox;
+			sourceTree = "<group>";
+		};
 		A07DF4872B5427ED00D0275E = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +124,7 @@
 		A07DF4922B5427ED00D0275E /* ios_study_bool */ = {
 			isa = PBXGroup;
 			children = (
+				A076B2792B5B72E500AAE9C5 /* ToolBox */,
 				A0AE535E2B55731E0075EAA4 /* Common */,
 				A0AE535A2B5572270075EAA4 /* 语言基础 */,
 				A07DF4932B5427ED00D0275E /* AppDelegate.h */,
@@ -332,6 +345,7 @@
 				A07DF4A12B5427ED00D0275E /* ios_study_bool.xcdatamodeld in Sources */,
 				A0AE53682B5573C20075EAA4 /* PartCellModel.m in Sources */,
 				A07DF4952B5427ED00D0275E /* AppDelegate.m in Sources */,
+				A076B27C2B5B732400AAE9C5 /* LangManager.m in Sources */,
 				A0AE535D2B5572740075EAA4 /* KeyWordViewController.m in Sources */,
 				A07DF4982B5427ED00D0275E /* SceneDelegate.m in Sources */,
 			);
