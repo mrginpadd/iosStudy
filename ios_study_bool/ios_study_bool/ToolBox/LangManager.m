@@ -9,11 +9,24 @@
 
 @implementation LangManager
 
-+ (void)perform {
-    [self performDefine];
-    [self performStr];
-    [self performArray];
-    [self performDic];
++ (void)perform: (LANGTYPE)type {
+    switch(type) {
+        case DEFINE:
+            [self performDefine];
+            break;
+        case STR:
+            [self performStr];
+            break;
+        case ARRAY:
+            [self performArray];
+            break;
+        case DICTIONARY:
+            [self performDic];
+            break;
+        default:
+            break;
+    }
+    
 }
 + (void) performDefine {
     

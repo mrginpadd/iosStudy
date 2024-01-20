@@ -43,7 +43,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([self.functions[indexPath.row] isEqualToString:@"语言基础"]) {
-        [LangManager perform];
+        [LangManager perform:DEFINE];
     }
 }
 

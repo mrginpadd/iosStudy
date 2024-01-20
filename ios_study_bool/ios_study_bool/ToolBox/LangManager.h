@@ -8,10 +8,15 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+typedef NS_ENUM(NSInteger, LANGTYPE) {
+    DEFINE,
+    STR,
+    ARRAY,
+    DICTIONARY
+};
 @interface LangManager : NSObject
 
-+ (void) perform;
++ (void) perform:(LANGTYPE) type;
 + (void) performDefine;
 + (void) performStr;
 + (void) performArray;
