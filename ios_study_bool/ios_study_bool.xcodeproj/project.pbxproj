@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A076B27C2B5B732400AAE9C5 /* LangManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B27B2B5B732400AAE9C5 /* LangManager.m */; };
+		A076B2832B5B8C5200AAE9C5 /* UILabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B2822B5B8C5200AAE9C5 /* UILabelViewController.m */; };
+		A076B2862B5B8CA400AAE9C5 /* ScreenUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B2852B5B8CA400AAE9C5 /* ScreenUtil.m */; };
 		A07DF4952B5427ED00D0275E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A07DF4942B5427ED00D0275E /* AppDelegate.m */; };
 		A07DF4982B5427ED00D0275E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A07DF4972B5427ED00D0275E /* SceneDelegate.m */; };
 		A07DF49B2B5427ED00D0275E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07DF49A2B5427ED00D0275E /* ViewController.m */; };
@@ -43,6 +45,10 @@
 /* Begin PBXFileReference section */
 		A076B27A2B5B732400AAE9C5 /* LangManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LangManager.h; sourceTree = "<group>"; };
 		A076B27B2B5B732400AAE9C5 /* LangManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LangManager.m; sourceTree = "<group>"; };
+		A076B2812B5B8C5200AAE9C5 /* UILabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelViewController.h; sourceTree = "<group>"; };
+		A076B2822B5B8C5200AAE9C5 /* UILabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UILabelViewController.m; sourceTree = "<group>"; };
+		A076B2842B5B8CA400AAE9C5 /* ScreenUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenUtil.h; sourceTree = "<group>"; };
+		A076B2852B5B8CA400AAE9C5 /* ScreenUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenUtil.m; sourceTree = "<group>"; };
 		A07DF4902B5427ED00D0275E /* ios_study_bool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_study_bool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07DF4932B5427ED00D0275E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A07DF4942B5427ED00D0275E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,6 +107,15 @@
 			path = ToolBox;
 			sourceTree = "<group>";
 		};
+		A076B27D2B5B8B5E00AAE9C5 /* UI组件 */ = {
+			isa = PBXGroup;
+			children = (
+				A076B2812B5B8C5200AAE9C5 /* UILabelViewController.h */,
+				A076B2822B5B8C5200AAE9C5 /* UILabelViewController.m */,
+			);
+			path = "UI组件";
+			sourceTree = "<group>";
+		};
 		A07DF4872B5427ED00D0275E = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +139,7 @@
 		A07DF4922B5427ED00D0275E /* ios_study_bool */ = {
 			isa = PBXGroup;
 			children = (
+				A076B27D2B5B8B5E00AAE9C5 /* UI组件 */,
 				A076B2792B5B72E500AAE9C5 /* ToolBox */,
 				A0AE535E2B55731E0075EAA4 /* Common */,
 				A0AE535A2B5572270075EAA4 /* 语言基础 */,
@@ -173,6 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				A0AE535F2B55732D0075EAA4 /* 单元格 */,
+				A076B2842B5B8CA400AAE9C5 /* ScreenUtil.h */,
+				A076B2852B5B8CA400AAE9C5 /* ScreenUtil.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -347,7 +365,9 @@
 				A07DF4952B5427ED00D0275E /* AppDelegate.m in Sources */,
 				A076B27C2B5B732400AAE9C5 /* LangManager.m in Sources */,
 				A0AE535D2B5572740075EAA4 /* KeyWordViewController.m in Sources */,
+				A076B2862B5B8CA400AAE9C5 /* ScreenUtil.m in Sources */,
 				A07DF4982B5427ED00D0275E /* SceneDelegate.m in Sources */,
+				A076B2832B5B8C5200AAE9C5 /* UILabelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
