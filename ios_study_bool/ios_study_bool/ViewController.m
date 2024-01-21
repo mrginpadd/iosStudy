@@ -8,6 +8,8 @@
 #import "ViewController.h"
 #import "KeyWordViewController.h"
 #import "LangManager.h"
+#import "UILabelViewController.h"
+
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray *functions;
@@ -42,8 +44,12 @@
 # pragma-mark UITableView代理
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    if ([self.functions[indexPath.row] isEqualToString:@"语言基础"]) {
+    NSString *selectedStr = self.functions[indexPath.row];
+    if ([selectedStr isEqualToString:@"语言基础"]) {
         [LangManager perform:DEFINE];
+    } else if([selectedStr isEqualToString:@"UI组件"]) {
+        UILabelViewController *targetVC = [[UILabelViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
     }
 }
 
