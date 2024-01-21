@@ -8,7 +8,7 @@
 #import "ViewController.h"
 #import "KeyWordViewController.h"
 #import "LangManager.h"
-#import "UILabelViewController.h"
+#import "UIComponentsViewController.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
@@ -48,7 +48,7 @@
     if ([selectedStr isEqualToString:@"语言基础"]) {
         [LangManager perform:DEFINE];
     } else if([selectedStr isEqualToString:@"UI组件"]) {
-        UILabelViewController *targetVC = [[UILabelViewController alloc] init];
+        UIComponentsViewController *targetVC = [[UIComponentsViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }
