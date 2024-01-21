@@ -8,6 +8,7 @@
 #import "UIComponentsViewController.h"
 #import "UILabelViewController.h"
 #import "CustomTableViewCell.h"
+#import "UIButtonViewController.h"
 @interface UIComponentsViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray* functions;
@@ -90,6 +91,9 @@
     NSString *selectedStr = _functions[indexPath.row];
     if ([selectedStr hasPrefix:@"UILabel"]) {
         UILabelViewController* targetVC = [[UILabelViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([selectedStr hasPrefix:@"UIButton"]) {
+        UIButtonViewController* targetVC = [[UIButtonViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }
