@@ -94,13 +94,13 @@
             filePath = "ios_study_bool/UI&#x7ec4;&#x4ef6;/UIComponentsViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "49283F35-01F9-43B7-A073-2FA836B27B7C - f789083e02de51dd"
+                  uuid = "49283F35-01F9-43B7-A073-2FA836B27B7C - f789083e02de51b2"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -110,12 +110,12 @@
                   urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/UI%E7%BB%84%E4%BB%B6/UIComponentsViewController.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "180">
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "172">
                </Location>
                <Location
-                  uuid = "49283F35-01F9-43B7-A073-2FA836B27B7C - f789083e02de51fc"
+                  uuid = "49283F35-01F9-43B7-A073-2FA836B27B7C - f789083e02de51b2"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -125,23 +125,8 @@
                   urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/UI%E7%BB%84%E4%BB%B6/UIComponentsViewController.m"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69"
-                  offsetFromSymbolStart = "128">
-               </Location>
-               <Location
-                  uuid = "49283F35-01F9-43B7-A073-2FA836B27B7C - f789083e02de51dd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[UIComponentsViewController tableView:cellForRowAtIndexPath:]"
-                  moduleName = "ios_study_bool"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/UI%E7%BB%84%E4%BB%B6/UIComponentsViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
                   offsetFromSymbolStart = "128">
                </Location>
             </Locations>

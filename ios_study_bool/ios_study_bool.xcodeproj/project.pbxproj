@@ -13,6 +13,8 @@
 		A076B2892B5CF55B00AAE9C5 /* UIComponentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B2882B5CF55B00AAE9C5 /* UIComponentsViewController.m */; };
 		A076B28C2B5D07A900AAE9C5 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B28B2B5D07A900AAE9C5 /* CustomTableViewCell.m */; };
 		A076B2922B5D38AE00AAE9C5 /* UIButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B2912B5D38AE00AAE9C5 /* UIButtonViewController.m */; };
+		A076B2952B60014400AAE9C5 /* UIImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B2942B60014400AAE9C5 /* UIImageViewController.m */; };
+		A076B29A2B601D6200AAE9C5 /* 动画图片 in Resources */ = {isa = PBXBuildFile; fileRef = A076B2992B601D6200AAE9C5 /* 动画图片 */; };
 		A07DF4952B5427ED00D0275E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A07DF4942B5427ED00D0275E /* AppDelegate.m */; };
 		A07DF4982B5427ED00D0275E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A07DF4972B5427ED00D0275E /* SceneDelegate.m */; };
 		A07DF49B2B5427ED00D0275E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A07DF49A2B5427ED00D0275E /* ViewController.m */; };
@@ -58,6 +60,9 @@
 		A076B28B2B5D07A900AAE9C5 /* CustomTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		A076B2902B5D38AE00AAE9C5 /* UIButtonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIButtonViewController.h; sourceTree = "<group>"; };
 		A076B2912B5D38AE00AAE9C5 /* UIButtonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIButtonViewController.m; sourceTree = "<group>"; };
+		A076B2932B60014400AAE9C5 /* UIImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImageViewController.h; sourceTree = "<group>"; };
+		A076B2942B60014400AAE9C5 /* UIImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIImageViewController.m; sourceTree = "<group>"; };
+		A076B2992B601D6200AAE9C5 /* 动画图片 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "动画图片"; sourceTree = "<group>"; };
 		A07DF4902B5427ED00D0275E /* ios_study_bool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_study_bool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07DF4932B5427ED00D0275E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A07DF4942B5427ED00D0275E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -125,8 +130,18 @@
 				A076B2882B5CF55B00AAE9C5 /* UIComponentsViewController.m */,
 				A076B2902B5D38AE00AAE9C5 /* UIButtonViewController.h */,
 				A076B2912B5D38AE00AAE9C5 /* UIButtonViewController.m */,
+				A076B2932B60014400AAE9C5 /* UIImageViewController.h */,
+				A076B2942B60014400AAE9C5 /* UIImageViewController.m */,
 			);
 			path = "UI组件";
+			sourceTree = "<group>";
+		};
+		A076B2962B60157100AAE9C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A076B2992B601D6200AAE9C5 /* 动画图片 */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A07DF4872B5427ED00D0275E = {
@@ -152,6 +167,7 @@
 		A07DF4922B5427ED00D0275E /* ios_study_bool */ = {
 			isa = PBXGroup;
 			children = (
+				A076B2962B60157100AAE9C5 /* Resources */,
 				A076B27D2B5B8B5E00AAE9C5 /* UI组件 */,
 				A076B2792B5B72E500AAE9C5 /* ToolBox */,
 				A0AE535E2B55731E0075EAA4 /* Common */,
@@ -346,6 +362,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A076B29A2B601D6200AAE9C5 /* 动画图片 in Resources */,
 				A07DF4A62B5427EE00D0275E /* LaunchScreen.storyboard in Resources */,
 				A07DF4A32B5427EE00D0275E /* Assets.xcassets in Resources */,
 				A07DF49E2B5427ED00D0275E /* Main.storyboard in Resources */,
@@ -383,6 +400,7 @@
 				A07DF4952B5427ED00D0275E /* AppDelegate.m in Sources */,
 				A076B27C2B5B732400AAE9C5 /* LangManager.m in Sources */,
 				A0AE535D2B5572740075EAA4 /* KeyWordViewController.m in Sources */,
+				A076B2952B60014400AAE9C5 /* UIImageViewController.m in Sources */,
 				A076B2862B5B8CA400AAE9C5 /* ScreenUtil.m in Sources */,
 				A07DF4982B5427ED00D0275E /* SceneDelegate.m in Sources */,
 				A076B2832B5B8C5200AAE9C5 /* UILabelViewController.m in Sources */,
