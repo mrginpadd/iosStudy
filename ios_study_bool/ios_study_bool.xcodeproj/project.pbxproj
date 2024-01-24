@@ -29,6 +29,7 @@
 		A0AE535D2B5572740075EAA4 /* KeyWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AE535C2B5572740075EAA4 /* KeyWordViewController.m */; };
 		A0AE53682B5573C20075EAA4 /* PartCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AE53672B5573C20075EAA4 /* PartCellModel.m */; };
 		A0C1EF382B613448004EE0AE /* UISwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF372B613448004EE0AE /* UISwitchViewController.m */; };
+		A0C1EF3B2B6139A4004EE0AE /* UITextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF3A2B6139A4004EE0AE /* UITextFieldViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		A0AE53672B5573C20075EAA4 /* PartCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartCellModel.m; sourceTree = "<group>"; };
 		A0C1EF362B613448004EE0AE /* UISwitchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISwitchViewController.h; sourceTree = "<group>"; };
 		A0C1EF372B613448004EE0AE /* UISwitchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISwitchViewController.m; sourceTree = "<group>"; };
+		A0C1EF392B6139A4004EE0AE /* UITextFieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextFieldViewController.h; sourceTree = "<group>"; };
+		A0C1EF3A2B6139A4004EE0AE /* UITextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextFieldViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 				A076B2942B60014400AAE9C5 /* UIImageViewController.m */,
 				A0C1EF362B613448004EE0AE /* UISwitchViewController.h */,
 				A0C1EF372B613448004EE0AE /* UISwitchViewController.m */,
+				A0C1EF392B6139A4004EE0AE /* UITextFieldViewController.h */,
+				A0C1EF3A2B6139A4004EE0AE /* UITextFieldViewController.m */,
 			);
 			path = "UI组件";
 			sourceTree = "<group>";
@@ -407,6 +412,7 @@
 				A076B27C2B5B732400AAE9C5 /* LangManager.m in Sources */,
 				A0AE535D2B5572740075EAA4 /* KeyWordViewController.m in Sources */,
 				A076B2952B60014400AAE9C5 /* UIImageViewController.m in Sources */,
+				A0C1EF3B2B6139A4004EE0AE /* UITextFieldViewController.m in Sources */,
 				A076B2862B5B8CA400AAE9C5 /* ScreenUtil.m in Sources */,
 				A07DF4982B5427ED00D0275E /* SceneDelegate.m in Sources */,
 				A076B2832B5B8C5200AAE9C5 /* UILabelViewController.m in Sources */,
