@@ -28,6 +28,7 @@
 		A07DF4BF2B5427EE00D0275E /* ios_study_boolUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A07DF4BE2B5427EE00D0275E /* ios_study_boolUITestsLaunchTests.m */; };
 		A0AE535D2B5572740075EAA4 /* KeyWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AE535C2B5572740075EAA4 /* KeyWordViewController.m */; };
 		A0AE53682B5573C20075EAA4 /* PartCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AE53672B5573C20075EAA4 /* PartCellModel.m */; };
+		A0C1EF382B613448004EE0AE /* UISwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF372B613448004EE0AE /* UISwitchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		A0AE535C2B5572740075EAA4 /* KeyWordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyWordViewController.m; sourceTree = "<group>"; };
 		A0AE53662B5573C20075EAA4 /* PartCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartCellModel.h; sourceTree = "<group>"; };
 		A0AE53672B5573C20075EAA4 /* PartCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartCellModel.m; sourceTree = "<group>"; };
+		A0C1EF362B613448004EE0AE /* UISwitchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISwitchViewController.h; sourceTree = "<group>"; };
+		A0C1EF372B613448004EE0AE /* UISwitchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISwitchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				A076B2912B5D38AE00AAE9C5 /* UIButtonViewController.m */,
 				A076B2932B60014400AAE9C5 /* UIImageViewController.h */,
 				A076B2942B60014400AAE9C5 /* UIImageViewController.m */,
+				A0C1EF362B613448004EE0AE /* UISwitchViewController.h */,
+				A0C1EF372B613448004EE0AE /* UISwitchViewController.m */,
 			);
 			path = "UI组件";
 			sourceTree = "<group>";
@@ -398,6 +403,7 @@
 				A07DF4A12B5427ED00D0275E /* ios_study_bool.xcdatamodeld in Sources */,
 				A0AE53682B5573C20075EAA4 /* PartCellModel.m in Sources */,
 				A07DF4952B5427ED00D0275E /* AppDelegate.m in Sources */,
+				A0C1EF382B613448004EE0AE /* UISwitchViewController.m in Sources */,
 				A076B27C2B5B732400AAE9C5 /* LangManager.m in Sources */,
 				A0AE535D2B5572740075EAA4 /* KeyWordViewController.m in Sources */,
 				A076B2952B60014400AAE9C5 /* UIImageViewController.m in Sources */,
