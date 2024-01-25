@@ -12,6 +12,7 @@
 #import "UIImageViewController.h"
 #import "UISwitchViewController.h"
 #import "UITextFieldViewController.h"
+#import "UITextViewController.h"
 @interface UIComponentsViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray* functions;
@@ -106,6 +107,9 @@
         [self.navigationController pushViewController:targetVC animated:YES];
     } else if([selectedStr hasPrefix:@"UITextField"]) {
         UITextFieldViewController* targetVC = [[UITextFieldViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([selectedStr hasPrefix:@"UITextView"]) {
+        UITextViewController* targetVC = [[UITextViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }
