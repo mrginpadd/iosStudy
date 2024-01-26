@@ -31,6 +31,7 @@
 		A0C1EF382B613448004EE0AE /* UISwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF372B613448004EE0AE /* UISwitchViewController.m */; };
 		A0C1EF3B2B6139A4004EE0AE /* UITextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF3A2B6139A4004EE0AE /* UITextFieldViewController.m */; };
 		A0C1EF3E2B628A99004EE0AE /* UITextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF3D2B628A99004EE0AE /* UITextViewController.m */; };
+		A0C1EF412B63DCFD004EE0AE /* UISliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF402B63DCFD004EE0AE /* UISliderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,8 @@
 		A0C1EF3A2B6139A4004EE0AE /* UITextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextFieldViewController.m; sourceTree = "<group>"; };
 		A0C1EF3C2B628A99004EE0AE /* UITextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextViewController.h; sourceTree = "<group>"; };
 		A0C1EF3D2B628A99004EE0AE /* UITextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UITextViewController.m; sourceTree = "<group>"; };
+		A0C1EF3F2B63DCFD004EE0AE /* UISliderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISliderViewController.h; sourceTree = "<group>"; };
+		A0C1EF402B63DCFD004EE0AE /* UISliderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISliderViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,8 @@
 				A0C1EF3A2B6139A4004EE0AE /* UITextFieldViewController.m */,
 				A0C1EF3C2B628A99004EE0AE /* UITextViewController.h */,
 				A0C1EF3D2B628A99004EE0AE /* UITextViewController.m */,
+				A0C1EF3F2B63DCFD004EE0AE /* UISliderViewController.h */,
+				A0C1EF402B63DCFD004EE0AE /* UISliderViewController.m */,
 			);
 			path = "UI组件";
 			sourceTree = "<group>";
@@ -418,6 +423,7 @@
 				A0AE535D2B5572740075EAA4 /* KeyWordViewController.m in Sources */,
 				A076B2952B60014400AAE9C5 /* UIImageViewController.m in Sources */,
 				A0C1EF3B2B6139A4004EE0AE /* UITextFieldViewController.m in Sources */,
+				A0C1EF412B63DCFD004EE0AE /* UISliderViewController.m in Sources */,
 				A076B2862B5B8CA400AAE9C5 /* ScreenUtil.m in Sources */,
 				A07DF4982B5427ED00D0275E /* SceneDelegate.m in Sources */,
 				A0C1EF3E2B628A99004EE0AE /* UITextViewController.m in Sources */,
