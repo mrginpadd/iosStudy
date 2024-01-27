@@ -1,0 +1,5 @@
+platform :ios, '9.0'
+target 'ios_study_bool' do
+  use_frameworks!
+  pod 'Faker', :git => 'https://github.com/kleiram/faker.git'
+end

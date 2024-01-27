@@ -7,16 +7,18 @@
 
 #import "CusUITableViewController.h"
 #import "FakeUtil.h"
-@interface CusUITableViewController ()<UITableViewDelegate, UITableViewDelegate, CusTableViewCellDelegate>
+@interface CusUITableViewController ()<UITableViewDelegate, UITableViewDataSource, CusTableViewCellDelegate, UIScrollViewDelegate>
 @property(nonatomic, strong, readwrite) UIScrollView* scrollView;
 @property(nonatomic, strong, readwrite) UITableView *tableView1;
 @property(nonatomic, strong, readwrite) UITableView *tableView2;
 @property(nonatomic, strong, readwrite) NSMutableArray* selectedCellIndex;
-@property(nonatomic, strong, readwrite) NSArray* array2;
+@property(nonatomic, strong, readwrite) NSMutableArray* array2;
+@property(nonatomic, assign, readwrite) BOOL isLoadingMore;
+@property(nonatomic, strong, readwrite) UILabel *loadingMoreView;
 @end
 
 @implementation CusUITableViewController
-- (NSArray*) array2 {
+- (NSMutableArray*) array2 {
     if (_array2 == nil) {
        _array2 = [FakeUtil generateChineseSentences:10];
     }
@@ -131,7 +133,7 @@
     label.backgroundColor = [UIColor blackColor];
     [_scrollView addSubview:label];
     
-    _tableView2 = [[UITableView alloc] initWithFrame:CGRectMake(0, 930, self.view.frame.size.width, 200)];
+    _tableView2 = [[UITableView alloc] initWithFrame:CGRectMake(0, 930, self.view.frame.size.width, 300)];
     [_tableView2 registerClass:[CusTableViewCell class] forCellReuseIdentifier:@"Cell1"];
     
     _tableView2.delegate = self;
@@ -153,11 +155,21 @@
     headerView.backgroundColor = [UIColor blackColor];
     _tableView2.tableHeaderView = headerView;
     [headerView addSubview:({
-            UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 40)];
+            UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0,  self.view.frame.size.width, 40)];
             label.text = @"UITableHeaderView";
+        label.textAlignment = NSTextAlignmentCenter;
         label.textColor = [UIColor whiteColor];
             label;
     })];
+    
+#pragma-mark -上拉加载更多
+    
+    self.loadingMoreView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 40)];
+    self.loadingMoreView.text = @"上拉加载更多";
+    self.loadingMoreView.backgroundColor = [UIColor blackColor];
+    self.loadingMoreView.textColor = [UIColor whiteColor];
+    self.loadingMoreView.textAlignment = NSTextAlignmentCenter;
+    _tableView2.tableFooterView = self.loadingMoreView;
     
     [_scrollView addSubview:_tableView2];
 }
@@ -206,14 +218,20 @@
             [cell.rightButton setImage:[UIImage imageNamed:@"unSelected"] forState:UIControlStateNormal];
         }
     } else if(tableView == _tableView2) {
-        cell.leftImageView.image = [UIImage imageNamed:@"小丑"];
-        cell.backgroundColor = [UIColor darkGrayColor];
-        cell.titleLabel.text = [NSString stringWithFormat:@"%ld %@", (long)indexPath.row, _array2[indexPath.row]];
-     
-        cell.titleLabel.adjustsFontSizeToFitWidth = YES;
-        cell.titleLabel.minimumScaleFactor = 0.3;
-        cell.rightButton.hidden = YES;
-
+        
+        if (indexPath.row == self.array2.count) { // 最后一个单元格是“加载更多”
+       
+        } else {
+            // 返回普通单元格
+            cell.leftImageView.image = [UIImage imageNamed:@"小丑"];
+            cell.backgroundColor = [UIColor darkGrayColor];
+            cell.titleLabel.text = [NSString stringWithFormat:@"%ld %@", (long)indexPath.row, _array2[indexPath.row]];
+            
+            cell.titleLabel.adjustsFontSizeToFitWidth = YES;
+            cell.titleLabel.minimumScaleFactor = 0.3;
+            cell.rightButton.hidden = YES;
+        }
+        
     }
     return cell;
 }
@@ -233,6 +251,42 @@
 
 
 }
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if (self.isLoadingMore) {
+        // 如果正在加载更多数据，则不执行下面的操作
+        return;
+    }
+
+    
+    NSLog(@"%s  %f  %f  %f", __FUNCTION__, scrollView.contentOffset.y, scrollView.contentSize.height, scrollView.frame.size.height);
+    // 判断是否滚动到底部  30是为了让用户再往上拉一点，有感知的上拉更多， 如果 -30就是无感知
+    if (scrollView.contentOffset.y >= scrollView.contentSize.height - scrollView.frame.size.height + 30) {
+
+            [self loadMoreData];
+    }
+    
+}
+
+- (void)loadMoreData {
+
+    self.isLoadingMore = YES;
+    self.loadingMoreView.text = @"加载中...";
+    
+      // 执行上拉加载更多的操作
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        // 执行加载更多数据的操作
+        NSArray *moreData = [FakeUtil generateChineseSentences:5];
+        [self.array2 addObjectsFromArray:moreData];
+        self.loadingMoreView.text = @"上拉加载更多";
+        self.isLoadingMore = NO;
+        // 加载完成后刷新表格视图
+        [self.tableView2 reloadData];
+    });
+
+
+}
+
 /*
 #pragma mark - Navigation
 
