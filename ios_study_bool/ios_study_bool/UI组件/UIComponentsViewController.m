@@ -14,6 +14,7 @@
 #import "UITextFieldViewController.h"
 #import "UITextViewController.h"
 #import "UISliderViewController.h"
+#import "UIProgressViewController.h"
 @interface UIComponentsViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray* functions;
@@ -114,6 +115,9 @@
         [self.navigationController pushViewController:targetVC animated:YES];
     } else if([selectedStr hasPrefix:@"UISlider"]) {
         UISliderViewController* targetVC = [[UISliderViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([selectedStr hasPrefix:@"UIProgress"]) {
+        UIProgressViewController* targetVC = [[UIProgressViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }
