@@ -33,6 +33,7 @@
 		A0C1EF3E2B628A99004EE0AE /* UITextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF3D2B628A99004EE0AE /* UITextViewController.m */; };
 		A0C1EF412B63DCFD004EE0AE /* UISliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF402B63DCFD004EE0AE /* UISliderViewController.m */; };
 		A0C1EF442B63F6DC004EE0AE /* UIProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF432B63F6DC004EE0AE /* UIProgressViewController.m */; };
+		A0C1EF472B64A14E004EE0AE /* CusUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF462B64A14E004EE0AE /* CusUITableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		A0C1EF402B63DCFD004EE0AE /* UISliderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISliderViewController.m; sourceTree = "<group>"; };
 		A0C1EF422B63F6DC004EE0AE /* UIProgressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIProgressViewController.h; sourceTree = "<group>"; };
 		A0C1EF432B63F6DC004EE0AE /* UIProgressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIProgressViewController.m; sourceTree = "<group>"; };
+		A0C1EF452B64A14E004EE0AE /* CusUITableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusUITableViewController.h; sourceTree = "<group>"; };
+		A0C1EF462B64A14E004EE0AE /* CusUITableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusUITableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,8 @@
 				A0C1EF402B63DCFD004EE0AE /* UISliderViewController.m */,
 				A0C1EF422B63F6DC004EE0AE /* UIProgressViewController.h */,
 				A0C1EF432B63F6DC004EE0AE /* UIProgressViewController.m */,
+				A0C1EF452B64A14E004EE0AE /* CusUITableViewController.h */,
+				A0C1EF462B64A14E004EE0AE /* CusUITableViewController.m */,
 			);
 			path = "UI组件";
 			sourceTree = "<group>";
@@ -434,6 +439,7 @@
 				A07DF4982B5427ED00D0275E /* SceneDelegate.m in Sources */,
 				A0C1EF3E2B628A99004EE0AE /* UITextViewController.m in Sources */,
 				A076B2832B5B8C5200AAE9C5 /* UILabelViewController.m in Sources */,
+				A0C1EF472B64A14E004EE0AE /* CusUITableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
