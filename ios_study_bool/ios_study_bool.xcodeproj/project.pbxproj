@@ -34,6 +34,7 @@
 		A0C1EF412B63DCFD004EE0AE /* UISliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF402B63DCFD004EE0AE /* UISliderViewController.m */; };
 		A0C1EF442B63F6DC004EE0AE /* UIProgressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF432B63F6DC004EE0AE /* UIProgressViewController.m */; };
 		A0C1EF472B64A14E004EE0AE /* CusUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF462B64A14E004EE0AE /* CusUITableViewController.m */; };
+		A0C1EF4D2B64EB5C004EE0AE /* FakeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF4C2B64EB5C004EE0AE /* FakeUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,8 @@
 		A0C1EF432B63F6DC004EE0AE /* UIProgressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIProgressViewController.m; sourceTree = "<group>"; };
 		A0C1EF452B64A14E004EE0AE /* CusUITableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusUITableViewController.h; sourceTree = "<group>"; };
 		A0C1EF462B64A14E004EE0AE /* CusUITableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusUITableViewController.m; sourceTree = "<group>"; };
+		A0C1EF4B2B64EB5C004EE0AE /* FakeUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeUtil.h; sourceTree = "<group>"; };
+		A0C1EF4C2B64EB5C004EE0AE /* FakeUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,9 +250,12 @@
 		A0AE535E2B55731E0075EAA4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A0C1EF4A2B64E38E004EE0AE /* 日志 */,
+				A0C1EF492B64E386004EE0AE /* 网络 */,
+				A0C1EF482B64E36B004EE0AE /* 适配 */,
 				A0AE535F2B55732D0075EAA4 /* 单元格 */,
-				A076B2842B5B8CA400AAE9C5 /* ScreenUtil.h */,
-				A076B2852B5B8CA400AAE9C5 /* ScreenUtil.m */,
+				A0C1EF4B2B64EB5C004EE0AE /* FakeUtil.h */,
+				A0C1EF4C2B64EB5C004EE0AE /* FakeUtil.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -287,6 +293,29 @@
 			children = (
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A0C1EF482B64E36B004EE0AE /* 适配 */ = {
+			isa = PBXGroup;
+			children = (
+				A076B2842B5B8CA400AAE9C5 /* ScreenUtil.h */,
+				A076B2852B5B8CA400AAE9C5 /* ScreenUtil.m */,
+			);
+			path = "适配";
+			sourceTree = "<group>";
+		};
+		A0C1EF492B64E386004EE0AE /* 网络 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "网络";
+			sourceTree = "<group>";
+		};
+		A0C1EF4A2B64E38E004EE0AE /* 日志 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "日志";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -425,6 +454,7 @@
 				A076B28C2B5D07A900AAE9C5 /* CustomTableViewCell.m in Sources */,
 				A076B2922B5D38AE00AAE9C5 /* UIButtonViewController.m in Sources */,
 				A07DF49B2B5427ED00D0275E /* ViewController.m in Sources */,
+				A0C1EF4D2B64EB5C004EE0AE /* FakeUtil.m in Sources */,
 				A07DF4A12B5427ED00D0275E /* ios_study_bool.xcdatamodeld in Sources */,
 				A0AE53682B5573C20075EAA4 /* PartCellModel.m in Sources */,
 				A07DF4952B5427ED00D0275E /* AppDelegate.m in Sources */,

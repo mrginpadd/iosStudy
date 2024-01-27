@@ -6,16 +6,22 @@
 //
 
 #import "CusUITableViewController.h"
-
+#import "FakeUtil.h"
 @interface CusUITableViewController ()<UITableViewDelegate, UITableViewDelegate, CusTableViewCellDelegate>
 @property(nonatomic, strong, readwrite) UIScrollView* scrollView;
 @property(nonatomic, strong, readwrite) UITableView *tableView1;
-
+@property(nonatomic, strong, readwrite) UITableView *tableView2;
 @property(nonatomic, strong, readwrite) NSMutableArray* selectedCellIndex;
+@property(nonatomic, strong, readwrite) NSArray* array2;
 @end
 
 @implementation CusUITableViewController
-
+- (NSArray*) array2 {
+    if (_array2 == nil) {
+       _array2 = [FakeUtil generateChineseSentences:10];
+    }
+    return _array2;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -33,6 +39,7 @@
     [self buildUseLabel];
     [self buildUseView];
     [self buildTableView1];
+    [self buildTableView2];
 }
 
 - (void)buildScrollView {
@@ -100,8 +107,14 @@
 }
 
 - (void)buildTableView1 {
-    self.selectedCellIndex = [[NSMutableSet alloc] init];
-    _tableView1 = [[UITableView alloc] initWithFrame:CGRectMake(0, 670, self.view.frame.size.width, 150)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 670, self.view.frame.size.width, 40)];
+    label.text = @"自定义单元格、单元格复用机制";
+    label.textColor = [UIColor whiteColor];
+    label.backgroundColor = [UIColor blackColor];
+    [_scrollView addSubview:label];
+    
+    _selectedCellIndex = [[NSMutableSet alloc] init];
+    _tableView1 = [[UITableView alloc] initWithFrame:CGRectMake(0, 720, self.view.frame.size.width, 150)];
     [_tableView1 registerClass:[CusTableViewCell class] forCellReuseIdentifier:@"Cell1"];
     _tableView1.delegate = self;
     _tableView1.dataSource = self;
@@ -111,8 +124,60 @@
     [_scrollView addSubview:_tableView1];
 }
 
+- (void)buildTableView2 {
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 880, self.view.frame.size.width, 40)];
+    label.text = @"下拉刷新、上拉加载更多";
+    label.textColor = [UIColor whiteColor];
+    label.backgroundColor = [UIColor blackColor];
+    [_scrollView addSubview:label];
+    
+    _tableView2 = [[UITableView alloc] initWithFrame:CGRectMake(0, 930, self.view.frame.size.width, 200)];
+    [_tableView2 registerClass:[CusTableViewCell class] forCellReuseIdentifier:@"Cell1"];
+    
+    _tableView2.delegate = self;
+    _tableView2.dataSource = self;
+    
+    _tableView2.backgroundColor = [UIColor grayColor];
+    _tableView2.layer.borderWidth = 2.0;
+    _tableView2.layer.borderColor = [UIColor blueColor].CGColor;
+    
+#pragma-mark -下拉刷新
+    // 创建 UIRefreshControl 对象
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(refreshData) forControlEvents:UIControlEventValueChanged];
+    // 将 refreshControl 设置为 tableView 的 refreshControl 属性
+    _tableView2.refreshControl = refreshControl;
+    
+    
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 40)];
+    headerView.backgroundColor = [UIColor blackColor];
+    _tableView2.tableHeaderView = headerView;
+    [headerView addSubview:({
+            UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 40)];
+            label.text = @"UITableHeaderView";
+        label.textColor = [UIColor whiteColor];
+            label;
+    })];
+    
+    [_scrollView addSubview:_tableView2];
+}
+- (void)refreshData {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.array2 = [FakeUtil generateChineseSentences:10];
+        [self.tableView2 reloadData];
+       [self.tableView2.refreshControl endRefreshing];
+    });
+    
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 20;
+    if (tableView == _tableView1) {
+        return 20;
+    } else if (tableView == _tableView2) {
+        return self.array2.count;
+    } else {
+        return 1;
+    }
 }
 
 
@@ -125,18 +190,30 @@
      
     }
     cell.delegate = self;
-    cell.leftImageView.image = [UIImage imageNamed:@"小丑"];
-    cell.backgroundColor = [UIColor darkGrayColor];
-    cell.titleLabel.text = [NSString stringWithFormat:@"我是单元格 %ld  %@: %@", (long)indexPath.row, @"是否被选中", [_selectedCellIndex containsObject:@(indexPath.row)] ? @"选中" : @"未选中"] ;
- 
-    cell.titleLabel.adjustsFontSizeToFitWidth = YES;
-    cell.titleLabel.minimumScaleFactor = 0.3;
     
-    BOOL isSelected = [_selectedCellIndex containsObject:indexPath];
-    if (isSelected) {
-        [cell.rightButton setImage:[UIImage imageNamed:@"selected"] forState:UIControlStateNormal];
-    } else {
-        [cell.rightButton setImage:[UIImage imageNamed:@"unSelected"] forState:UIControlStateNormal];
+    if (tableView == _tableView1) {
+        cell.leftImageView.image = [UIImage imageNamed:@"小丑"];
+        cell.backgroundColor = [UIColor darkGrayColor];
+        cell.titleLabel.text = [NSString stringWithFormat:@"我是单元格 %ld  %@: %@", (long)indexPath.row, @"是否被选中", [_selectedCellIndex containsObject:@(indexPath.row)] ? @"选中" : @"未选中"] ;
+     
+        cell.titleLabel.adjustsFontSizeToFitWidth = YES;
+        cell.titleLabel.minimumScaleFactor = 0.3;
+        
+        BOOL isSelected = [_selectedCellIndex containsObject:indexPath];
+        if (isSelected) {
+            [cell.rightButton setImage:[UIImage imageNamed:@"selected"] forState:UIControlStateNormal];
+        } else {
+            [cell.rightButton setImage:[UIImage imageNamed:@"unSelected"] forState:UIControlStateNormal];
+        }
+    } else if(tableView == _tableView2) {
+        cell.leftImageView.image = [UIImage imageNamed:@"小丑"];
+        cell.backgroundColor = [UIColor darkGrayColor];
+        cell.titleLabel.text = [NSString stringWithFormat:@"%ld %@", (long)indexPath.row, _array2[indexPath.row]];
+     
+        cell.titleLabel.adjustsFontSizeToFitWidth = YES;
+        cell.titleLabel.minimumScaleFactor = 0.3;
+        cell.rightButton.hidden = YES;
+
     }
     return cell;
 }
@@ -179,12 +256,12 @@
         [self.contentView addSubview:self.leftImageView];
         
         // 添加中间的标题标签
-        self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(60, 10, 200, 40)];
+        self.titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(60, 10, 250, 40)];
         self.titleLabel.backgroundColor = [UIColor greenColor];
         [self.contentView addSubview:self.titleLabel];
 
         // 添加右边的单选按钮
-        self.rightButton = [[UIButton alloc] initWithFrame:CGRectMake(270, 15, 30, 30)];
+        self.rightButton = [[UIButton alloc] initWithFrame:CGRectMake(320, 15, 30, 30)];
         self.rightButton.backgroundColor = [UIColor redColor];
 
 //        [self.rightButton setImage:[UIImage imageNamed:@"unSelected"] forState:UIControlStateNormal];

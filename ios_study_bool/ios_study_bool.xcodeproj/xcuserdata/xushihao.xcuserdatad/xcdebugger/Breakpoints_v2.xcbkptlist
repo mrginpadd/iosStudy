@@ -244,102 +244,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4BF22530-D274-46D7-8170-D44C40CB8104"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ios_study_bool/UI&#x7ec4;&#x4ef6;/CusUITableViewController.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "4BF22530-D274-46D7-8170-D44C40CB8104 - 70f9724af5870b92"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[CusUITableViewController tableView:cellForRowAtIndexPath:]"
-                  moduleName = "ios_study_bool"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/UI%E7%BB%84%E4%BB%B6/CusUITableViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "137"
-                  endingLineNumber = "137"
-                  offsetFromSymbolStart = "844">
-               </Location>
-               <Location
-                  uuid = "4BF22530-D274-46D7-8170-D44C40CB8104 - 70f9724af5870b92"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[CusUITableViewController tableView:cellForRowAtIndexPath:]"
-                  moduleName = "ios_study_bool"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/UI%E7%BB%84%E4%BB%B6/CusUITableViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "137"
-                  endingLineNumber = "137"
-                  offsetFromSymbolStart = "760">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "48C4E063-1213-484B-A29E-B96A1635412A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ios_study_bool/UI&#x7ec4;&#x4ef6;/CusUITableViewController.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "48C4E063-1213-484B-A29E-B96A1635412A - 70f9724af5870b4c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[CusUITableViewController tableView:cellForRowAtIndexPath:]"
-                  moduleName = "ios_study_bool"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/UI%E7%BB%84%E4%BB%B6/CusUITableViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "139"
-                  endingLineNumber = "139"
-                  offsetFromSymbolStart = "944">
-               </Location>
-               <Location
-                  uuid = "48C4E063-1213-484B-A29E-B96A1635412A - 70f9724af5870b4c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[CusUITableViewController tableView:cellForRowAtIndexPath:]"
-                  moduleName = "ios_study_bool"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/UI%E7%BB%84%E4%BB%B6/CusUITableViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "139"
-                  endingLineNumber = "139"
-                  offsetFromSymbolStart = "860">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "93B6836D-3F5E-4EB8-9B5B-3281AE98F779"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -347,8 +251,8 @@
             filePath = "ios_study_bool/UI&#x7ec4;&#x4ef6;/CusUITableViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
+            startingLineNumber = "227"
+            endingLineNumber = "227"
             landmarkName = "-cell:"
             landmarkType = "7">
          </BreakpointContent>
@@ -363,8 +267,8 @@
             filePath = "ios_study_bool/UI&#x7ec4;&#x4ef6;/CusUITableViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
             landmarkName = "-cell:"
             landmarkType = "7">
          </BreakpointContent>
