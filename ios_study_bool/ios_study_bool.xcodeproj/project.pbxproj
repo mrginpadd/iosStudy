@@ -37,6 +37,7 @@
 		A0C1EF4D2B64EB5C004EE0AE /* FakeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF4C2B64EB5C004EE0AE /* FakeUtil.m */; };
 		A0C1EF532B661DE4004EE0AE /* CusUICollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF522B661DE4004EE0AE /* CusUICollectionViewController.m */; };
 		A0C1EF562B6DE196004EE0AE /* CusScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF552B6DE196004EE0AE /* CusScrollViewController.m */; };
+		A0C1EF592B6E3F15004EE0AE /* CusPageControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF582B6E3F15004EE0AE /* CusPageControlViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,8 @@
 		A0C1EF522B661DE4004EE0AE /* CusUICollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusUICollectionViewController.m; sourceTree = "<group>"; };
 		A0C1EF542B6DE196004EE0AE /* CusScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusScrollViewController.h; sourceTree = "<group>"; };
 		A0C1EF552B6DE196004EE0AE /* CusScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusScrollViewController.m; sourceTree = "<group>"; };
+		A0C1EF572B6E3F15004EE0AE /* CusPageControlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusPageControlViewController.h; sourceTree = "<group>"; };
+		A0C1EF582B6E3F15004EE0AE /* CusPageControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusPageControlViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,8 @@
 				A0C1EF522B661DE4004EE0AE /* CusUICollectionViewController.m */,
 				A0C1EF542B6DE196004EE0AE /* CusScrollViewController.h */,
 				A0C1EF552B6DE196004EE0AE /* CusScrollViewController.m */,
+				A0C1EF572B6E3F15004EE0AE /* CusPageControlViewController.h */,
+				A0C1EF582B6E3F15004EE0AE /* CusPageControlViewController.m */,
 			);
 			path = "UI组件";
 			sourceTree = "<group>";
@@ -468,6 +473,7 @@
 				A07DF4A12B5427ED00D0275E /* ios_study_bool.xcdatamodeld in Sources */,
 				A0AE53682B5573C20075EAA4 /* PartCellModel.m in Sources */,
 				A0C1EF532B661DE4004EE0AE /* CusUICollectionViewController.m in Sources */,
+				A0C1EF592B6E3F15004EE0AE /* CusPageControlViewController.m in Sources */,
 				A07DF4952B5427ED00D0275E /* AppDelegate.m in Sources */,
 				A0C1EF382B613448004EE0AE /* UISwitchViewController.m in Sources */,
 				A076B27C2B5B732400AAE9C5 /* LangManager.m in Sources */,
