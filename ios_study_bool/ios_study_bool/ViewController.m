@@ -9,7 +9,7 @@
 #import "KeyWordViewController.h"
 #import "LangManager.h"
 #import "UIComponentsViewController.h"
-
+#import "CustomTableViewCell.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray<NSArray*> *functions;
@@ -53,7 +53,7 @@
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellId"];
+    [self.tableView registerClass:[CustomTableViewCell class] forCellReuseIdentifier:@"cellId"];
 
     [self.view addSubview:self.tableView];
 }
@@ -101,18 +101,12 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId"];
+    CustomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId"];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellId"];
-        
+        cell = [[CustomTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellId"];
     }
-//    cell.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
-    [cell.contentView addSubview:({
-         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 56)];
-        label.text = self.functions[indexPath.section][indexPath.row];
-        label.textAlignment = NSTextAlignmentCenter;
-         label;
-    })];
+
+    cell.titleLabel.text = self.functions[indexPath.section][indexPath.row];
     return cell;
 }
 
