@@ -46,12 +46,42 @@
 }
 
 - (void)buildViews {
+    
+    [self buildNaviBarView];
+    
+    
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cellId"];
 
     [self.view addSubview:self.tableView];
+}
+
+- (void)buildNaviBarView {
+    // 创建一个UIImageView对象，用于显示头像
+    UIImageView *avatarImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    avatarImageView.image = [UIImage imageNamed:@"size20"];
+    avatarImageView.layer.cornerRadius = avatarImageView.frame.size.width / 2;
+    avatarImageView.clipsToBounds = YES;
+    avatarImageView.contentMode = UIViewContentModeScaleAspectFit;
+    avatarImageView.backgroundColor = [UIColor grayColor];
+
+    // 创建一个UIBarButtonItem对象，并将它设置为UIImageView对象
+    UIBarButtonItem *avatarBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:avatarImageView];
+    self.navigationItem.leftBarButtonItem = avatarBarButtonItem;
+    
+
+    self.navigationItem.title = @"实验室";
+    
+    
+    // 创建两个UIBarButtonItem对象，用于展示不同的选项
+    UIBarButtonItem *option1BarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"TODO" style:UIBarButtonItemStylePlain target:self action:@selector(option1ButtonPressed)];
+    UIBarButtonItem *option2BarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"主页" style:UIBarButtonItemStylePlain target:self action:@selector(option2ButtonPressed)];
+    NSArray *rightBarButtonItems = @[option1BarButtonItem, option2BarButtonItem];
+    
+    // 将UIBarButtonItem对象设置为导航栏的右侧按钮
+    self.navigationItem.rightBarButtonItems = rightBarButtonItems;
 }
 
 # pragma-mark UITableView代理
