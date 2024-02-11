@@ -19,6 +19,8 @@
 #import "CusUICollectionViewController.h"
 #import "CusScrollViewController.h"
 #import "CusPageControlViewController.h"
+#import "CusSegmentedControlViewController.h"
+#import "CusUITabbarViewController.h"
 @interface UIComponentsViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray* functions;
@@ -134,6 +136,12 @@
         [self.navigationController pushViewController:targetVC animated:YES];
     } else if([selectedStr hasPrefix:@"UIPageControl"]) {
         CusPageControlViewController* targetVC = [[CusPageControlViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([selectedStr hasPrefix:@"UISegmentedControl"]) {
+        CusSegmentedControlViewController *targetVC = [[CusSegmentedControlViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([selectedStr hasPrefix:@"UITabBarController"]) {
+        CusUITabbarViewController *targetVC = [[CusUITabbarViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }

@@ -38,6 +38,8 @@
 		A0C1EF532B661DE4004EE0AE /* CusUICollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF522B661DE4004EE0AE /* CusUICollectionViewController.m */; };
 		A0C1EF562B6DE196004EE0AE /* CusScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF552B6DE196004EE0AE /* CusScrollViewController.m */; };
 		A0C1EF592B6E3F15004EE0AE /* CusPageControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF582B6E3F15004EE0AE /* CusPageControlViewController.m */; };
+		A0C1EF5C2B75EB39004EE0AE /* CusSegmentedControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF5B2B75EB39004EE0AE /* CusSegmentedControlViewController.m */; };
+		A0C1EF5F2B78C999004EE0AE /* CusUITabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF5E2B78C999004EE0AE /* CusUITabbarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +117,10 @@
 		A0C1EF552B6DE196004EE0AE /* CusScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusScrollViewController.m; sourceTree = "<group>"; };
 		A0C1EF572B6E3F15004EE0AE /* CusPageControlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusPageControlViewController.h; sourceTree = "<group>"; };
 		A0C1EF582B6E3F15004EE0AE /* CusPageControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusPageControlViewController.m; sourceTree = "<group>"; };
+		A0C1EF5A2B75EB39004EE0AE /* CusSegmentedControlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusSegmentedControlViewController.h; sourceTree = "<group>"; };
+		A0C1EF5B2B75EB39004EE0AE /* CusSegmentedControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusSegmentedControlViewController.m; sourceTree = "<group>"; };
+		A0C1EF5D2B78C999004EE0AE /* CusUITabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusUITabbarViewController.h; sourceTree = "<group>"; };
+		A0C1EF5E2B78C999004EE0AE /* CusUITabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusUITabbarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +186,10 @@
 				A0C1EF552B6DE196004EE0AE /* CusScrollViewController.m */,
 				A0C1EF572B6E3F15004EE0AE /* CusPageControlViewController.h */,
 				A0C1EF582B6E3F15004EE0AE /* CusPageControlViewController.m */,
+				A0C1EF5A2B75EB39004EE0AE /* CusSegmentedControlViewController.h */,
+				A0C1EF5B2B75EB39004EE0AE /* CusSegmentedControlViewController.m */,
+				A0C1EF5D2B78C999004EE0AE /* CusUITabbarViewController.h */,
+				A0C1EF5E2B78C999004EE0AE /* CusUITabbarViewController.m */,
 			);
 			path = "UI组件";
 			sourceTree = "<group>";
@@ -479,6 +489,7 @@
 				A076B27C2B5B732400AAE9C5 /* LangManager.m in Sources */,
 				A0AE535D2B5572740075EAA4 /* KeyWordViewController.m in Sources */,
 				A076B2952B60014400AAE9C5 /* UIImageViewController.m in Sources */,
+				A0C1EF5C2B75EB39004EE0AE /* CusSegmentedControlViewController.m in Sources */,
 				A0C1EF3B2B6139A4004EE0AE /* UITextFieldViewController.m in Sources */,
 				A0C1EF412B63DCFD004EE0AE /* UISliderViewController.m in Sources */,
 				A0C1EF442B63F6DC004EE0AE /* UIProgressViewController.m in Sources */,
@@ -487,6 +498,7 @@
 				A0C1EF3E2B628A99004EE0AE /* UITextViewController.m in Sources */,
 				A0C1EF562B6DE196004EE0AE /* CusScrollViewController.m in Sources */,
 				A076B2832B5B8C5200AAE9C5 /* UILabelViewController.m in Sources */,
+				A0C1EF5F2B78C999004EE0AE /* CusUITabbarViewController.m in Sources */,
 				A0C1EF472B64A14E004EE0AE /* CusUITableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

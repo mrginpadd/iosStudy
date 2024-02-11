@@ -101,7 +101,6 @@
     view1.layer.borderWidth = 2.0;
     [view1 addSubview:({
         _scrollView1 = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width , 150)];
-        
         _scrollView1.backgroundColor = [UIColor grayColor];
         _scrollView1.contentSize = CGSizeMake(self.view.frame.size.width * 10, 150);
         _scrollView1.pagingEnabled = YES;
