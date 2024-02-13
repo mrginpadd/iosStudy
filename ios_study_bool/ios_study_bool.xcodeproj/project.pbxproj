@@ -40,6 +40,8 @@
 		A0C1EF592B6E3F15004EE0AE /* CusPageControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF582B6E3F15004EE0AE /* CusPageControlViewController.m */; };
 		A0C1EF5C2B75EB39004EE0AE /* CusSegmentedControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF5B2B75EB39004EE0AE /* CusSegmentedControlViewController.m */; };
 		A0C1EF5F2B78C999004EE0AE /* CusUITabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF5E2B78C999004EE0AE /* CusUITabbarViewController.m */; };
+		A0C1EF622B78FD20004EE0AE /* UINavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF612B78FD20004EE0AE /* UINavigationViewController.m */; };
+		A0C1EF662B7B1619004EE0AE /* TipUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF652B7B1619004EE0AE /* TipUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +123,10 @@
 		A0C1EF5B2B75EB39004EE0AE /* CusSegmentedControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusSegmentedControlViewController.m; sourceTree = "<group>"; };
 		A0C1EF5D2B78C999004EE0AE /* CusUITabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusUITabbarViewController.h; sourceTree = "<group>"; };
 		A0C1EF5E2B78C999004EE0AE /* CusUITabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusUITabbarViewController.m; sourceTree = "<group>"; };
+		A0C1EF602B78FD20004EE0AE /* UINavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UINavigationViewController.h; sourceTree = "<group>"; };
+		A0C1EF612B78FD20004EE0AE /* UINavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UINavigationViewController.m; sourceTree = "<group>"; };
+		A0C1EF642B7B1619004EE0AE /* TipUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipUtil.h; sourceTree = "<group>"; };
+		A0C1EF652B7B1619004EE0AE /* TipUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +196,8 @@
 				A0C1EF5B2B75EB39004EE0AE /* CusSegmentedControlViewController.m */,
 				A0C1EF5D2B78C999004EE0AE /* CusUITabbarViewController.h */,
 				A0C1EF5E2B78C999004EE0AE /* CusUITabbarViewController.m */,
+				A0C1EF602B78FD20004EE0AE /* UINavigationViewController.h */,
+				A0C1EF612B78FD20004EE0AE /* UINavigationViewController.m */,
 			);
 			path = "UI组件";
 			sourceTree = "<group>";
@@ -275,12 +283,11 @@
 		A0AE535E2B55731E0075EAA4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A0C1EF632B7B15CE004EE0AE /* Uitils */,
 				A0C1EF4A2B64E38E004EE0AE /* 日志 */,
 				A0C1EF492B64E386004EE0AE /* 网络 */,
 				A0C1EF482B64E36B004EE0AE /* 适配 */,
 				A0AE535F2B55732D0075EAA4 /* 单元格 */,
-				A0C1EF4B2B64EB5C004EE0AE /* FakeUtil.h */,
-				A0C1EF4C2B64EB5C004EE0AE /* FakeUtil.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -341,6 +348,17 @@
 			children = (
 			);
 			path = "日志";
+			sourceTree = "<group>";
+		};
+		A0C1EF632B7B15CE004EE0AE /* Uitils */ = {
+			isa = PBXGroup;
+			children = (
+				A0C1EF4B2B64EB5C004EE0AE /* FakeUtil.h */,
+				A0C1EF4C2B64EB5C004EE0AE /* FakeUtil.m */,
+				A0C1EF642B7B1619004EE0AE /* TipUtil.h */,
+				A0C1EF652B7B1619004EE0AE /* TipUtil.m */,
+			);
+			path = Uitils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -481,6 +499,7 @@
 				A07DF49B2B5427ED00D0275E /* ViewController.m in Sources */,
 				A0C1EF4D2B64EB5C004EE0AE /* FakeUtil.m in Sources */,
 				A07DF4A12B5427ED00D0275E /* ios_study_bool.xcdatamodeld in Sources */,
+				A0C1EF662B7B1619004EE0AE /* TipUtil.m in Sources */,
 				A0AE53682B5573C20075EAA4 /* PartCellModel.m in Sources */,
 				A0C1EF532B661DE4004EE0AE /* CusUICollectionViewController.m in Sources */,
 				A0C1EF592B6E3F15004EE0AE /* CusPageControlViewController.m in Sources */,
@@ -497,6 +516,7 @@
 				A07DF4982B5427ED00D0275E /* SceneDelegate.m in Sources */,
 				A0C1EF3E2B628A99004EE0AE /* UITextViewController.m in Sources */,
 				A0C1EF562B6DE196004EE0AE /* CusScrollViewController.m in Sources */,
+				A0C1EF622B78FD20004EE0AE /* UINavigationViewController.m in Sources */,
 				A076B2832B5B8C5200AAE9C5 /* UILabelViewController.m in Sources */,
 				A0C1EF5F2B78C999004EE0AE /* CusUITabbarViewController.m in Sources */,
 				A0C1EF472B64A14E004EE0AE /* CusUITableViewController.m in Sources */,
