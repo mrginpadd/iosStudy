@@ -46,6 +46,7 @@
 		A0C1EF6C2B7B6052004EE0AE /* UIAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF6B2B7B6052004EE0AE /* UIAlertViewController.m */; };
 		A0C1EF702B7B612F004EE0AE /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF6F2B7B612F004EE0AE /* IntroductionViewController.m */; };
 		A0C1EF732B7C4517004EE0AE /* ToastUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF722B7C4517004EE0AE /* ToastUtil.m */; };
+		A0C1EF762B7C6F74004EE0AE /* CusUIPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF752B7C6F74004EE0AE /* CusUIPickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,8 @@
 		A0C1EF6F2B7B612F004EE0AE /* IntroductionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroductionViewController.m; sourceTree = "<group>"; };
 		A0C1EF712B7C4517004EE0AE /* ToastUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToastUtil.h; sourceTree = "<group>"; };
 		A0C1EF722B7C4517004EE0AE /* ToastUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastUtil.m; sourceTree = "<group>"; };
+		A0C1EF742B7C6F74004EE0AE /* CusUIPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusUIPickerViewController.h; sourceTree = "<group>"; };
+		A0C1EF752B7C6F74004EE0AE /* CusUIPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusUIPickerViewController.m; sourceTree = "<group>"; };
 		E92F4BAD3A2EEECF87152C21 /* Pods_ios_study_bool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_study_bool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -223,6 +226,8 @@
 				A0C1EF612B78FD20004EE0AE /* UINavigationViewController.m */,
 				A0C1EF6A2B7B6052004EE0AE /* UIAlertViewController.h */,
 				A0C1EF6B2B7B6052004EE0AE /* UIAlertViewController.m */,
+				A0C1EF742B7C6F74004EE0AE /* CusUIPickerViewController.h */,
+				A0C1EF752B7C6F74004EE0AE /* CusUIPickerViewController.m */,
 			);
 			path = "UI组件";
 			sourceTree = "<group>";
@@ -611,6 +616,7 @@
 				A0C1EF562B6DE196004EE0AE /* CusScrollViewController.m in Sources */,
 				A0C1EF622B78FD20004EE0AE /* UINavigationViewController.m in Sources */,
 				A0C1EF702B7B612F004EE0AE /* IntroductionViewController.m in Sources */,
+				A0C1EF762B7C6F74004EE0AE /* CusUIPickerViewController.m in Sources */,
 				A076B2832B5B8C5200AAE9C5 /* UILabelViewController.m in Sources */,
 				A0C1EF5F2B78C999004EE0AE /* CusUITabbarViewController.m in Sources */,
 				A0C1EF472B64A14E004EE0AE /* CusUITableViewController.m in Sources */,

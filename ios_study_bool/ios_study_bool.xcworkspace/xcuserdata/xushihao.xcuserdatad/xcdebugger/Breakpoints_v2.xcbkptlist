@@ -16,7 +16,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "109"
             endingLineNumber = "109"
-            landmarkName = "-showAlert"
+            landmarkName = "-buildViews"
             landmarkType = "7">
             <Locations>
                <Location
@@ -63,6 +63,21 @@
                   startingLineNumber = "92"
                   endingLineNumber = "92"
                   offsetFromSymbolStart = "1240">
+               </Location>
+               <Location
+                  uuid = "D98FA5C9-07B1-4500-A1A8-F744A08C8B02 - 238aa3c0509dfb66"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[UIAlertViewController buildViews]"
+                  moduleName = "ios_study_bool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/UI%E7%BB%84%E4%BB%B6/UIAlertViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "1280">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -118,64 +133,33 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1254D01F-38FB-4AE9-B8D0-94810D283829"
+            uuid = "174CA977-B695-443D-9C75-EB0DABABCC5D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ios_study_bool/UI&#x7ec4;&#x4ef6;/UIAlertViewController.m"
+            filePath = "ios_study_bool/UI&#x7ec4;&#x4ef6;/CusUIPickerViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
-            landmarkName = "-buildViews"
+            startingLineNumber = "222"
+            endingLineNumber = "222"
+            landmarkName = "-cancelButtonAction:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "1254D01F-38FB-4AE9-B8D0-94810D283829 - 238aa3c0509dc400"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[UIAlertViewController buildViews]"
-                  moduleName = "ios_study_bool"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/UI%E7%BB%84%E4%BB%B6/UIAlertViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "83"
-                  endingLineNumber = "83"
-                  offsetFromSymbolStart = "1120">
-               </Location>
-               <Location
-                  uuid = "1254D01F-38FB-4AE9-B8D0-94810D283829 - 1d00b3129e6895f0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__35-[UIAlertViewController buildViews]_block_invoke.22"
-                  moduleName = "ios_study_bool"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/UI%E7%BB%84%E4%BB%B6/UIAlertViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "84"
-                  endingLineNumber = "84"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "1254D01F-38FB-4AE9-B8D0-94810D283829 - 238aa3c0509dc400"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[UIAlertViewController buildViews]"
-                  moduleName = "ios_study_bool"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/UI%E7%BB%84%E4%BB%B6/UIAlertViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "83"
-                  endingLineNumber = "83"
-                  offsetFromSymbolStart = "1140">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0993F849-0861-40AA-A5C1-4D0088BA3172"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios_study_bool/UI&#x7ec4;&#x4ef6;/CusUIPickerViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
+            landmarkName = "-confirmButtonAction:"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

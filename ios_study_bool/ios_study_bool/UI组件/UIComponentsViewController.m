@@ -24,6 +24,7 @@
 #import "UINavigationViewController.h"
 #import "UIAlertViewController.h"
 #import "IntroductionViewController.h"
+#import "CusUIPickerViewController.h"
 @interface UIComponentsViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray* functions;
@@ -149,8 +150,11 @@
     } else if([selectedStr hasPrefix:@"UINavigationController"]) {
         UINavigationViewController *targetVC = [[UINavigationViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
-    } else if([selectedStr hasPrefix:@"UIAlert"]) {
+    } else if([selectedStr hasPrefix:@"UIAlertController"]) {
         UIAlertViewController *targetVC = [[UIAlertViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([selectedStr hasPrefix:@"UIPickerView"]) {
+        CusUIPickerViewController *targetVC = [[CusUIPickerViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }

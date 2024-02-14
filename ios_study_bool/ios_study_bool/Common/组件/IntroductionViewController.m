@@ -293,4 +293,113 @@
     [TipUtil showTip:content title:title inController:self];
 }
 
+
+- (void)setIntroTipBtns:(NSArray<NSString *> *)tipBtns {
+    NSMutableArray *btns = @[].mutableCopy;
+    
+    for(int i=0; i<tipBtns.count; i++) {
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        [btn setTitle:tipBtns[i] forState:UIControlStateNormal];
+        btn.backgroundColor = [UIColor systemCyanColor];
+
+        [btns addObject:btn];
+
+        [btn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+        
+        [_introView addSubview:btn];
+        
+        if (i == 0) {
+          [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+             make.left.equalTo(_introTitleLabel.mas_right).offset(10);
+             make.centerY.equalTo(_introView);
+             make.width.lessThanOrEqualTo(@200);
+             make.height.equalTo(_introView).offset(-8);
+          }];
+        } else {
+          UIButton *preBtn = btns[i-1];
+          [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+              make.left.equalTo(preBtn.mas_right).offset(10);
+              make.centerY.equalTo(_introView);
+              make.width.lessThanOrEqualTo(@200);
+              make.height.equalTo(_introView).offset(-8);
+          }];
+        }
+    }
+}
+
+- (void)setApplicationTipBtns:(NSArray<NSString *> *)tipBtns {
+    NSMutableArray *btns = @[].mutableCopy;
+    
+    for(int i=0; i<tipBtns.count; i++) {
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        [btn setTitle:tipBtns[i] forState:UIControlStateNormal];
+        btn.backgroundColor = [UIColor systemCyanColor];
+
+        [btns addObject:btn];
+
+
+        [btn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+        
+        [_applicationView addSubview:btn];
+        
+        if (i == 0) {
+          [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+             make.left.equalTo(_applicationTitleLabel.mas_right).offset(10);
+             make.centerY.equalTo(_applicationView);
+             make.width.lessThanOrEqualTo(@200);
+             make.height.equalTo(_applicationView).offset(-8);
+          }];
+        } else {
+          UIButton *preBtn = btns[i-1];
+          [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+              make.left.equalTo(preBtn.mas_right).offset(10);
+              make.centerY.equalTo(_applicationView);
+              make.width.lessThanOrEqualTo(@200);
+              make.height.equalTo(_applicationView).offset(-8);
+          }];
+        }
+    }
+}
+
+- (void)setUseStepTipBtns:(NSArray<NSString *> *)tipBtns {
+    NSMutableArray *btns = @[].mutableCopy;
+    for(int i=0; i<tipBtns.count; i++) {
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        [btn setTitle:tipBtns[i] forState:UIControlStateNormal];
+        btn.backgroundColor = [UIColor systemCyanColor];
+
+        [btns addObject:btn];
+
+        [btn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+        
+        [_useStepView addSubview:btn];
+        
+        if (i == 0) {
+          [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+             make.left.equalTo(_userStepTitleLabel.mas_right).offset(10);
+             make.centerY.equalTo(_useStepView);
+             make.width.lessThanOrEqualTo(@200);
+             make.height.equalTo(_useStepView).offset(-8);
+          }];
+        } else {
+          UIButton *preBtn = btns[i-1];
+          [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+              make.left.equalTo(preBtn.mas_right).offset(10);
+              make.centerY.equalTo(_useStepView);
+              make.width.lessThanOrEqualTo(@200);
+              make.height.equalTo(_useStepView).offset(-8);
+          }];
+        }
+    }
+}
+
+- (void)buttonClicked:(UIButton *)sender {
+    // 当按钮被点击时触发相应的方法
+    NSString *title = sender.titleLabel.text; // 获取按钮的标题
+    
+    // 通过代理将按钮的点击事件传递给 self
+    if ([self.delegate respondsToSelector:@selector(buttonClickedWithTitle:)]) {
+        [self.delegate buttonClickedWithTitle:title];
+    }
+}
 @end

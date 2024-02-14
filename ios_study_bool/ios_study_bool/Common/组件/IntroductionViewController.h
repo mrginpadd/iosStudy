@@ -9,7 +9,16 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol CusUIPickerViewControllerDelegate <NSObject>
+
+-(void)buttonClickedWithTitle:(NSString*) title;
+
+@end
+
 @interface IntroductionViewController : UIViewController
+
+@property(nonatomic, weak) id<CusUIPickerViewControllerDelegate> delegate;
+
 @property(nonatomic, strong, readwrite) UIScrollView *scrollView;
 
 
@@ -31,11 +40,19 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong, readwrite) NSMutableArray<UIButton*>* useStepBtns;
 - (instancetype)init;
 
+//设置标题和内容，用于展示底部弹框
 - (void)setIntroTipBtns:(NSArray<NSString *> *)tipBtns titles: (NSArray<NSString *> *)tipTitles contents:(NSArray<NSString *> *)tipContents;
 
 - (void)setApplicationTipBtns:(NSArray<NSString *> *)tipBtns titles: (NSArray<NSString *> *)tipTitles contents:(NSArray<NSString *> *)tipContents;
 
 - (void)setUseStepTipBtns:(NSArray<NSString *> *)tipBtns titles: (NSArray<NSString *> *)tipTitles contents:(NSArray<NSString *> *)tipContents;
+
+//只设置按钮标题，用代理接受按钮点击事件的回调，进行额外处理
+- (void)setIntroTipBtns:(NSArray<NSString *> *)tipBtns;
+
+- (void)setApplicationTipBtns:(NSArray<NSString *> *)tipBtns;
+
+- (void)setUseStepTipBtns:(NSArray<NSString *> *)tipBtns;
 
 @end
 
