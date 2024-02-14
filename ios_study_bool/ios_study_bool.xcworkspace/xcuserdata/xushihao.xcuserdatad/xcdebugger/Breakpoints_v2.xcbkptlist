@@ -303,7 +303,38 @@
                   endingLineNumber = "67"
                   offsetFromSymbolStart = "44">
                </Location>
+               <Location
+                  uuid = "71AAC6E7-6E0C-416D-9FA9-06306A600FCE - 9a1384c3d69704f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CusActivityIndicatorViewController buttonClickedWithTitle:]"
+                  moduleName = "ios_study_bool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/UI%E7%BB%84%E4%BB%B6/CusActivityIndicatorViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "44">
+               </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E66A94EE-29B9-4724-AA85-70ED0F58F45D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios_study_bool/UI&#x7ec4;&#x4ef6;/CusUIWebViewViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "CusUIWebViewViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
