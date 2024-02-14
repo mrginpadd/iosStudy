@@ -8,7 +8,7 @@
 #import "CusUIPickerViewController.h"
 #import "IntroductionViewController.h"
 #import "Masonry.h"
-@interface CusUIPickerViewController ()<CusUIPickerViewControllerDelegate,UIPickerViewDataSource, UIPickerViewDelegate>
+@interface CusUIPickerViewController ()<IntroductionViewControllerDelegate,UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property(nonatomic, strong, readwrite) NSArray* colorsArray;
 @end

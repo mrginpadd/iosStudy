@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol CusUIPickerViewControllerDelegate <NSObject>
+@protocol IntroductionViewControllerDelegate <NSObject>
 
 -(void)buttonClickedWithTitle:(NSString*) title;
 
@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface IntroductionViewController : UIViewController
 
-@property(nonatomic, weak) id<CusUIPickerViewControllerDelegate> delegate;
+@property(nonatomic, weak) id<IntroductionViewControllerDelegate> delegate;
 
 @property(nonatomic, strong, readwrite) UIScrollView *scrollView;
 

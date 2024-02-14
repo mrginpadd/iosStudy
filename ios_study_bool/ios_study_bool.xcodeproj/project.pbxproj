@@ -47,6 +47,7 @@
 		A0C1EF702B7B612F004EE0AE /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF6F2B7B612F004EE0AE /* IntroductionViewController.m */; };
 		A0C1EF732B7C4517004EE0AE /* ToastUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF722B7C4517004EE0AE /* ToastUtil.m */; };
 		A0C1EF762B7C6F74004EE0AE /* CusUIPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF752B7C6F74004EE0AE /* CusUIPickerViewController.m */; };
+		A0C1EF7C2B7CE00B004EE0AE /* CusUIDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF7B2B7CE00B004EE0AE /* CusUIDatePickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +143,8 @@
 		A0C1EF722B7C4517004EE0AE /* ToastUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastUtil.m; sourceTree = "<group>"; };
 		A0C1EF742B7C6F74004EE0AE /* CusUIPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusUIPickerViewController.h; sourceTree = "<group>"; };
 		A0C1EF752B7C6F74004EE0AE /* CusUIPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusUIPickerViewController.m; sourceTree = "<group>"; };
+		A0C1EF7A2B7CE00B004EE0AE /* CusUIDatePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusUIDatePickerViewController.h; sourceTree = "<group>"; };
+		A0C1EF7B2B7CE00B004EE0AE /* CusUIDatePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusUIDatePickerViewController.m; sourceTree = "<group>"; };
 		E92F4BAD3A2EEECF87152C21 /* Pods_ios_study_bool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_study_bool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -228,6 +231,8 @@
 				A0C1EF6B2B7B6052004EE0AE /* UIAlertViewController.m */,
 				A0C1EF742B7C6F74004EE0AE /* CusUIPickerViewController.h */,
 				A0C1EF752B7C6F74004EE0AE /* CusUIPickerViewController.m */,
+				A0C1EF7A2B7CE00B004EE0AE /* CusUIDatePickerViewController.h */,
+				A0C1EF7B2B7CE00B004EE0AE /* CusUIDatePickerViewController.m */,
 			);
 			path = "UI组件";
 			sourceTree = "<group>";
@@ -592,6 +597,7 @@
 				A0C1EF732B7C4517004EE0AE /* ToastUtil.m in Sources */,
 				A076B2892B5CF55B00AAE9C5 /* UIComponentsViewController.m in Sources */,
 				A076B28C2B5D07A900AAE9C5 /* CustomTableViewCell.m in Sources */,
+				A0C1EF7C2B7CE00B004EE0AE /* CusUIDatePickerViewController.m in Sources */,
 				A076B2922B5D38AE00AAE9C5 /* UIButtonViewController.m in Sources */,
 				A07DF49B2B5427ED00D0275E /* ViewController.m in Sources */,
 				A0C1EF4D2B64EB5C004EE0AE /* FakeUtil.m in Sources */,

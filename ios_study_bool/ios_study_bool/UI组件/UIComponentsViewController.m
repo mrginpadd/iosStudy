@@ -25,6 +25,7 @@
 #import "UIAlertViewController.h"
 #import "IntroductionViewController.h"
 #import "CusUIPickerViewController.h"
+#import "CusUIDatePickerViewController.h"
 @interface UIComponentsViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray* functions;
@@ -53,7 +54,8 @@
         @"UIPickerView 用于从多个选项中选择一个或多个值",
         @"UIDatePicker 用于选择日期和时间",
         @"UIActivityIndicatorView （活动指示器）：用于显示加载或处理中的状态",
-        @"UIWebView 用于在应用程序中显示网页内容"
+        @"UIWebView 用于在应用程序中显示网页内容",
+        @"UIPresentationController 底部弹窗之类的"
         ];
     }
     return _functions;
@@ -155,6 +157,9 @@
         [self.navigationController pushViewController:targetVC animated:YES];
     } else if([selectedStr hasPrefix:@"UIPickerView"]) {
         CusUIPickerViewController *targetVC = [[CusUIPickerViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([selectedStr hasPrefix:@"UIDatePicker"]) {
+        CusUIDatePickerViewController *targetVC = [[CusUIDatePickerViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }

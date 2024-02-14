@@ -74,7 +74,7 @@
     self.navigationItem.leftBarButtonItem = avatarBarButtonItem;
     
 
-    self.navigationItem.title = @"徐世豪の实验室";
+    self.navigationItem.title = @"徐さんの実験室";
     // 创建一个字典，用于设置导航栏标题的样式
     NSDictionary *titleAttributes = @{
         NSForegroundColorAttributeName: [UIColor whiteColor], // 设置标题颜色为红色
