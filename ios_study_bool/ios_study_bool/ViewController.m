@@ -40,7 +40,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor greenColor];
+ 
     [self buildViews];
     // Do any additional setup after loading the view.
 }
@@ -49,8 +49,10 @@
     
     [self buildNaviBarView];
     
-    
-    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    CGFloat navigationBarHeight = self.navigationController.navigationBar.frame.size.height;
+
+
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, self.view.frame.size.height - navigationBarHeight) style:UITableViewStylePlain];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     [self.tableView registerClass:[CustomTableViewCell class] forCellReuseIdentifier:@"cellId"];
@@ -73,8 +75,15 @@
     
 
     self.navigationItem.title = @"实验室";
-    
-    
+    // 创建一个字典，用于设置导航栏标题的样式
+    NSDictionary *titleAttributes = @{
+        NSForegroundColorAttributeName: [UIColor whiteColor], // 设置标题颜色为红色
+        NSFontAttributeName: [UIFont boldSystemFontOfSize:17.0] // 设置标题字体大小和粗细
+    };
+    // 将标题样式应用到导航栏标题
+    self.navigationController.navigationBar.titleTextAttributes = titleAttributes;
+    self.navigationController.navigationBar.barTintColor = [UIColor blackColor];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     // 创建两个UIBarButtonItem对象，用于展示不同的选项
     UIBarButtonItem *option1BarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"TODO" style:UIBarButtonItemStylePlain target:self action:@selector(option1ButtonPressed)];
     UIBarButtonItem *option2BarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"主页" style:UIBarButtonItemStylePlain target:self action:@selector(option2ButtonPressed)];

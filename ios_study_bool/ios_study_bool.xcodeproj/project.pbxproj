@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08A67298486B4562E2D7A34D /* Pods_ios_study_bool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92F4BAD3A2EEECF87152C21 /* Pods_ios_study_bool.framework */; };
 		A076B27C2B5B732400AAE9C5 /* LangManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B27B2B5B732400AAE9C5 /* LangManager.m */; };
 		A076B2832B5B8C5200AAE9C5 /* UILabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B2822B5B8C5200AAE9C5 /* UILabelViewController.m */; };
 		A076B2862B5B8CA400AAE9C5 /* ScreenUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B2852B5B8CA400AAE9C5 /* ScreenUtil.m */; };
@@ -42,6 +43,9 @@
 		A0C1EF5F2B78C999004EE0AE /* CusUITabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF5E2B78C999004EE0AE /* CusUITabbarViewController.m */; };
 		A0C1EF622B78FD20004EE0AE /* UINavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF612B78FD20004EE0AE /* UINavigationViewController.m */; };
 		A0C1EF662B7B1619004EE0AE /* TipUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF652B7B1619004EE0AE /* TipUtil.m */; };
+		A0C1EF6C2B7B6052004EE0AE /* UIAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF6B2B7B6052004EE0AE /* UIAlertViewController.m */; };
+		A0C1EF702B7B612F004EE0AE /* IntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF6F2B7B612F004EE0AE /* IntroductionViewController.m */; };
+		A0C1EF732B7C4517004EE0AE /* ToastUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF722B7C4517004EE0AE /* ToastUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E9FE7C685B53FB9B64634EE /* Pods-ios_study_bool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_study_bool.debug.xcconfig"; path = "Target Support Files/Pods-ios_study_bool/Pods-ios_study_bool.debug.xcconfig"; sourceTree = "<group>"; };
+		7ACC0FDE30B9677E90B67120 /* Pods-ios_study_bool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_study_bool.release.xcconfig"; path = "Target Support Files/Pods-ios_study_bool/Pods-ios_study_bool.release.xcconfig"; sourceTree = "<group>"; };
 		A076B27A2B5B732400AAE9C5 /* LangManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LangManager.h; sourceTree = "<group>"; };
 		A076B27B2B5B732400AAE9C5 /* LangManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LangManager.m; sourceTree = "<group>"; };
 		A076B2812B5B8C5200AAE9C5 /* UILabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelViewController.h; sourceTree = "<group>"; };
@@ -127,6 +133,13 @@
 		A0C1EF612B78FD20004EE0AE /* UINavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UINavigationViewController.m; sourceTree = "<group>"; };
 		A0C1EF642B7B1619004EE0AE /* TipUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipUtil.h; sourceTree = "<group>"; };
 		A0C1EF652B7B1619004EE0AE /* TipUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipUtil.m; sourceTree = "<group>"; };
+		A0C1EF6A2B7B6052004EE0AE /* UIAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIAlertViewController.h; sourceTree = "<group>"; };
+		A0C1EF6B2B7B6052004EE0AE /* UIAlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIAlertViewController.m; sourceTree = "<group>"; };
+		A0C1EF6E2B7B612F004EE0AE /* IntroductionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroductionViewController.h; sourceTree = "<group>"; };
+		A0C1EF6F2B7B612F004EE0AE /* IntroductionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroductionViewController.m; sourceTree = "<group>"; };
+		A0C1EF712B7C4517004EE0AE /* ToastUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToastUtil.h; sourceTree = "<group>"; };
+		A0C1EF722B7C4517004EE0AE /* ToastUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastUtil.m; sourceTree = "<group>"; };
+		E92F4BAD3A2EEECF87152C21 /* Pods_ios_study_bool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_study_bool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08A67298486B4562E2D7A34D /* Pods_ios_study_bool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +168,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D44D0842BA6B4AAAD3495A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E9FE7C685B53FB9B64634EE /* Pods-ios_study_bool.debug.xcconfig */,
+				7ACC0FDE30B9677E90B67120 /* Pods-ios_study_bool.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A076B2792B5B72E500AAE9C5 /* ToolBox */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +221,8 @@
 				A0C1EF5E2B78C999004EE0AE /* CusUITabbarViewController.m */,
 				A0C1EF602B78FD20004EE0AE /* UINavigationViewController.h */,
 				A0C1EF612B78FD20004EE0AE /* UINavigationViewController.m */,
+				A0C1EF6A2B7B6052004EE0AE /* UIAlertViewController.h */,
+				A0C1EF6B2B7B6052004EE0AE /* UIAlertViewController.m */,
 			);
 			path = "UI组件";
 			sourceTree = "<group>";
@@ -217,6 +242,8 @@
 				A07DF4B12B5427EE00D0275E /* ios_study_boolTests */,
 				A07DF4BB2B5427EE00D0275E /* ios_study_boolUITests */,
 				A07DF4912B5427ED00D0275E /* Products */,
+				0D44D0842BA6B4AAAD3495A9 /* Pods */,
+				D4299B3122CE24120E24FBD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -283,6 +310,7 @@
 		A0AE535E2B55731E0075EAA4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A0C1EF6D2B7B60FD004EE0AE /* 组件 */,
 				A0C1EF632B7B15CE004EE0AE /* Uitils */,
 				A0C1EF4A2B64E38E004EE0AE /* 日志 */,
 				A0C1EF492B64E386004EE0AE /* 网络 */,
@@ -357,8 +385,27 @@
 				A0C1EF4C2B64EB5C004EE0AE /* FakeUtil.m */,
 				A0C1EF642B7B1619004EE0AE /* TipUtil.h */,
 				A0C1EF652B7B1619004EE0AE /* TipUtil.m */,
+				A0C1EF712B7C4517004EE0AE /* ToastUtil.h */,
+				A0C1EF722B7C4517004EE0AE /* ToastUtil.m */,
 			);
 			path = Uitils;
+			sourceTree = "<group>";
+		};
+		A0C1EF6D2B7B60FD004EE0AE /* 组件 */ = {
+			isa = PBXGroup;
+			children = (
+				A0C1EF6E2B7B612F004EE0AE /* IntroductionViewController.h */,
+				A0C1EF6F2B7B612F004EE0AE /* IntroductionViewController.m */,
+			);
+			path = "组件";
+			sourceTree = "<group>";
+		};
+		D4299B3122CE24120E24FBD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E92F4BAD3A2EEECF87152C21 /* Pods_ios_study_bool.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,9 +415,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A07DF4C22B5427EE00D0275E /* Build configuration list for PBXNativeTarget "ios_study_bool" */;
 			buildPhases = (
+				DD1F5E19E99F6FC28FCD1195 /* [CP] Check Pods Manifest.lock */,
 				A07DF48C2B5427ED00D0275E /* Sources */,
 				A07DF48D2B5427ED00D0275E /* Frameworks */,
 				A07DF48E2B5427ED00D0275E /* Resources */,
+				1BCA1D24953DEBE1180BF550 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -487,12 +536,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BCA1D24953DEBE1180BF550 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios_study_bool/Pods-ios_study_bool-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ios_study_bool/Pods-ios_study_bool-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ios_study_bool/Pods-ios_study_bool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD1F5E19E99F6FC28FCD1195 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios_study_bool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A07DF48C2B5427ED00D0275E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A07DF4A92B5427EE00D0275E /* main.m in Sources */,
+				A0C1EF732B7C4517004EE0AE /* ToastUtil.m in Sources */,
 				A076B2892B5CF55B00AAE9C5 /* UIComponentsViewController.m in Sources */,
 				A076B28C2B5D07A900AAE9C5 /* CustomTableViewCell.m in Sources */,
 				A076B2922B5D38AE00AAE9C5 /* UIButtonViewController.m in Sources */,
@@ -508,6 +600,7 @@
 				A076B27C2B5B732400AAE9C5 /* LangManager.m in Sources */,
 				A0AE535D2B5572740075EAA4 /* KeyWordViewController.m in Sources */,
 				A076B2952B60014400AAE9C5 /* UIImageViewController.m in Sources */,
+				A0C1EF6C2B7B6052004EE0AE /* UIAlertViewController.m in Sources */,
 				A0C1EF5C2B75EB39004EE0AE /* CusSegmentedControlViewController.m in Sources */,
 				A0C1EF3B2B6139A4004EE0AE /* UITextFieldViewController.m in Sources */,
 				A0C1EF412B63DCFD004EE0AE /* UISliderViewController.m in Sources */,
@@ -517,6 +610,7 @@
 				A0C1EF3E2B628A99004EE0AE /* UITextViewController.m in Sources */,
 				A0C1EF562B6DE196004EE0AE /* CusScrollViewController.m in Sources */,
 				A0C1EF622B78FD20004EE0AE /* UINavigationViewController.m in Sources */,
+				A0C1EF702B7B612F004EE0AE /* IntroductionViewController.m in Sources */,
 				A076B2832B5B8C5200AAE9C5 /* UILabelViewController.m in Sources */,
 				A0C1EF5F2B78C999004EE0AE /* CusUITabbarViewController.m in Sources */,
 				A0C1EF472B64A14E004EE0AE /* CusUITableViewController.m in Sources */,
@@ -687,6 +781,7 @@
 		};
 		A07DF4C32B5427EE00D0275E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E9FE7C685B53FB9B64634EE /* Pods-ios_study_bool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -705,6 +800,16 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"UIKit\"",
+					"-fobjc-arc",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "omo.ios-study-bool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -714,6 +819,7 @@
 		};
 		A07DF4C42B5427EE00D0275E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ACC0FDE30B9677E90B67120 /* Pods-ios_study_bool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -732,6 +838,16 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Masonry\"",
+					"-framework",
+					"\"UIKit\"",
+					"-fobjc-arc",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "omo.ios-study-bool";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

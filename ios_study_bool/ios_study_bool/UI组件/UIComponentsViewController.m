@@ -22,6 +22,8 @@
 #import "CusSegmentedControlViewController.h"
 #import "CusUITabbarViewController.h"
 #import "UINavigationViewController.h"
+#import "UIAlertViewController.h"
+#import "IntroductionViewController.h"
 @interface UIComponentsViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray* functions;
@@ -146,6 +148,9 @@
         [self.navigationController pushViewController:targetVC animated:YES];
     } else if([selectedStr hasPrefix:@"UINavigationController"]) {
         UINavigationViewController *targetVC = [[UINavigationViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([selectedStr hasPrefix:@"UIAlert"]) {
+        UIAlertViewController *targetVC = [[UIAlertViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }
