@@ -39,6 +39,9 @@
     [self buildIntroTitleLabel];
     [self buildContentLabel];
     
+    [self buildAttributeLabel];
+    [self buildAttrubuteContentLabel];
+    
     [self buildApplicationView];
     [self buildApplicationTitleLabel];
     [self buildApplicationContentLabel];
@@ -70,7 +73,7 @@
     _introTitleLabel.text = @"xxx介绍";
     [_introView addSubview:_introTitleLabel];
     [_introTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(_scrollView);
+        make.left.equalTo(_scrollView).offset(5);;
         make.top.equalTo(_scrollView);
         make.height.equalTo(@40);
     }];
@@ -93,13 +96,40 @@
  
 }
 
+- (void)buildAttributeLabel {
+    _attributeTitleLabel = [[UILabel alloc] init];
+    _attributeTitleLabel.textColor = [UIColor whiteColor];
+    _attributeTitleLabel.backgroundColor = [UIColor blackColor];
+    _attributeTitleLabel.text = @" 常用属性";
+    [_scrollView addSubview:_attributeTitleLabel];
+    
+    [_attributeTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(_scrollView);
+        make.width.equalTo(_scrollView);
+        make.top.equalTo(_introContentLabel.mas_bottom).offset(5);
+        make.height.equalTo(@40);
+    }];
+}
+
+- (void)buildAttrubuteContentLabel {
+    _attributeContentLabel = [[UILabel alloc] init];
+    _attributeContentLabel.textColor = [UIColor grayColor];
+    _attributeContentLabel.text = @"...";
+    _attributeContentLabel.numberOfLines = 0;
+    [_scrollView addSubview:_attributeContentLabel];
+    [_attributeContentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.left.equalTo(_scrollView);
+            make.top.equalTo(_attributeTitleLabel.mas_bottom);
+    }];
+}
+
 - (void)buildApplicationView {
     _applicationView = [[UIView alloc] init];
     _applicationView.backgroundColor = [UIColor blackColor];
     [_scrollView addSubview:_applicationView];
     [_applicationView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(_scrollView);
-        make.top.equalTo(_introContentLabel.mas_bottom);
+        make.top.equalTo(_attributeContentLabel.mas_bottom);
         make.width.equalTo(_scrollView);
         make.height.equalTo(@40);
     }];

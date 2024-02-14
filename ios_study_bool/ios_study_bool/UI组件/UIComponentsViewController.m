@@ -26,6 +26,7 @@
 #import "IntroductionViewController.h"
 #import "CusUIPickerViewController.h"
 #import "CusUIDatePickerViewController.h"
+#import "CusActivityIndicatorViewController.h"
 @interface UIComponentsViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray* functions;
@@ -160,6 +161,9 @@
         [self.navigationController pushViewController:targetVC animated:YES];
     } else if([selectedStr hasPrefix:@"UIDatePicker"]) {
         CusUIDatePickerViewController *targetVC = [[CusUIDatePickerViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([selectedStr hasPrefix:@"UIActivityIndicatorView"]) {
+        CusActivityIndicatorViewController *targetVC = [[CusActivityIndicatorViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }

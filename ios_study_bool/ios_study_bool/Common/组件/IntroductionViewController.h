@@ -29,6 +29,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong, readwrite) UILabel *introTitleLabel;
 @property(nonatomic, strong, readwrite) UILabel *introContentLabel;
 
+@property(nonatomic, strong, readwrite) UILabel *attributeTitleLabel;
+@property(nonatomic, strong, readwrite) UILabel *attributeContentLabel;
+
 @property(nonatomic, strong, readwrite) UILabel *applicationTitleLabel;
 @property(nonatomic, strong, readwrite) UILabel *applicationContentLabel;
 
