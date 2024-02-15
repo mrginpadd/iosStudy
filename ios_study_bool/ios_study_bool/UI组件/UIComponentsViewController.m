@@ -29,6 +29,7 @@
 #import "CusActivityIndicatorViewController.h"
 #import "CusUIWebViewViewController.h"
 #import "CusWKWebViewController.h"
+#import "CusPresentationViewController.h"
 @interface UIComponentsViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray* functions;
@@ -173,6 +174,9 @@
         [self.navigationController pushViewController:targetVC animated:YES];
     } else if([selectedStr hasPrefix:@"WKWebView"]) {
         CusWKWebViewController *targetVC = [[CusWKWebViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([selectedStr hasPrefix:@"UIPresentationController"]) {
+        CusPresentationViewController *targetVC = [[CusPresentationViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }

@@ -51,6 +51,8 @@
 		A0C1EF7F2B7CEC76004EE0AE /* CusActivityIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF7E2B7CEC76004EE0AE /* CusActivityIndicatorViewController.m */; };
 		A0C1EF822B7CFA43004EE0AE /* CusUIWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF812B7CFA43004EE0AE /* CusUIWebViewViewController.m */; };
 		A0C1EF882B7D0EDB004EE0AE /* CusWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF872B7D0EDB004EE0AE /* CusWKWebViewController.m */; };
+		A0C1EF8E2B7DAD5F004EE0AE /* CusPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF8D2B7DAD5F004EE0AE /* CusPresentationViewController.m */; };
+		A0C1EF952B7DB2D1004EE0AE /* MyPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF942B7DB2D1004EE0AE /* MyPopupViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +156,10 @@
 		A0C1EF812B7CFA43004EE0AE /* CusUIWebViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusUIWebViewViewController.m; sourceTree = "<group>"; };
 		A0C1EF862B7D0EDB004EE0AE /* CusWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusWKWebViewController.h; sourceTree = "<group>"; };
 		A0C1EF872B7D0EDB004EE0AE /* CusWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusWKWebViewController.m; sourceTree = "<group>"; };
+		A0C1EF8C2B7DAD5F004EE0AE /* CusPresentationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusPresentationViewController.h; sourceTree = "<group>"; };
+		A0C1EF8D2B7DAD5F004EE0AE /* CusPresentationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusPresentationViewController.m; sourceTree = "<group>"; };
+		A0C1EF932B7DB2D1004EE0AE /* MyPopupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyPopupViewController.h; sourceTree = "<group>"; };
+		A0C1EF942B7DB2D1004EE0AE /* MyPopupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyPopupViewController.m; sourceTree = "<group>"; };
 		E92F4BAD3A2EEECF87152C21 /* Pods_ios_study_bool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_study_bool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -248,6 +254,8 @@
 				A0C1EF812B7CFA43004EE0AE /* CusUIWebViewViewController.m */,
 				A0C1EF862B7D0EDB004EE0AE /* CusWKWebViewController.h */,
 				A0C1EF872B7D0EDB004EE0AE /* CusWKWebViewController.m */,
+				A0C1EF8C2B7DAD5F004EE0AE /* CusPresentationViewController.h */,
+				A0C1EF8D2B7DAD5F004EE0AE /* CusPresentationViewController.m */,
 			);
 			path = "UI组件";
 			sourceTree = "<group>";
@@ -419,10 +427,20 @@
 		A0C1EF6D2B7B60FD004EE0AE /* 组件 */ = {
 			isa = PBXGroup;
 			children = (
+				A0C1EF922B7DB2B1004EE0AE /* 底部弹窗 */,
 				A0C1EF6E2B7B612F004EE0AE /* IntroductionViewController.h */,
 				A0C1EF6F2B7B612F004EE0AE /* IntroductionViewController.m */,
 			);
 			path = "组件";
+			sourceTree = "<group>";
+		};
+		A0C1EF922B7DB2B1004EE0AE /* 底部弹窗 */ = {
+			isa = PBXGroup;
+			children = (
+				A0C1EF932B7DB2D1004EE0AE /* MyPopupViewController.h */,
+				A0C1EF942B7DB2D1004EE0AE /* MyPopupViewController.m */,
+			);
+			path = "底部弹窗";
 			sourceTree = "<group>";
 		};
 		D4299B3122CE24120E24FBD2 /* Frameworks */ = {
@@ -623,6 +641,7 @@
 				A0C1EF532B661DE4004EE0AE /* CusUICollectionViewController.m in Sources */,
 				A0C1EF592B6E3F15004EE0AE /* CusPageControlViewController.m in Sources */,
 				A0C1EF7F2B7CEC76004EE0AE /* CusActivityIndicatorViewController.m in Sources */,
+				A0C1EF8E2B7DAD5F004EE0AE /* CusPresentationViewController.m in Sources */,
 				A07DF4952B5427ED00D0275E /* AppDelegate.m in Sources */,
 				A0C1EF382B613448004EE0AE /* UISwitchViewController.m in Sources */,
 				A076B27C2B5B732400AAE9C5 /* LangManager.m in Sources */,
@@ -638,6 +657,7 @@
 				A0C1EF822B7CFA43004EE0AE /* CusUIWebViewViewController.m in Sources */,
 				A0C1EF3E2B628A99004EE0AE /* UITextViewController.m in Sources */,
 				A0C1EF562B6DE196004EE0AE /* CusScrollViewController.m in Sources */,
+				A0C1EF952B7DB2D1004EE0AE /* MyPopupViewController.m in Sources */,
 				A0C1EF622B78FD20004EE0AE /* UINavigationViewController.m in Sources */,
 				A0C1EF702B7B612F004EE0AE /* IntroductionViewController.m in Sources */,
 				A0C1EF762B7C6F74004EE0AE /* CusUIPickerViewController.m in Sources */,
