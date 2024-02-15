@@ -85,54 +85,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F3F791DD-BF8A-49B2-B666-8E496FF7FDEB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ios_study_bool/Common/&#x7ec4;&#x4ef6;/IntroductionViewController.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "323"
-            endingLineNumber = "323"
-            landmarkName = "-showTip:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F3F791DD-BF8A-49B2-B666-8E496FF7FDEB - e2c425bc8209d64b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[IntroductionViewController showTip:]"
-                  moduleName = "ios_study_bool"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/Common/%E7%BB%84%E4%BB%B6/IntroductionViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "293"
-                  endingLineNumber = "293"
-                  offsetFromSymbolStart = "132">
-               </Location>
-               <Location
-                  uuid = "F3F791DD-BF8A-49B2-B666-8E496FF7FDEB - e2c425bc8209d269"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[IntroductionViewController showTip:]"
-                  moduleName = "ios_study_bool"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/Common/%E7%BB%84%E4%BB%B6/IntroductionViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "323"
-                  endingLineNumber = "323"
-                  offsetFromSymbolStart = "132">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "52F7B870-382C-455D-B92A-0B3D3A0209E2"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -140,90 +92,10 @@
             filePath = "ios_study_bool/Common/&#x7ec4;&#x4ef6;/IntroductionViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "224"
-            endingLineNumber = "224"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
             landmarkName = "-setIntroTipBtns:titles:contents:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "52F7B870-382C-455D-B92A-0B3D3A0209E2 - 4ee3363ffb0915cd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[IntroductionViewController setIntroTipBtns:titles:contents:]"
-                  moduleName = "ios_study_bool"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/Common/%E7%BB%84%E4%BB%B6/IntroductionViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "194"
-                  endingLineNumber = "194"
-                  offsetFromSymbolStart = "416">
-               </Location>
-               <Location
-                  uuid = "52F7B870-382C-455D-B92A-0B3D3A0209E2 - 4ee3363ffb091993"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[IntroductionViewController setIntroTipBtns:titles:contents:]"
-                  moduleName = "ios_study_bool"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/Common/%E7%BB%84%E4%BB%B6/IntroductionViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "224"
-                  endingLineNumber = "224"
-                  offsetFromSymbolStart = "416">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "474A2CA4-72A1-478E-9636-B4D94EB27C45"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ios_study_bool/Common/&#x7ec4;&#x4ef6;/IntroductionViewController.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "295"
-            endingLineNumber = "295"
-            landmarkName = "-setUseStepTipBtns:titles:contents:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "474A2CA4-72A1-478E-9636-B4D94EB27C45 - afb2b6c46ca7ccdb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[IntroductionViewController setUseStepTipBtns:titles:contents:]"
-                  moduleName = "ios_study_bool"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/Common/%E7%BB%84%E4%BB%B6/IntroductionViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "265"
-                  endingLineNumber = "265"
-                  offsetFromSymbolStart = "384">
-               </Location>
-               <Location
-                  uuid = "474A2CA4-72A1-478E-9636-B4D94EB27C45 - afb2b6c46ca7cf39"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[IntroductionViewController setUseStepTipBtns:titles:contents:]"
-                  moduleName = "ios_study_bool"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/Common/%E7%BB%84%E4%BB%B6/IntroductionViewController.m"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "295"
-                  endingLineNumber = "295"
-                  offsetFromSymbolStart = "384">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -350,6 +222,38 @@
             startingLineNumber = "79"
             endingLineNumber = "79"
             landmarkName = "-webView:didFinishNavigation:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D900371B-6D03-4996-85A9-4D0485D8C867"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios_study_bool/oc&#x5b9e;&#x9a8c;&#x5ba4;/&#x521d;&#x7ea7;/&#x4e8b;&#x4ef6;&#x4ea4;&#x4e92;/src/&#x59d4;&#x6258;&#x4ee3;&#x7406;/CusDelegationViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "955B3599-20B0-4464-8CEB-903ABB87FB86"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios_study_bool/oc&#x5b9e;&#x9a8c;&#x5ba4;/&#x521d;&#x7ea7;/&#x4e8b;&#x4ef6;&#x4ea4;&#x4e92;/src/&#x59d4;&#x6258;&#x4ee3;&#x7406;/CusDelegationViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "-viewDidLoad"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

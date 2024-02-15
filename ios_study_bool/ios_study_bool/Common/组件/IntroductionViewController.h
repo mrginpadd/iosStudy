@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol IntroductionViewControllerDelegate <NSObject>
-
+@required
 -(void)buttonClickedWithTitle:(NSString*) title;
 
 @end

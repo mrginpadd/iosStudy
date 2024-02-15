@@ -10,6 +10,7 @@
 #import "LangManager.h"
 #import "UIComponentsViewController.h"
 #import "CustomTableViewCell.h"
+#import "CusEventViewController.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray<NSArray*> *functions;
@@ -101,6 +102,9 @@
         [LangManager perform:DEFINE];
     } else if([selectedStr isEqualToString:@"UI组件"]) {
         UIComponentsViewController *targetVC = [[UIComponentsViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([selectedStr isEqualToString:@"事件交互"]) {
+        CusEventViewController *targetVC = [[CusEventViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }

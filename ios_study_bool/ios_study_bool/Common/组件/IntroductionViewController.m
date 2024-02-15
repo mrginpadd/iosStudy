@@ -212,6 +212,8 @@
 
 - (void)setIntroTipBtns:(NSArray<NSString *> *)tipBtns titles: (NSArray<NSString *> *)tipTitles contents:(NSArray<NSString *> *)tipContents {
     _introView.userInteractionEnabled = YES;
+    UIView *preView = _introView.subviews.lastObject;
+    
     for(int i=0; i<tipBtns.count; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [btn setTitle:tipBtns[i] forState:UIControlStateNormal];
@@ -229,7 +231,7 @@
         
         if (i == 0) {
           [btn mas_makeConstraints:^(MASConstraintMaker *make) {
-             make.left.equalTo(_introTitleLabel.mas_right).offset(10);
+             make.left.equalTo(preView.mas_right).offset(10);
              make.centerY.equalTo(_introView);
              make.width.lessThanOrEqualTo(@200);
              make.height.equalTo(_introView).offset(-8);
@@ -248,6 +250,7 @@
 
 - (void)setApplicationTipBtns:(NSArray<NSString *> *)tipBtns titles: (NSArray<NSString *> *)tipTitles contents:(NSArray<NSString *> *)tipContents {
     
+    UIView *preView = _applicationView.subviews.lastObject;
     for(int i=0; i<tipBtns.count; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [btn setTitle:tipBtns[i] forState:UIControlStateNormal];
@@ -265,7 +268,7 @@
         
         if (i == 0) {
           [btn mas_makeConstraints:^(MASConstraintMaker *make) {
-             make.left.equalTo(_applicationTitleLabel.mas_right).offset(10);
+             make.left.equalTo(preView.mas_right).offset(10);
              make.centerY.equalTo(_applicationView);
              make.width.lessThanOrEqualTo(@200);
              make.height.equalTo(_applicationView).offset(-8);
@@ -282,7 +285,7 @@
     }
 }
 - (void)setUseStepTipBtns:(NSArray<NSString *> *)tipBtns titles: (NSArray<NSString *> *)tipTitles contents:(NSArray<NSString *> *)tipContents {
-    
+    UIView *preView = _useStepView.subviews.lastObject;
     for(int i=0; i<tipBtns.count; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [btn setTitle:tipBtns[i] forState:UIControlStateNormal];
@@ -300,7 +303,7 @@
         
         if (i == 0) {
           [btn mas_makeConstraints:^(MASConstraintMaker *make) {
-             make.left.equalTo(_userStepTitleLabel.mas_right).offset(10);
+             make.left.equalTo(preView.mas_right).offset(10);
              make.centerY.equalTo(_useStepView);
              make.width.lessThanOrEqualTo(@200);
              make.height.equalTo(_useStepView).offset(-8);
@@ -325,6 +328,9 @@
 
 
 - (void)setIntroTipBtns:(NSArray<NSString *> *)tipBtns {
+    
+    UIView *preView = _introView.subviews.lastObject;
+    
     NSMutableArray *btns = @[].mutableCopy;
     
     for(int i=0; i<tipBtns.count; i++) {
@@ -340,7 +346,7 @@
         
         if (i == 0) {
           [btn mas_makeConstraints:^(MASConstraintMaker *make) {
-             make.left.equalTo(_introTitleLabel.mas_right).offset(10);
+             make.left.equalTo(preView.mas_right).offset(10);
              make.centerY.equalTo(_introView);
              make.width.lessThanOrEqualTo(@200);
              make.height.equalTo(_introView).offset(-8);
@@ -358,6 +364,8 @@
 }
 
 - (void)setApplicationTipBtns:(NSArray<NSString *> *)tipBtns {
+    
+    UIView *preView = _applicationView.subviews.lastObject;
     NSMutableArray *btns = @[].mutableCopy;
     
     for(int i=0; i<tipBtns.count; i++) {
@@ -374,7 +382,7 @@
         
         if (i == 0) {
           [btn mas_makeConstraints:^(MASConstraintMaker *make) {
-             make.left.equalTo(_applicationTitleLabel.mas_right).offset(10);
+             make.left.equalTo(preView.mas_right).offset(10);
              make.centerY.equalTo(_applicationView);
              make.width.lessThanOrEqualTo(@200);
              make.height.equalTo(_applicationView).offset(-8);
@@ -392,7 +400,11 @@
 }
 
 - (void)setUseStepTipBtns:(NSArray<NSString *> *)tipBtns {
+    
+    UIView *preView = _useStepView.subviews.lastObject;
+    
     NSMutableArray *btns = @[].mutableCopy;
+    
     for(int i=0; i<tipBtns.count; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [btn setTitle:tipBtns[i] forState:UIControlStateNormal];
@@ -406,7 +418,7 @@
         
         if (i == 0) {
           [btn mas_makeConstraints:^(MASConstraintMaker *make) {
-             make.left.equalTo(_userStepTitleLabel.mas_right).offset(10);
+             make.left.equalTo(preView.mas_right).offset(10);
              make.centerY.equalTo(_useStepView);
              make.width.lessThanOrEqualTo(@200);
              make.height.equalTo(_useStepView).offset(-8);

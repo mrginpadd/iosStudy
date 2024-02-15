@@ -15,23 +15,29 @@
     UIView *tipView = [self setupTipViewInController:viewController];
     tipController.view = tipView;
     
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, viewController.view.frame.size.width, viewController.view.frame.size.height)];
+    scrollView.contentSize = CGSizeMake(viewController.view.frame.size.width, viewController.view.frame.size.height * 2);
+    
+    [tipView addSubview: scrollView];
+    
     // 设置 navView
     UIView *navView = [self setupNavView:tipView title: title inController:viewController];
     [tipView addSubview:navView];
     
     // 设置 label
     UILabel *label = [self setupLabelWithTip:tip inView:tipView];
-    [tipView addSubview:label];
+    [scrollView addSubview:label];
     
     // 弹出视图
     [self presentTipController:tipController inController:viewController];
 }
 
 + (UIView *)setupTipViewInController:(UIViewController *)viewController {
+
+
     UIView *tipView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, viewController.view.frame.size.width, viewController.view.frame.size.height)];
     tipView.backgroundColor = [UIColor blackColor];
-    tipView.contentMode = UIViewContentModeTop;
-    
+
     return tipView;
 }
 
