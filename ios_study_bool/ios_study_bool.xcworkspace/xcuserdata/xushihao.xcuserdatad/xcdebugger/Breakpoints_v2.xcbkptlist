@@ -260,17 +260,97 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "73C117D2-33D8-4824-9382-0D052CECE17E"
+            uuid = "587DE7ED-5293-4B41-9EAD-9F2B62A6A65A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ios_study_bool/oc&#x5b9e;&#x9a8c;&#x5ba4;/&#x521d;&#x7ea7;/&#x4e8b;&#x4ef6;&#x4ea4;&#x4e92;/src/Target-Action/CusTargetActionViewController.m"
+            filePath = "ios_study_bool/oc&#x5b9e;&#x9a8c;&#x5ba4;/&#x521d;&#x7ea7;/&#x4e8b;&#x4ef6;&#x4ea4;&#x4e92;/src/&#x624b;&#x52bf;&#x8bc6;&#x522b;&#x5668;/TripleTapGestureRecognizer.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "-touchUpInsideAction:"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "-touchesCancelled:withEvent:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "96A9CC90-8F14-4C61-AF89-8900A344E5E5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios_study_bool/oc&#x5b9e;&#x9a8c;&#x5ba4;/&#x521d;&#x7ea7;/&#x4e8b;&#x4ef6;&#x4ea4;&#x4e92;/src/&#x624b;&#x52bf;&#x8bc6;&#x522b;&#x5668;/TripleTapGestureRecognizer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "-touchesEnded:withEvent:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9895652C-2809-4691-B99D-C7B8315088A9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios_study_bool/oc&#x5b9e;&#x9a8c;&#x5ba4;/&#x521d;&#x7ea7;/&#x4e8b;&#x4ef6;&#x4ea4;&#x4e92;/src/&#x624b;&#x52bf;&#x8bc6;&#x522b;&#x5668;/TripleTapGestureRecognizer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "-touchesEnded:withEvent:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "05A1F40F-E5D4-4DA3-AA9D-4F9D8C0E67CB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios_study_bool/oc&#x5b9e;&#x9a8c;&#x5ba4;/&#x521d;&#x7ea7;/&#x4e8b;&#x4ef6;&#x4ea4;&#x4e92;/src/&#x624b;&#x52bf;&#x8bc6;&#x522b;&#x5668;/TripleTapGestureRecognizer.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "-touchesEnded:withEvent:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "05A1F40F-E5D4-4DA3-AA9D-4F9D8C0E67CB - c2fefc49034e0b24"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[TripleTapGestureRecognizer touchesEnded:withEvent:]"
+                  moduleName = "ios_study_bool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/oc%E5%AE%9E%E9%AA%8C%E5%AE%A4/%E5%88%9D%E7%BA%A7/%E4%BA%8B%E4%BB%B6%E4%BA%A4%E4%BA%92/src/%E6%89%8B%E5%8A%BF%E8%AF%86%E5%88%AB%E5%99%A8/TripleTapGestureRecognizer.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "204">
+               </Location>
+               <Location
+                  uuid = "05A1F40F-E5D4-4DA3-AA9D-4F9D8C0E67CB - c2fefc49034e0b62"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[TripleTapGestureRecognizer touchesEnded:withEvent:]"
+                  moduleName = "ios_study_bool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/oc%E5%AE%9E%E9%AA%8C%E5%AE%A4/%E5%88%9D%E7%BA%A7/%E4%BA%8B%E4%BB%B6%E4%BA%A4%E4%BA%92/src/%E6%89%8B%E5%8A%BF%E8%AF%86%E5%88%AB%E5%99%A8/TripleTapGestureRecognizer.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "216">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

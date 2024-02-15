@@ -10,6 +10,7 @@
 #import "CusDelegationViewController.h"
 #import "CusNotificationViewController.h"
 #import "CusTargetActionViewController.h"
+#import "CusGesRegViewController.h"
 @interface CusEventViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) NSArray* names;
 @property(nonatomic, strong, readwrite) UITableView *tableView;
@@ -76,7 +77,8 @@
         CusTargetActionViewController *targetVC = [[CusTargetActionViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     } else if([_names[indexPath.row] hasPrefix:@"手势识别器"]) {
-        
+        CusGesRegViewController *targetVC = [[CusGesRegViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
     }
 }
 
