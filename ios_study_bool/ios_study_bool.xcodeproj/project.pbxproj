@@ -56,6 +56,7 @@
 		A0C1EF9D2B7DC5C2004EE0AE /* CusEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF9C2B7DC5C2004EE0AE /* CusEventViewController.m */; };
 		A0C1EFA12B7DD29F004EE0AE /* CusDelegationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFA02B7DD29F004EE0AE /* CusDelegationViewController.m */; };
 		A0C1EFA52B7DEA67004EE0AE /* CusNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFA42B7DEA67004EE0AE /* CusNotificationViewController.m */; };
+		A0C1EFA92B7DF788004EE0AE /* CusTargetActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFA82B7DF788004EE0AE /* CusTargetActionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +170,8 @@
 		A0C1EFA02B7DD29F004EE0AE /* CusDelegationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusDelegationViewController.m; sourceTree = "<group>"; };
 		A0C1EFA32B7DEA67004EE0AE /* CusNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusNotificationViewController.h; sourceTree = "<group>"; };
 		A0C1EFA42B7DEA67004EE0AE /* CusNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusNotificationViewController.m; sourceTree = "<group>"; };
+		A0C1EFA72B7DF788004EE0AE /* CusTargetActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusTargetActionViewController.h; sourceTree = "<group>"; };
+		A0C1EFA82B7DF788004EE0AE /* CusTargetActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusTargetActionViewController.m; sourceTree = "<group>"; };
 		E92F4BAD3A2EEECF87152C21 /* Pods_ios_study_bool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_study_bool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -490,6 +493,7 @@
 		A0C1EF9A2B7DC59F004EE0AE /* src */ = {
 			isa = PBXGroup;
 			children = (
+				A0C1EFA62B7DF6C4004EE0AE /* Target-Action */,
 				A0C1EFA22B7DEA5C004EE0AE /* 通知 */,
 				A0C1EF9E2B7DD20F004EE0AE /* 委托代理 */,
 			);
@@ -512,6 +516,15 @@
 				A0C1EFA42B7DEA67004EE0AE /* CusNotificationViewController.m */,
 			);
 			path = "通知";
+			sourceTree = "<group>";
+		};
+		A0C1EFA62B7DF6C4004EE0AE /* Target-Action */ = {
+			isa = PBXGroup;
+			children = (
+				A0C1EFA72B7DF788004EE0AE /* CusTargetActionViewController.h */,
+				A0C1EFA82B7DF788004EE0AE /* CusTargetActionViewController.m */,
+			);
+			path = "Target-Action";
 			sourceTree = "<group>";
 		};
 		D4299B3122CE24120E24FBD2 /* Frameworks */ = {
@@ -738,6 +751,7 @@
 				A076B2832B5B8C5200AAE9C5 /* UILabelViewController.m in Sources */,
 				A0C1EF5F2B78C999004EE0AE /* CusUITabbarViewController.m in Sources */,
 				A0C1EF472B64A14E004EE0AE /* CusUITableViewController.m in Sources */,
+				A0C1EFA92B7DF788004EE0AE /* CusTargetActionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

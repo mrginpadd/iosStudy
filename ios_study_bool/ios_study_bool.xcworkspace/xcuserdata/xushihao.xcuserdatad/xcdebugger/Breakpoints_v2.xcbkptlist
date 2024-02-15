@@ -237,7 +237,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "143"
             endingLineNumber = "143"
-            landmarkName = "-viewDidLoad"
+            landmarkName = "-doSomethingByDelegate"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -253,7 +253,23 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "144"
             endingLineNumber = "144"
-            landmarkName = "-viewDidLoad"
+            landmarkName = "-doSomethingByDelegate"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "73C117D2-33D8-4824-9382-0D052CECE17E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios_study_bool/oc&#x5b9e;&#x9a8c;&#x5ba4;/&#x521d;&#x7ea7;/&#x4e8b;&#x4ef6;&#x4ea4;&#x4e92;/src/Target-Action/CusTargetActionViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "-touchUpInsideAction:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
