@@ -11,6 +11,7 @@
 #import "CusNotificationViewController.h"
 #import "CusTargetActionViewController.h"
 #import "CusGesRegViewController.h"
+#import "CusEventTransferViewController.h"
 @interface CusEventViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) NSArray* names;
 @property(nonatomic, strong, readwrite) UITableView *tableView;
@@ -24,7 +25,8 @@
             @"委托代理 protocol - delegate",
             @"通知 notification",
             @"目标-动作 target - action",
-            @"手势识别器 Gesture Recognizers"
+            @"手势识别器 Gesture Recognizers",
+            @"事件传递机制"
            ];
     }
     return _names;
@@ -78,6 +80,9 @@
         [self.navigationController pushViewController:targetVC animated:YES];
     } else if([_names[indexPath.row] hasPrefix:@"手势识别器"]) {
         CusGesRegViewController *targetVC = [[CusGesRegViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([_names[indexPath.row] hasPrefix:@"事件传递机制"]) {
+        CusEventTransferViewController *targetVC = [[CusEventTransferViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }
