@@ -55,6 +55,7 @@
 		A0C1EF952B7DB2D1004EE0AE /* MyPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF942B7DB2D1004EE0AE /* MyPopupViewController.m */; };
 		A0C1EF9D2B7DC5C2004EE0AE /* CusEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF9C2B7DC5C2004EE0AE /* CusEventViewController.m */; };
 		A0C1EFA12B7DD29F004EE0AE /* CusDelegationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFA02B7DD29F004EE0AE /* CusDelegationViewController.m */; };
+		A0C1EFA52B7DEA67004EE0AE /* CusNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFA42B7DEA67004EE0AE /* CusNotificationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +167,8 @@
 		A0C1EF9C2B7DC5C2004EE0AE /* CusEventViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusEventViewController.m; sourceTree = "<group>"; };
 		A0C1EF9F2B7DD29F004EE0AE /* CusDelegationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusDelegationViewController.h; sourceTree = "<group>"; };
 		A0C1EFA02B7DD29F004EE0AE /* CusDelegationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusDelegationViewController.m; sourceTree = "<group>"; };
+		A0C1EFA32B7DEA67004EE0AE /* CusNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusNotificationViewController.h; sourceTree = "<group>"; };
+		A0C1EFA42B7DEA67004EE0AE /* CusNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusNotificationViewController.m; sourceTree = "<group>"; };
 		E92F4BAD3A2EEECF87152C21 /* Pods_ios_study_bool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_study_bool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -487,6 +490,7 @@
 		A0C1EF9A2B7DC59F004EE0AE /* src */ = {
 			isa = PBXGroup;
 			children = (
+				A0C1EFA22B7DEA5C004EE0AE /* 通知 */,
 				A0C1EF9E2B7DD20F004EE0AE /* 委托代理 */,
 			);
 			path = src;
@@ -499,6 +503,15 @@
 				A0C1EFA02B7DD29F004EE0AE /* CusDelegationViewController.m */,
 			);
 			path = "委托代理";
+			sourceTree = "<group>";
+		};
+		A0C1EFA22B7DEA5C004EE0AE /* 通知 */ = {
+			isa = PBXGroup;
+			children = (
+				A0C1EFA32B7DEA67004EE0AE /* CusNotificationViewController.h */,
+				A0C1EFA42B7DEA67004EE0AE /* CusNotificationViewController.m */,
+			);
+			path = "通知";
 			sourceTree = "<group>";
 		};
 		D4299B3122CE24120E24FBD2 /* Frameworks */ = {
@@ -692,6 +705,7 @@
 				A0C1EF882B7D0EDB004EE0AE /* CusWKWebViewController.m in Sources */,
 				A076B2922B5D38AE00AAE9C5 /* UIButtonViewController.m in Sources */,
 				A07DF49B2B5427ED00D0275E /* ViewController.m in Sources */,
+				A0C1EFA52B7DEA67004EE0AE /* CusNotificationViewController.m in Sources */,
 				A0C1EF4D2B64EB5C004EE0AE /* FakeUtil.m in Sources */,
 				A07DF4A12B5427ED00D0275E /* ios_study_bool.xcdatamodeld in Sources */,
 				A0C1EF662B7B1619004EE0AE /* TipUtil.m in Sources */,

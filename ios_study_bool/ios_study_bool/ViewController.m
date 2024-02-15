@@ -11,6 +11,7 @@
 #import "UIComponentsViewController.h"
 #import "CustomTableViewCell.h"
 #import "CusEventViewController.h"
+#import <WebKit/WebKit.h>
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray<NSArray*> *functions;
@@ -87,7 +88,7 @@
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     // 创建两个UIBarButtonItem对象，用于展示不同的选项
     UIBarButtonItem *option1BarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"TODO" style:UIBarButtonItemStylePlain target:self action:@selector(option1ButtonPressed)];
-    UIBarButtonItem *option2BarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"主页" style:UIBarButtonItemStylePlain target:self action:@selector(option2ButtonPressed)];
+    UIBarButtonItem *option2BarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"网站" style:UIBarButtonItemStylePlain target:self action:@selector(option2ButtonPressed)];
     NSArray *rightBarButtonItems = @[option1BarButtonItem, option2BarButtonItem];
     
     // 将UIBarButtonItem对象设置为导航栏的右侧按钮
@@ -135,4 +136,15 @@
     return self.sections[section];
 }
 
+- (void)option2ButtonPressed{
+    UIViewController *vc = [[UIViewController alloc] init];
+    
+    WKWebView *webView = [[WKWebView alloc] initWithFrame:[self.view bounds]];
+    NSURL *url = [[NSURL alloc] initWithString:@"https://www.bazi-test.com/"];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+    [webView loadRequest:request];
+    vc.navigationItem.title = @"我的个人网站";
+    [vc.view addSubview:webView];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 @end
