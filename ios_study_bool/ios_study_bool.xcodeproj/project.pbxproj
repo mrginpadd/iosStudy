@@ -50,6 +50,7 @@
 		A0C1EF7C2B7CE00B004EE0AE /* CusUIDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF7B2B7CE00B004EE0AE /* CusUIDatePickerViewController.m */; };
 		A0C1EF7F2B7CEC76004EE0AE /* CusActivityIndicatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF7E2B7CEC76004EE0AE /* CusActivityIndicatorViewController.m */; };
 		A0C1EF822B7CFA43004EE0AE /* CusUIWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF812B7CFA43004EE0AE /* CusUIWebViewViewController.m */; };
+		A0C1EF882B7D0EDB004EE0AE /* CusWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF872B7D0EDB004EE0AE /* CusWKWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +152,8 @@
 		A0C1EF7E2B7CEC76004EE0AE /* CusActivityIndicatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusActivityIndicatorViewController.m; sourceTree = "<group>"; };
 		A0C1EF802B7CFA43004EE0AE /* CusUIWebViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusUIWebViewViewController.h; sourceTree = "<group>"; };
 		A0C1EF812B7CFA43004EE0AE /* CusUIWebViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusUIWebViewViewController.m; sourceTree = "<group>"; };
+		A0C1EF862B7D0EDB004EE0AE /* CusWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusWKWebViewController.h; sourceTree = "<group>"; };
+		A0C1EF872B7D0EDB004EE0AE /* CusWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusWKWebViewController.m; sourceTree = "<group>"; };
 		E92F4BAD3A2EEECF87152C21 /* Pods_ios_study_bool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_study_bool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -243,6 +246,8 @@
 				A0C1EF7E2B7CEC76004EE0AE /* CusActivityIndicatorViewController.m */,
 				A0C1EF802B7CFA43004EE0AE /* CusUIWebViewViewController.h */,
 				A0C1EF812B7CFA43004EE0AE /* CusUIWebViewViewController.m */,
+				A0C1EF862B7D0EDB004EE0AE /* CusWKWebViewController.h */,
+				A0C1EF872B7D0EDB004EE0AE /* CusWKWebViewController.m */,
 			);
 			path = "UI组件";
 			sourceTree = "<group>";
@@ -608,6 +613,7 @@
 				A076B2892B5CF55B00AAE9C5 /* UIComponentsViewController.m in Sources */,
 				A076B28C2B5D07A900AAE9C5 /* CustomTableViewCell.m in Sources */,
 				A0C1EF7C2B7CE00B004EE0AE /* CusUIDatePickerViewController.m in Sources */,
+				A0C1EF882B7D0EDB004EE0AE /* CusWKWebViewController.m in Sources */,
 				A076B2922B5D38AE00AAE9C5 /* UIButtonViewController.m in Sources */,
 				A07DF49B2B5427ED00D0275E /* ViewController.m in Sources */,
 				A0C1EF4D2B64EB5C004EE0AE /* FakeUtil.m in Sources */,

@@ -28,6 +28,7 @@
 #import "CusUIDatePickerViewController.h"
 #import "CusActivityIndicatorViewController.h"
 #import "CusUIWebViewViewController.h"
+#import "CusWKWebViewController.h"
 @interface UIComponentsViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray* functions;
@@ -56,7 +57,8 @@
         @"UIPickerView 用于从多个选项中选择一个或多个值",
         @"UIDatePicker 用于选择日期和时间",
         @"UIActivityIndicatorView （活动指示器）：用于显示加载或处理中的状态",
-        @"UIWebView 用于在应用程序中显示网页内容",
+        @"UIWebView ios12前 用于在应用程序中显示网页内容",
+        @"WKWebView ios12后 用于在应用程序中显示网页内容",
         @"UIPresentationController 底部弹窗之类的"
         ];
     }
@@ -168,6 +170,9 @@
         [self.navigationController pushViewController:targetVC animated:YES];
     } else if([selectedStr hasPrefix:@"UIWebView"]) {
         CusUIWebViewViewController *targetVC = [[CusUIWebViewViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([selectedStr hasPrefix:@"WKWebView"]) {
+        CusWKWebViewController *targetVC = [[CusWKWebViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }
