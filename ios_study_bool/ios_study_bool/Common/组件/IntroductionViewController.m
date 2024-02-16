@@ -82,10 +82,7 @@
 - (void)buildContentLabel {
     _introContentLabel = [[UILabel alloc] init];
     _introContentLabel.textColor = [UIColor grayColor];
-    _introContentLabel.text = @" \n \
-    介绍内容文本.............................高度自适应..................... \n \
-    ........................................ \n \
-    ";
+    _introContentLabel.text = @"...";
     _introContentLabel.numberOfLines = 0;
     [_scrollView addSubview:_introContentLabel];
     [_introContentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -153,10 +150,7 @@
     _applicationContentLabel = [[UILabel alloc] init];
     _applicationContentLabel.textColor = [UIColor grayColor];
     _applicationContentLabel.numberOfLines = 0;
-    _applicationContentLabel.text = @" \n \
-    介绍内容文本.............................高度自适应..................... \n \
-    ........................................ \n \
-    ";
+    _applicationContentLabel.text = @"...";
     [_scrollView addSubview:_applicationContentLabel];
     [_applicationContentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(_scrollView);
@@ -198,10 +192,7 @@
     _useStepContentLabel = [[UILabel alloc] init];
     _useStepContentLabel.textColor = [UIColor grayColor];
     _useStepContentLabel.numberOfLines = 0;
-    _useStepContentLabel.text = @" \n \
-    介绍内容文本.............................高度自适应..................... \n \
-    ........................................ \n \
-    ";
+    _useStepContentLabel.text = @"...";
     [_scrollView addSubview:_useStepContentLabel];
     [_useStepContentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(_scrollView);
@@ -216,8 +207,8 @@
     
     for(int i=0; i<tipBtns.count; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        btn.backgroundColor = [UIColor redColor];
         [btn setTitle:tipBtns[i] forState:UIControlStateNormal];
-        btn.backgroundColor = [UIColor systemCyanColor];
 
         [_introBtns addObject:btn];
         
@@ -254,7 +245,7 @@
     for(int i=0; i<tipBtns.count; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [btn setTitle:tipBtns[i] forState:UIControlStateNormal];
-        btn.backgroundColor = [UIColor systemCyanColor];
+        btn.backgroundColor = [UIColor redColor];
 
         [_applicationBtns addObject:btn];
         
@@ -289,7 +280,7 @@
     for(int i=0; i<tipBtns.count; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [btn setTitle:tipBtns[i] forState:UIControlStateNormal];
-        btn.backgroundColor = [UIColor systemCyanColor];
+        btn.backgroundColor = [UIColor redColor];
 
         [_useStepBtns addObject:btn];
         

@@ -12,6 +12,7 @@
 #import "CustomTableViewCell.h"
 #import "CusEventViewController.h"
 #import <WebKit/WebKit.h>
+#import "CusRouteViewController.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray<NSArray*> *functions;
@@ -106,6 +107,9 @@
         [self.navigationController pushViewController:targetVC animated:YES];
     } else if([selectedStr isEqualToString:@"事件交互"]) {
         CusEventViewController *targetVC = [[CusEventViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([selectedStr hasPrefix:@"路由与导航"]) {
+        CusRouteViewController *targetVC = [[CusRouteViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }

@@ -60,6 +60,12 @@
 		A0C1EFAD2B7DFF19004EE0AE /* CusGesRegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFAC2B7DFF19004EE0AE /* CusGesRegViewController.m */; };
 		A0C1EFB02B7E04C6004EE0AE /* TripleTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFAF2B7E04C6004EE0AE /* TripleTapGestureRecognizer.m */; };
 		A0C1EFB42B7E2377004EE0AE /* CusEventTransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFB32B7E2377004EE0AE /* CusEventTransferViewController.m */; };
+		A0C1EFB82B7E2FAF004EE0AE /* CusUINavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFB72B7E2FAF004EE0AE /* CusUINavigationViewController.m */; };
+		A0C1EFBC2B7E33F7004EE0AE /* CusRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFBB2B7E33F7004EE0AE /* CusRouteViewController.m */; };
+		A0C1EFC02B7F02DA004EE0AE /* CusRouteCaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFBF2B7F02DA004EE0AE /* CusRouteCaseViewController.m */; };
+		A0C1EFC72B7F5007004EE0AE /* CTMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFC62B7F5007004EE0AE /* CTMediator.m */; };
+		A0C1EFCA2B7F54BD004EE0AE /* ANewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFC92B7F54BD004EE0AE /* ANewViewController.m */; };
+		A0C1EFCD2B7F83EB004EE0AE /* BNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFCC2B7F83EB004EE0AE /* BNewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,6 +187,18 @@
 		A0C1EFAF2B7E04C6004EE0AE /* TripleTapGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TripleTapGestureRecognizer.m; sourceTree = "<group>"; };
 		A0C1EFB22B7E2377004EE0AE /* CusEventTransferViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusEventTransferViewController.h; sourceTree = "<group>"; };
 		A0C1EFB32B7E2377004EE0AE /* CusEventTransferViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusEventTransferViewController.m; sourceTree = "<group>"; };
+		A0C1EFB62B7E2FAF004EE0AE /* CusUINavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusUINavigationViewController.h; sourceTree = "<group>"; };
+		A0C1EFB72B7E2FAF004EE0AE /* CusUINavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusUINavigationViewController.m; sourceTree = "<group>"; };
+		A0C1EFBA2B7E33F7004EE0AE /* CusRouteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusRouteViewController.h; sourceTree = "<group>"; };
+		A0C1EFBB2B7E33F7004EE0AE /* CusRouteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusRouteViewController.m; sourceTree = "<group>"; };
+		A0C1EFBE2B7F02DA004EE0AE /* CusRouteCaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusRouteCaseViewController.h; sourceTree = "<group>"; };
+		A0C1EFBF2B7F02DA004EE0AE /* CusRouteCaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusRouteCaseViewController.m; sourceTree = "<group>"; };
+		A0C1EFC52B7F5007004EE0AE /* CTMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTMediator.h; sourceTree = "<group>"; };
+		A0C1EFC62B7F5007004EE0AE /* CTMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTMediator.m; sourceTree = "<group>"; };
+		A0C1EFC82B7F54BD004EE0AE /* ANewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANewViewController.h; sourceTree = "<group>"; };
+		A0C1EFC92B7F54BD004EE0AE /* ANewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANewViewController.m; sourceTree = "<group>"; };
+		A0C1EFCB2B7F83EB004EE0AE /* BNewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNewViewController.h; sourceTree = "<group>"; };
+		A0C1EFCC2B7F83EB004EE0AE /* BNewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNewViewController.m; sourceTree = "<group>"; };
 		E92F4BAD3A2EEECF87152C21 /* Pods_ios_study_bool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_study_bool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -432,6 +450,7 @@
 		A0C1EF972B7DC509004EE0AE /* 初级 */ = {
 			isa = PBXGroup;
 			children = (
+				A0C1EFB52B7E25B7004EE0AE /* 路由与导航 */,
 				A0C1EF982B7DC52C004EE0AE /* 事件交互 */,
 				A076B27D2B5B8B5E00AAE9C5 /* UI组件 */,
 			);
@@ -556,6 +575,49 @@
 				A0C1EFB32B7E2377004EE0AE /* CusEventTransferViewController.m */,
 			);
 			path = "事件传递机制";
+			sourceTree = "<group>";
+		};
+		A0C1EFB52B7E25B7004EE0AE /* 路由与导航 */ = {
+			isa = PBXGroup;
+			children = (
+				A0C1EFB92B7E33E5004EE0AE /* src */,
+				A0C1EFBA2B7E33F7004EE0AE /* CusRouteViewController.h */,
+				A0C1EFBB2B7E33F7004EE0AE /* CusRouteViewController.m */,
+			);
+			path = "路由与导航";
+			sourceTree = "<group>";
+		};
+		A0C1EFB92B7E33E5004EE0AE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A0C1EFC22B7F064B004EE0AE /* 组件化路由 */,
+				A0C1EFC12B7F0592004EE0AE /* UINavigationController导航 */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A0C1EFC12B7F0592004EE0AE /* UINavigationController导航 */ = {
+			isa = PBXGroup;
+			children = (
+				A0C1EFB62B7E2FAF004EE0AE /* CusUINavigationViewController.h */,
+				A0C1EFB72B7E2FAF004EE0AE /* CusUINavigationViewController.m */,
+			);
+			path = "UINavigationController导航";
+			sourceTree = "<group>";
+		};
+		A0C1EFC22B7F064B004EE0AE /* 组件化路由 */ = {
+			isa = PBXGroup;
+			children = (
+				A0C1EFBE2B7F02DA004EE0AE /* CusRouteCaseViewController.h */,
+				A0C1EFBF2B7F02DA004EE0AE /* CusRouteCaseViewController.m */,
+				A0C1EFC52B7F5007004EE0AE /* CTMediator.h */,
+				A0C1EFC62B7F5007004EE0AE /* CTMediator.m */,
+				A0C1EFC82B7F54BD004EE0AE /* ANewViewController.h */,
+				A0C1EFC92B7F54BD004EE0AE /* ANewViewController.m */,
+				A0C1EFCB2B7F83EB004EE0AE /* BNewViewController.h */,
+				A0C1EFCC2B7F83EB004EE0AE /* BNewViewController.m */,
+			);
+			path = "组件化路由";
 			sourceTree = "<group>";
 		};
 		D4299B3122CE24120E24FBD2 /* Frameworks */ = {
@@ -761,10 +823,13 @@
 				A0C1EF7F2B7CEC76004EE0AE /* CusActivityIndicatorViewController.m in Sources */,
 				A0C1EF8E2B7DAD5F004EE0AE /* CusPresentationViewController.m in Sources */,
 				A07DF4952B5427ED00D0275E /* AppDelegate.m in Sources */,
+				A0C1EFC72B7F5007004EE0AE /* CTMediator.m in Sources */,
 				A0C1EF382B613448004EE0AE /* UISwitchViewController.m in Sources */,
 				A076B27C2B5B732400AAE9C5 /* LangManager.m in Sources */,
 				A0AE535D2B5572740075EAA4 /* KeyWordViewController.m in Sources */,
 				A076B2952B60014400AAE9C5 /* UIImageViewController.m in Sources */,
+				A0C1EFB82B7E2FAF004EE0AE /* CusUINavigationViewController.m in Sources */,
+				A0C1EFBC2B7E33F7004EE0AE /* CusRouteViewController.m in Sources */,
 				A0C1EF6C2B7B6052004EE0AE /* UIAlertViewController.m in Sources */,
 				A0C1EF5C2B75EB39004EE0AE /* CusSegmentedControlViewController.m in Sources */,
 				A0C1EF3B2B6139A4004EE0AE /* UITextFieldViewController.m in Sources */,
@@ -783,6 +848,9 @@
 				A0C1EF762B7C6F74004EE0AE /* CusUIPickerViewController.m in Sources */,
 				A076B2832B5B8C5200AAE9C5 /* UILabelViewController.m in Sources */,
 				A0C1EF5F2B78C999004EE0AE /* CusUITabbarViewController.m in Sources */,
+				A0C1EFCA2B7F54BD004EE0AE /* ANewViewController.m in Sources */,
+				A0C1EFC02B7F02DA004EE0AE /* CusRouteCaseViewController.m in Sources */,
+				A0C1EFCD2B7F83EB004EE0AE /* BNewViewController.m in Sources */,
 				A0C1EF472B64A14E004EE0AE /* CusUITableViewController.m in Sources */,
 				A0C1EFA92B7DF788004EE0AE /* CusTargetActionViewController.m in Sources */,
 				A0C1EFB42B7E2377004EE0AE /* CusEventTransferViewController.m in Sources */,
