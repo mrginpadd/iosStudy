@@ -66,6 +66,7 @@
 		A0C1EFC72B7F5007004EE0AE /* CTMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFC62B7F5007004EE0AE /* CTMediator.m */; };
 		A0C1EFCA2B7F54BD004EE0AE /* ANewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFC92B7F54BD004EE0AE /* ANewViewController.m */; };
 		A0C1EFCD2B7F83EB004EE0AE /* BNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFCC2B7F83EB004EE0AE /* BNewViewController.m */; };
+		A0C1EFD22B7F9BE9004EE0AE /* CusAnimateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFD12B7F9BE9004EE0AE /* CusAnimateViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,6 +200,8 @@
 		A0C1EFC92B7F54BD004EE0AE /* ANewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANewViewController.m; sourceTree = "<group>"; };
 		A0C1EFCB2B7F83EB004EE0AE /* BNewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNewViewController.h; sourceTree = "<group>"; };
 		A0C1EFCC2B7F83EB004EE0AE /* BNewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNewViewController.m; sourceTree = "<group>"; };
+		A0C1EFD02B7F9BE9004EE0AE /* CusAnimateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusAnimateViewController.h; sourceTree = "<group>"; };
+		A0C1EFD12B7F9BE9004EE0AE /* CusAnimateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusAnimateViewController.m; sourceTree = "<group>"; };
 		E92F4BAD3A2EEECF87152C21 /* Pods_ios_study_bool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_study_bool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -293,7 +296,6 @@
 				A076B2962B60157100AAE9C5 /* Resources */,
 				A076B2792B5B72E500AAE9C5 /* ToolBox */,
 				A0AE535E2B55731E0075EAA4 /* Common */,
-				A0AE535A2B5572270075EAA4 /* 语言基础 */,
 				A07DF4932B5427ED00D0275E /* AppDelegate.h */,
 				A07DF4942B5427ED00D0275E /* AppDelegate.m */,
 				A07DF4962B5427ED00D0275E /* SceneDelegate.h */,
@@ -450,6 +452,8 @@
 		A0C1EF972B7DC509004EE0AE /* 初级 */ = {
 			isa = PBXGroup;
 			children = (
+				A0AE535A2B5572270075EAA4 /* 语言基础 */,
+				A0C1EFCE2B7F9A05004EE0AE /* 动画 */,
 				A0C1EFB52B7E25B7004EE0AE /* 路由与导航 */,
 				A0C1EF982B7DC52C004EE0AE /* 事件交互 */,
 				A076B27D2B5B8B5E00AAE9C5 /* UI组件 */,
@@ -618,6 +622,15 @@
 				A0C1EFCC2B7F83EB004EE0AE /* BNewViewController.m */,
 			);
 			path = "组件化路由";
+			sourceTree = "<group>";
+		};
+		A0C1EFCE2B7F9A05004EE0AE /* 动画 */ = {
+			isa = PBXGroup;
+			children = (
+				A0C1EFD02B7F9BE9004EE0AE /* CusAnimateViewController.h */,
+				A0C1EFD12B7F9BE9004EE0AE /* CusAnimateViewController.m */,
+			);
+			path = "动画";
 			sourceTree = "<group>";
 		};
 		D4299B3122CE24120E24FBD2 /* Frameworks */ = {
@@ -849,6 +862,7 @@
 				A076B2832B5B8C5200AAE9C5 /* UILabelViewController.m in Sources */,
 				A0C1EF5F2B78C999004EE0AE /* CusUITabbarViewController.m in Sources */,
 				A0C1EFCA2B7F54BD004EE0AE /* ANewViewController.m in Sources */,
+				A0C1EFD22B7F9BE9004EE0AE /* CusAnimateViewController.m in Sources */,
 				A0C1EFC02B7F02DA004EE0AE /* CusRouteCaseViewController.m in Sources */,
 				A0C1EFCD2B7F83EB004EE0AE /* BNewViewController.m in Sources */,
 				A0C1EF472B64A14E004EE0AE /* CusUITableViewController.m in Sources */,
