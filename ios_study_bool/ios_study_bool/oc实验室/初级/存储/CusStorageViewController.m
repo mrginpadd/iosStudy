@@ -8,6 +8,7 @@
 #import "CusStorageViewController.h"
 #import "CustomTableViewCell.h"
 #import "CusUserDefaultViewController.h"
+#import "CusFileManagerViewController.h"
 @interface CusStorageViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray* names;
@@ -53,6 +54,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if ([_names[indexPath.row] isEqualToString:@"UserDefaults少量数据"]) {
         CusUserDefaultViewController *targetVC = [[CusUserDefaultViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([_names[indexPath.row] isEqualToString:@"NSFileManager文件存储"]) {
+        CusFileManagerViewController *targetVC = [[CusFileManagerViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }

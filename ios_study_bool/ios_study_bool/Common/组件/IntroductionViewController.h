@@ -22,10 +22,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong, readwrite) UIScrollView *scrollView;
 
 
-@property(nonatomic, strong, readwrite) UIView *introView;
-@property(nonatomic, strong, readwrite) UIView *applicationView;
-@property(nonatomic, strong, readwrite) UIView *useStepView;
-@property(nonatomic, strong, readwrite) UIView *attributeView;
+@property(nonatomic, strong, readwrite) UIScrollView *introView;
+@property(nonatomic, strong, readwrite) UIScrollView *applicationView;
+@property(nonatomic, strong, readwrite) UIScrollView *useStepView;
+@property(nonatomic, strong, readwrite) UIScrollView *attributeView;
 
 @property(nonatomic, strong, readwrite) UILabel *introTitleLabel;
 @property(nonatomic, strong, readwrite) UILabel *introContentLabel;

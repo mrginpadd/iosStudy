@@ -59,7 +59,7 @@
     [self.view addSubview:_scrollView];
 }
 - (void)buildIntroView {
-    _introView = [[UIView alloc] init];
+    _introView = [[UIScrollView alloc] init];
     _introView.backgroundColor = [UIColor blackColor];
     [_scrollView addSubview:_introView];
     [_introView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -68,6 +68,10 @@
         make.width.equalTo(_scrollView);
         make.height.equalTo(@40);
     }];
+    [_scrollView layoutIfNeeded];
+    
+    _introView.contentSize = CGSizeMake(_introView.frame.size.width * 2, 40);
+    
 }
 - (void)buildIntroTitleLabel {
     _introTitleLabel = [[UILabel alloc] init];
@@ -75,8 +79,8 @@
     _introTitleLabel.text = @"xxx介绍";
     [_introView addSubview:_introTitleLabel];
     [_introTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(_scrollView).offset(5);;
-        make.top.equalTo(_scrollView);
+        make.left.equalTo(_introView).offset(5);;
+        make.top.equalTo(_introView);
         make.height.equalTo(@40);
     }];
 }
@@ -97,7 +101,7 @@
 
 - (void)buildAttributeView {
     
-    _attributeView = [[UIView alloc] init];
+    _attributeView = [[UIScrollView alloc] init];
     _attributeView.backgroundColor = [UIColor blackColor];
     [_scrollView addSubview:_attributeView];
     [_attributeView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -106,6 +110,8 @@
         make.width.equalTo(_scrollView);
         make.height.equalTo(@40);
     }];
+    [_scrollView layoutIfNeeded];
+    _attributeView.contentSize = CGSizeMake(_attributeView.frame.size.width * 2, 40);
 }
 
 - (void)buildAttributeLabel {
@@ -137,7 +143,7 @@
 }
 
 - (void)buildApplicationView {
-    _applicationView = [[UIView alloc] init];
+    _applicationView = [[UIScrollView alloc] init];
     _applicationView.backgroundColor = [UIColor blackColor];
     [_scrollView addSubview:_applicationView];
     [_applicationView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -146,6 +152,8 @@
         make.width.equalTo(_scrollView);
         make.height.equalTo(@40);
     }];
+    [_scrollView layoutIfNeeded];
+    _applicationView.contentSize = CGSizeMake(_applicationView.frame.size.width * 2, 40);
 }
 
 - (void)buildApplicationTitleLabel {
@@ -177,7 +185,7 @@
 
 
 - (void)buildUseStepView {
-    _useStepView = [[UIView alloc] init];
+    _useStepView = [[UIScrollView alloc] init];
     _useStepView.backgroundColor = [UIColor blackColor];
     [_scrollView addSubview:_useStepView];
     [_useStepView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -186,6 +194,8 @@
         make.width.equalTo(_scrollView);
         make.height.equalTo(@40);
     }];
+    [_scrollView layoutIfNeeded];
+    _useStepView.contentSize = CGSizeMake(_useStepView.frame.size.width * 2, 40);
 }
 
 
@@ -404,6 +414,42 @@
               make.centerY.equalTo(_introView);
               make.width.lessThanOrEqualTo(@200);
               make.height.equalTo(_introView).offset(-8);
+          }];
+        }
+    }
+}
+
+- (void)setAttributeTipBtns:(NSArray<NSString *> *)tipBtns {
+    
+    UIView *preView = _attributeView.subviews.lastObject;
+    NSMutableArray *btns = @[].mutableCopy;
+    
+    for(int i=0; i<tipBtns.count; i++) {
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        [btn setTitle:tipBtns[i] forState:UIControlStateNormal];
+        btn.backgroundColor = [UIColor systemCyanColor];
+
+        [btns addObject:btn];
+
+
+        [btn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+        
+        [_attributeView addSubview:btn];
+        
+        if (i == 0) {
+          [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+             make.left.equalTo(preView.mas_right).offset(10);
+             make.centerY.equalTo(_attributeView);
+             make.width.lessThanOrEqualTo(@200);
+             make.height.equalTo(_attributeView).offset(-8);
+          }];
+        } else {
+          UIButton *preBtn = btns[i-1];
+          [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+              make.left.equalTo(preBtn.mas_right).offset(10);
+              make.centerY.equalTo(_attributeView);
+              make.width.lessThanOrEqualTo(@200);
+              make.height.equalTo(_attributeView).offset(-8);
           }];
         }
     }
