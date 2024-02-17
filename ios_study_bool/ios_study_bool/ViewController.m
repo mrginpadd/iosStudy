@@ -14,6 +14,7 @@
 #import <WebKit/WebKit.h>
 #import "CusRouteViewController.h"
 #import "CusAnimateViewController.h"
+#import "CusStorageViewController.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray<NSArray*> *functions;
@@ -114,6 +115,9 @@
         [self.navigationController pushViewController:targetVC animated:YES];
     } else if([selectedStr hasPrefix:@"动画"]) {
         CusAnimateViewController *targetVC = [[CusAnimateViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([selectedStr hasPrefix:@"存储"]) {
+        CusStorageViewController *targetVC = [[CusStorageViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }

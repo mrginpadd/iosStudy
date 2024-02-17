@@ -25,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong, readwrite) UIView *introView;
 @property(nonatomic, strong, readwrite) UIView *applicationView;
 @property(nonatomic, strong, readwrite) UIView *useStepView;
+@property(nonatomic, strong, readwrite) UIView *attributeView;
 
 @property(nonatomic, strong, readwrite) UILabel *introTitleLabel;
 @property(nonatomic, strong, readwrite) UILabel *introContentLabel;
@@ -39,6 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, strong, readwrite) UILabel *useStepContentLabel;
 
 @property(nonatomic, strong, readwrite) NSMutableArray<UIButton*>* introBtns;
+@property(nonatomic, strong, readwrite) NSMutableArray<UIButton*>* attributeBtns;
 @property(nonatomic, strong, readwrite) NSMutableArray<UIButton*>* applicationBtns;
 @property(nonatomic, strong, readwrite) NSMutableArray<UIButton*>* useStepBtns;
 - (instancetype)init;
@@ -46,12 +48,16 @@ NS_ASSUME_NONNULL_BEGIN
 //设置标题和内容，用于展示底部弹框
 - (void)setIntroTipBtns:(NSArray<NSString *> *)tipBtns titles: (NSArray<NSString *> *)tipTitles contents:(NSArray<NSString *> *)tipContents;
 
+- (void)setAttributeTipBtns:(NSArray<NSString *> *)tipBtns titles: (NSArray<NSString *> *)tipTitles contents:(NSArray<NSString *> *)tipContents;
+
 - (void)setApplicationTipBtns:(NSArray<NSString *> *)tipBtns titles: (NSArray<NSString *> *)tipTitles contents:(NSArray<NSString *> *)tipContents;
 
 - (void)setUseStepTipBtns:(NSArray<NSString *> *)tipBtns titles: (NSArray<NSString *> *)tipTitles contents:(NSArray<NSString *> *)tipContents;
 
 //只设置按钮标题，用代理接受按钮点击事件的回调，进行额外处理
 - (void)setIntroTipBtns:(NSArray<NSString *> *)tipBtns;
+
+- (void)setAttributeTipBtns:(NSArray<NSString *> *)tipBtns;
 
 - (void)setApplicationTipBtns:(NSArray<NSString *> *)tipBtns;
 

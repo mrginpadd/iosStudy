@@ -40,7 +40,7 @@
         [toastView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.center.equalTo(window);
             make.width.lessThanOrEqualTo(@300);
-            make.height.equalTo(@40);
+            make.height.lessThanOrEqualTo(@140);
         }];
         
         // Toast提示信息
@@ -49,6 +49,7 @@
         msgLabel.text = message;
         msgLabel.textColor = [UIColor whiteColor];
         msgLabel.textAlignment = NSTextAlignmentCenter;
+        msgLabel.numberOfLines = 0;
         [msgLabel mas_makeConstraints:^(MASConstraintMaker *make) {
                     make.center.width.height.equalTo(toastView);
         }];
@@ -90,7 +91,7 @@
         [toastView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.bottom.equalTo(window).offset(-30);
             make.width.lessThanOrEqualTo(@300);
-            make.height.equalTo(@40);
+            make.height.lessThanOrEqualTo(@140);
         }];
         
         // Toast提示信息
@@ -99,6 +100,7 @@
         msgLabel.text = message;
         msgLabel.textColor = [UIColor whiteColor];
         msgLabel.textAlignment = NSTextAlignmentCenter;
+        msgLabel.numberOfLines = 0;
         [msgLabel mas_makeConstraints:^(MASConstraintMaker *make) {
                     make.center.width.height.equalTo(toastView);
         }];

@@ -20,6 +20,7 @@
     self = [super init];
     if (self) {
       self.introBtns = @[].mutableCopy;
+      self.attributeBtns = @[].mutableCopy;
       self.applicationBtns = @[].mutableCopy;
       self.useStepBtns = @[].mutableCopy;
     }
@@ -39,6 +40,7 @@
     [self buildIntroTitleLabel];
     [self buildContentLabel];
     
+    [self buildAttributeView];
     [self buildAttributeLabel];
     [self buildAttrubuteContentLabel];
     
@@ -93,17 +95,30 @@
  
 }
 
+- (void)buildAttributeView {
+    
+    _attributeView = [[UIView alloc] init];
+    _attributeView.backgroundColor = [UIColor blackColor];
+    [_scrollView addSubview:_attributeView];
+    [_attributeView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(_scrollView);
+        make.top.equalTo(_introContentLabel.mas_bottom).offset(5);
+        make.width.equalTo(_scrollView);
+        make.height.equalTo(@40);
+    }];
+}
+
 - (void)buildAttributeLabel {
     _attributeTitleLabel = [[UILabel alloc] init];
     _attributeTitleLabel.textColor = [UIColor whiteColor];
     _attributeTitleLabel.backgroundColor = [UIColor blackColor];
     _attributeTitleLabel.text = @" 常用属性";
-    [_scrollView addSubview:_attributeTitleLabel];
+    [_attributeView addSubview:_attributeTitleLabel];
     
     [_attributeTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(_scrollView);
-        make.width.equalTo(_scrollView);
-        make.top.equalTo(_introContentLabel.mas_bottom).offset(5);
+        make.centerY.equalTo(_attributeView);
+        make.left.equalTo(_attributeView).offset(5);
+        make.width.lessThanOrEqualTo(@200);
         make.height.equalTo(@40);
     }];
 }
@@ -115,8 +130,9 @@
     _attributeContentLabel.numberOfLines = 0;
     [_scrollView addSubview:_attributeContentLabel];
     [_attributeContentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.left.equalTo(_scrollView);
-            make.top.equalTo(_attributeTitleLabel.mas_bottom);
+        make.centerX.equalTo(_scrollView);
+        make.top.equalTo(_attributeView.mas_bottom).offset(5);
+        make.width.equalTo(_scrollView);
     }];
 }
 
@@ -238,6 +254,45 @@
         }
     }
 }
+
+- (void)setAttributeTipBtns:(NSArray<NSString *> *)tipBtns titles: (NSArray<NSString *> *)tipTitles contents:(NSArray<NSString *> *)tipContents {
+    _attributeTitleLabel.userInteractionEnabled = YES;
+    UIView *preView = _attributeView.subviews.lastObject;
+    
+    for(int i=0; i<tipBtns.count; i++) {
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        btn.backgroundColor = [UIColor redColor];
+        [btn setTitle:tipBtns[i] forState:UIControlStateNormal];
+
+        [_attributeBtns addObject:btn];
+        
+        // 使用关联参数，实现uibutton多个入参
+        objc_setAssociatedObject(btn,@"title",tipTitles[i],OBJC_ASSOCIATION_RETAIN_NONATOMIC);//实际上就是KVC
+        objc_setAssociatedObject(btn,@"content",tipContents[i],OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+
+        [btn addTarget:self action:@selector(showTip:) forControlEvents:UIControlEventTouchUpInside];
+        
+        [_attributeView addSubview:btn];
+        
+        if (i == 0) {
+          [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+             make.left.equalTo(preView.mas_right).offset(10);
+             make.centerY.equalTo(_attributeView);
+             make.width.lessThanOrEqualTo(@200);
+             make.height.equalTo(_attributeView).offset(-8);
+          }];
+        } else {
+          UIButton *preBtn = _attributeBtns[i-1];
+          [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+              make.left.equalTo(preBtn.mas_right).offset(10);
+              make.centerY.equalTo(_attributeView);
+              make.width.lessThanOrEqualTo(@200);
+              make.height.equalTo(_attributeView).offset(-8);
+          }];
+        }
+    }
+}
+
 
 - (void)setApplicationTipBtns:(NSArray<NSString *> *)tipBtns titles: (NSArray<NSString *> *)tipTitles contents:(NSArray<NSString *> *)tipContents {
     
