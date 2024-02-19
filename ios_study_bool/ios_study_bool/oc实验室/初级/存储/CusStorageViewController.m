@@ -9,6 +9,8 @@
 #import "CustomTableViewCell.h"
 #import "CusUserDefaultViewController.h"
 #import "CusFileManagerViewController.h"
+#import "CusPropertyListViewController.h"
+#import "CusArchiveViewController.h"
 @interface CusStorageViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray* names;
@@ -57,6 +59,12 @@
         [self.navigationController pushViewController:targetVC animated:YES];
     } else if([_names[indexPath.row] isEqualToString:@"NSFileManager文件存储"]) {
         CusFileManagerViewController *targetVC = [[CusFileManagerViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([_names[indexPath.row] isEqualToString:@"Property List 配置信息"]) {
+        CusPropertyListViewController *targetVC = [[CusPropertyListViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([_names[indexPath.row] isEqualToString:@"NSKeyedArchiver序列化与反序列化"]) {
+        CusArchiveViewController *targetVC = [[CusArchiveViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }

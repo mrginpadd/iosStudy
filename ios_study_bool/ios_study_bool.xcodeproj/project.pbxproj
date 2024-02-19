@@ -70,6 +70,9 @@
 		A0C1EFD62B805F8F004EE0AE /* CusStorageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFD52B805F8F004EE0AE /* CusStorageViewController.m */; };
 		A0C1EFD92B8080F6004EE0AE /* CusUserDefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFD82B8080F6004EE0AE /* CusUserDefaultViewController.m */; };
 		A0C1EFDB2B80B83F004EE0AE /* 架构图 in Resources */ = {isa = PBXBuildFile; fileRef = A0C1EFDA2B80B83F004EE0AE /* 架构图 */; };
+		A0C1EFDF2B80D916004EE0AE /* CusFileManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFDE2B80D916004EE0AE /* CusFileManagerViewController.m */; };
+		A0C1EFE22B821C2E004EE0AE /* CusPropertyListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFE12B821C2E004EE0AE /* CusPropertyListViewController.m */; };
+		A0C1EFE82B8229D8004EE0AE /* CusArchiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFE72B8229D8004EE0AE /* CusArchiveViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -210,6 +213,12 @@
 		A0C1EFD72B8080F6004EE0AE /* CusUserDefaultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusUserDefaultViewController.h; sourceTree = "<group>"; };
 		A0C1EFD82B8080F6004EE0AE /* CusUserDefaultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusUserDefaultViewController.m; sourceTree = "<group>"; };
 		A0C1EFDA2B80B83F004EE0AE /* 架构图 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "架构图"; sourceTree = "<group>"; };
+		A0C1EFDD2B80D916004EE0AE /* CusFileManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusFileManagerViewController.h; sourceTree = "<group>"; };
+		A0C1EFDE2B80D916004EE0AE /* CusFileManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusFileManagerViewController.m; sourceTree = "<group>"; };
+		A0C1EFE02B821C2E004EE0AE /* CusPropertyListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusPropertyListViewController.h; sourceTree = "<group>"; };
+		A0C1EFE12B821C2E004EE0AE /* CusPropertyListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusPropertyListViewController.m; sourceTree = "<group>"; };
+		A0C1EFE62B8229D8004EE0AE /* CusArchiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusArchiveViewController.h; sourceTree = "<group>"; };
+		A0C1EFE72B8229D8004EE0AE /* CusArchiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusArchiveViewController.m; sourceTree = "<group>"; };
 		E92F4BAD3A2EEECF87152C21 /* Pods_ios_study_bool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_study_bool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -646,12 +655,26 @@
 		A0C1EFD32B805F82004EE0AE /* 存储 */ = {
 			isa = PBXGroup;
 			children = (
+				A0C1EFDC2B80C459004EE0AE /* src */,
 				A0C1EFD42B805F8F004EE0AE /* CusStorageViewController.h */,
 				A0C1EFD52B805F8F004EE0AE /* CusStorageViewController.m */,
-				A0C1EFD72B8080F6004EE0AE /* CusUserDefaultViewController.h */,
-				A0C1EFD82B8080F6004EE0AE /* CusUserDefaultViewController.m */,
 			);
 			path = "存储";
+			sourceTree = "<group>";
+		};
+		A0C1EFDC2B80C459004EE0AE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A0C1EFDD2B80D916004EE0AE /* CusFileManagerViewController.h */,
+				A0C1EFDE2B80D916004EE0AE /* CusFileManagerViewController.m */,
+				A0C1EFD72B8080F6004EE0AE /* CusUserDefaultViewController.h */,
+				A0C1EFD82B8080F6004EE0AE /* CusUserDefaultViewController.m */,
+				A0C1EFE02B821C2E004EE0AE /* CusPropertyListViewController.h */,
+				A0C1EFE12B821C2E004EE0AE /* CusPropertyListViewController.m */,
+				A0C1EFE62B8229D8004EE0AE /* CusArchiveViewController.h */,
+				A0C1EFE72B8229D8004EE0AE /* CusArchiveViewController.m */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		D4299B3122CE24120E24FBD2 /* Frameworks */ = {
@@ -839,10 +862,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A07DF4A92B5427EE00D0275E /* main.m in Sources */,
+				A0C1EFDF2B80D916004EE0AE /* CusFileManagerViewController.m in Sources */,
 				A0C1EF732B7C4517004EE0AE /* ToastUtil.m in Sources */,
 				A076B2892B5CF55B00AAE9C5 /* UIComponentsViewController.m in Sources */,
 				A076B28C2B5D07A900AAE9C5 /* CustomTableViewCell.m in Sources */,
 				A0C1EF7C2B7CE00B004EE0AE /* CusUIDatePickerViewController.m in Sources */,
+				A0C1EFE82B8229D8004EE0AE /* CusArchiveViewController.m in Sources */,
 				A0C1EF882B7D0EDB004EE0AE /* CusWKWebViewController.m in Sources */,
 				A076B2922B5D38AE00AAE9C5 /* UIButtonViewController.m in Sources */,
 				A07DF49B2B5427ED00D0275E /* ViewController.m in Sources */,
@@ -866,6 +891,7 @@
 				A0C1EFB82B7E2FAF004EE0AE /* CusUINavigationViewController.m in Sources */,
 				A0C1EFD62B805F8F004EE0AE /* CusStorageViewController.m in Sources */,
 				A0C1EFD92B8080F6004EE0AE /* CusUserDefaultViewController.m in Sources */,
+				A0C1EFE22B821C2E004EE0AE /* CusPropertyListViewController.m in Sources */,
 				A0C1EFBC2B7E33F7004EE0AE /* CusRouteViewController.m in Sources */,
 				A0C1EF6C2B7B6052004EE0AE /* UIAlertViewController.m in Sources */,
 				A0C1EF5C2B75EB39004EE0AE /* CusSegmentedControlViewController.m in Sources */,
