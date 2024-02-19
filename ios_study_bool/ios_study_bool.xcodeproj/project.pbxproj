@@ -73,6 +73,7 @@
 		A0C1EFDF2B80D916004EE0AE /* CusFileManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFDE2B80D916004EE0AE /* CusFileManagerViewController.m */; };
 		A0C1EFE22B821C2E004EE0AE /* CusPropertyListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFE12B821C2E004EE0AE /* CusPropertyListViewController.m */; };
 		A0C1EFE82B8229D8004EE0AE /* CusArchiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFE72B8229D8004EE0AE /* CusArchiveViewController.m */; };
+		A0C1EFEB2B82DA63004EE0AE /* CusSqLiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFEA2B82DA63004EE0AE /* CusSqLiteViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -219,6 +220,8 @@
 		A0C1EFE12B821C2E004EE0AE /* CusPropertyListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusPropertyListViewController.m; sourceTree = "<group>"; };
 		A0C1EFE62B8229D8004EE0AE /* CusArchiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusArchiveViewController.h; sourceTree = "<group>"; };
 		A0C1EFE72B8229D8004EE0AE /* CusArchiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusArchiveViewController.m; sourceTree = "<group>"; };
+		A0C1EFE92B82DA63004EE0AE /* CusSqLiteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusSqLiteViewController.h; sourceTree = "<group>"; };
+		A0C1EFEA2B82DA63004EE0AE /* CusSqLiteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusSqLiteViewController.m; sourceTree = "<group>"; };
 		E92F4BAD3A2EEECF87152C21 /* Pods_ios_study_bool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_study_bool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -673,6 +676,8 @@
 				A0C1EFE12B821C2E004EE0AE /* CusPropertyListViewController.m */,
 				A0C1EFE62B8229D8004EE0AE /* CusArchiveViewController.h */,
 				A0C1EFE72B8229D8004EE0AE /* CusArchiveViewController.m */,
+				A0C1EFE92B82DA63004EE0AE /* CusSqLiteViewController.h */,
+				A0C1EFEA2B82DA63004EE0AE /* CusSqLiteViewController.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -887,6 +892,7 @@
 				A0C1EF382B613448004EE0AE /* UISwitchViewController.m in Sources */,
 				A076B27C2B5B732400AAE9C5 /* LangManager.m in Sources */,
 				A0AE535D2B5572740075EAA4 /* KeyWordViewController.m in Sources */,
+				A0C1EFEB2B82DA63004EE0AE /* CusSqLiteViewController.m in Sources */,
 				A076B2952B60014400AAE9C5 /* UIImageViewController.m in Sources */,
 				A0C1EFB82B7E2FAF004EE0AE /* CusUINavigationViewController.m in Sources */,
 				A0C1EFD62B805F8F004EE0AE /* CusStorageViewController.m in Sources */,

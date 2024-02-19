@@ -11,6 +11,7 @@
 #import "CusFileManagerViewController.h"
 #import "CusPropertyListViewController.h"
 #import "CusArchiveViewController.h"
+#import "CusSqLiteViewController.h"
 @interface CusStorageViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray* names;
@@ -65,6 +66,9 @@
         [self.navigationController pushViewController:targetVC animated:YES];
     } else if([_names[indexPath.row] isEqualToString:@"NSKeyedArchiver序列化与反序列化"]) {
         CusArchiveViewController *targetVC = [[CusArchiveViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([_names[indexPath.row] isEqualToString:@"SQLite数据库"]) {
+        CusSqLiteViewController *targetVC = [[CusSqLiteViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }
