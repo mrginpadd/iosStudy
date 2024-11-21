@@ -62,7 +62,7 @@
     
     //查找
     NSRange range = [@"123456789" rangeOfString:@"123"];
-    if (range.location != NSNotFound) {
+    if (range.location == NSNotFound) {
         NSLog(@"not found");
     } else {
         NSLog(@"found");

@@ -22,6 +22,7 @@
     [self addChildViewController:vc];
     [vc didMoveToParentViewController:self];
     
+    vc.introTitleLabel.text = @"Target-Action介绍";
     vc.introContentLabel.text = @"\n \
      Target-Action \n \
      是一种常见的设计模式，用于处理用户界面元素（如按钮、滑动条等）的交互事件。 \n \

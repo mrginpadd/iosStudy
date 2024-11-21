@@ -12,6 +12,7 @@
 #import "CusPropertyListViewController.h"
 #import "CusArchiveViewController.h"
 #import "CusSqLiteViewController.h"
+#import "CusKeyChainViewController.h"
 @interface CusStorageViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray* names;
@@ -69,6 +70,9 @@
         [self.navigationController pushViewController:targetVC animated:YES];
     } else if([_names[indexPath.row] isEqualToString:@"SQLite数据库"]) {
         CusSqLiteViewController *targetVC = [[CusSqLiteViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([_names[indexPath.row] isEqualToString:@"Keychain 敏感数据"]) {
+        CusKeyChainViewController *targetVC = [[CusKeyChainViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }

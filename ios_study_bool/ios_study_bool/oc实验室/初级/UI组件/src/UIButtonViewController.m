@@ -70,6 +70,8 @@
     UIButton *btn7 = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [btn7 setFrame:CGRectMake(240, 80+TOPHEIGHT, 100, 30)];
     [btn7 setTitle:@"RoundedRect" forState:UIControlStateNormal];
+    btn7.layer.cornerRadius = 10.0;
+    btn7.layer.masksToBounds = YES;
     btn7.backgroundColor = [UIColor greenColor];
     
     UIButton *btn8 = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];

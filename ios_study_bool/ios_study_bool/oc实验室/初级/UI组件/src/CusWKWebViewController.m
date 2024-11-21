@@ -104,7 +104,7 @@ UIDelegate：用户界面代理，用于处理用户交互行为，比如警报�
     webView.navigationDelegate = self;
     
     
-    NSURL *url = [NSURL URLWithString:@"https://www.bazi-test.com/"];
+    NSURL *url = [NSURL URLWithString:@"https://www.baidu.com/"];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
     [webView loadRequest:request];
     

@@ -103,7 +103,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *selectedStr = self.functions[indexPath.section][indexPath.row];
     if ([selectedStr isEqualToString:@"语言基础"]) {
-        [LangManager perform:DEFINE];
+        [LangManager perform:STR];
     } else if([selectedStr isEqualToString:@"UI组件"]) {
         UIComponentsViewController *targetVC = [[UIComponentsViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];

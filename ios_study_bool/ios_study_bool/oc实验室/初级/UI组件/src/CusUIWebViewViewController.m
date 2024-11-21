@@ -102,7 +102,7 @@ UIWebView提供了加载、显示和操作网页内容的功能。\n \
     webView.tag = 1;
     webView.delegate = self;
     
-    NSURL *url = [NSURL URLWithString:@"https://www.bazi-test.com"];
+    NSURL *url = [NSURL URLWithString:@"https://www.baidu.com"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [webView loadRequest:request];
     [self.view addSubview:webView];

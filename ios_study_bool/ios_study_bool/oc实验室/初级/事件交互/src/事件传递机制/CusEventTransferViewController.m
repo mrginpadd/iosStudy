@@ -35,7 +35,27 @@ iOS 的事件传递机制是基于响应者链（Responder Chain）的。当用�
     \n \
 如果事件未被处理：\n \ 如果事件传递到响应链的顶端仍然没有被处理，事件会被丢弃，不再进行传递。\n \
     \n \
-通过这样的事件传递机制，iOS\n \
+    事件传递机制的核心在于事件的传递、响应和处理。  \n \
+    事件传递的主要对象： UIResponder 、 UIWindow 、 UIView。\n \
+    UIResponder \n \
+    所有可以响应触摸事件的对象都是UIResponder类或其子类(如UIView、UIWindow、UIViewController的实例)。\n \
+    \n \
+    UIWindow  \n \
+    UIWindow是 iOS应用的根视图，它负责接收并管理所有的触摸事件 \n \
+    在事件传递过程中，UIWindow是事件流的起点。 \n \
+    \n \
+    UIView  \n \
+    UIView是所有可视化元素的基类，每个视图都可能响应用户的触摸事件. \n \
+    当用户触发触摸事件时，事件会传递到视图层级结构中的某个视图。 \n \
+    事件传递的关键方法。\n \
+    hitTest:withEvent:  \n \
+    判断一个触摸事件是否击中该视图。每个视图都会调用这个方法来判断触摸是否发生在它的范围内。若视图的 hitTest 方法返回 nil，事件会被传递到下一个视图。 \n \
+    \n \
+    pointInside:withEvent: \n \
+    用于判断一个特定的触摸点是否位于当前视图的可触摸区域内。如果返回 YES，表示触摸事件位于该视图内。   \n \
+    nextResponder  \n \
+    每个 UIResponder 对象都有一个 nextResponder 属性，它指向下一个响应者对象。当当前对象无法处理事件时，事件会传递给 nextResponder，通常是父视图或视图控制器。  \n \
+\n \
     ";
     // Do any additional setup after loading the view.
 }

@@ -90,9 +90,9 @@
     })];
     
     [_scrollView addSubview:({
-            UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(0, 910, 200, 100)];
+        UITextView *textView = [[UITextView alloc] initWithFrame:CGRectMake(0, 910, 200, 100)];
         textView.delegate = self;
-            textView.backgroundColor = [UIColor yellowColor];
+        textView.backgroundColor = [UIColor yellowColor];
         NSString *text = @"这是UITextView编辑区域，链接： https://www.baidu.com 电话：10086 ...";
         //1.设置文本为富文本
         NSMutableAttributedString *attributedText = [[NSMutableAttributedString alloc] initWithString:text];
@@ -108,7 +108,7 @@
         NSRange phoneRange = [text rangeOfString:@"10086"];
         if (phoneRange.location != NSNotFound) {
             [attributedText addAttribute:NSLinkAttributeName value:[NSURL URLWithString:@"tel:10086"] range:phoneRange];
-            [attributedText addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:phoneRange];
+            [attributedText addAttribute:NSBackgroundColorAttributeName value:[UIColor redColor] range:phoneRange];
         }
 
         
@@ -117,12 +117,12 @@
         textView.dataDetectorTypes = UIDataDetectorTypeLink | UIDataDetectorTypePhoneNumber | UIDataDetectorTypeMoney;
         
         [textView setEditable:YES];
-            textView.textColor = [UIColor blackColor];
-            textView.font = [UIFont systemFontOfSize:15];
+        textView.textColor = [UIColor blackColor];
+        textView.font = [UIFont systemFontOfSize:15];
         textView.layer.borderColor = [UIColor grayColor].CGColor;
         textView.layer.borderWidth = 1.5;
         textView.layer.cornerRadius = 5.0;
-            textView;
+        textView;
     })];
 
 }

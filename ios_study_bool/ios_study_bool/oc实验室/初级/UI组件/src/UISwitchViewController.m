@@ -23,7 +23,7 @@
 - (void) _buildViews {
 
     [self.view addSubview:({
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, TOPHEIGHT, self.view.frame.size.width, 300)];
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, TOPHEIGHT, self.view.frame.size.width, 600)];
         label.text = @"UISwitch是iOS开发中常用的控件，它是一个用于切换开关状态的按钮。下面是UISwitch的一些常用属性：\n \
         isOn：布尔值，表示开关的状态。当isOn为true时，开关处于打开状态；当isOn为false时，开关处于关闭状态。\n \
         onTintColor：颜色，表示开关打开时的背景颜色。可以使用UIColor类来设置颜色。\n \
@@ -37,7 +37,7 @@
         label;
     })];
     [self.view addSubview:({
-        UISwitch *swBtn = [[UISwitch alloc] initWithFrame:CGRectMake(0, 300 + TOPHEIGHT, 100, 30)];
+        UISwitch *swBtn = [[UISwitch alloc] initWithFrame:CGRectMake(0, 630 + TOPHEIGHT, 100, 30)];
         swBtn.thumbTintColor = [UIColor redColor];
         swBtn.onTintColor = [UIColor greenColor];
      
