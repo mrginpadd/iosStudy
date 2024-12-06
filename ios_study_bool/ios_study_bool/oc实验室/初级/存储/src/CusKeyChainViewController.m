@@ -7,7 +7,8 @@
 
 #import "CusKeyChainViewController.h"
 #import "IntroductionViewController.h"
-@interface CusKeyChainViewController ()
+#import "ToastUtil.h"
+@interface CusKeyChainViewController ()<IntroductionViewControllerDelegate>
 
 @end
 
@@ -61,10 +62,88 @@
     存储证书和私钥\n \
     ";
     
-  
+
+    [vc setUseStepTipBtns:@[@"保存数据", @"读取", @"删除"]];
     
 }
  
+- (void)buttonClickedWithTitle:(NSString *)title {
+    if ([title isEqualToString:@"保存数据"]) {
+        
+        if ([self saveDataToKeyChain:@"张三" val:@"pwd12345"]) {
+            [ToastUtil showToastCenter:@"key: 张三 val: pwd12345"];
+        } else {
+            [ToastUtil showToastCenter:@"保存失败"];
+        }
+    } else if([title isEqualToString:@"读取"]) {
+        NSString *res = [self readDataFromKeyChain:@"张三"];
+        [ToastUtil showToastCenter:[NSString stringWithFormat:@"根据key读取到密码 %@", res]];
+    } else if([title isEqualToString:@"删除"]) {
+        if ([self deleteDataFromKeyChain:@"张三"]) {
+            [ToastUtil showToastCenter:@"删除成功"];
+        } else {
+            [ToastUtil showToastCenter:@"删除失败"];
+        }
+    }
+}
+
+//保存数据到keyChain
+- (BOOL)saveDataToKeyChain:(NSString*)key val:(NSString*)val {
+    //将字符串转换为NSData
+    NSData *valData = [val dataUsingEncoding:NSUTF8StringEncoding];
+    
+    //创建一个字典，用于存储KeyChain项
+    NSDictionary *query = @{
+        (__bridge  id)kSecClass: (__bridge  id)kSecClassGenericPassword, //设置为密码类
+        (__bridge  id)kSecAttrAccount: key,
+        (__bridge id)kSecValueData: valData
+    };
+    
+    //先删除已有的记录
+    SecItemDelete((__bridge CFDictionaryRef)query);
+    //将数据添加到KeyChain
+    OSStatus status = SecItemAdd((__bridge  CFDictionaryRef)query, NULL);
+    
+    return status == errSecSuccess;
+}
+
+//读取keyChain数据
+- (NSString*)readDataFromKeyChain:(NSString*)key {
+    //创建查询字典
+    NSDictionary *query = @{
+        (__bridge id)kSecClass: (__bridge  id)kSecClassGenericPassword, //设置为密码类
+        (__bridge id)kSecAttrAccount: key, //设置账户名为key
+        (__bridge id)kSecReturnData: (__bridge id)kCFBooleanTrue, //请求返回数据
+        (__bridge id)kSecMatchLimit: (__bridge id)kSecMatchLimitOne //限制为一个结果
+    };
+    
+    //查询KeyChain
+    CFTypeRef result = NULL;
+    OSStatus status = SecItemCopyMatching((__bridge CFDictionaryRef)query, &result);
+    
+    if (status == errSecSuccess) {
+        //将返回的NSData转换为字符串
+        NSData *data = (__bridge NSData*)result;
+        return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    }
+    return nil;
+    
+    
+}
+
+//删除keyChain数据
+- (BOOL)deleteDataFromKeyChain:(NSString*)key {
+    //创建查询字典
+    NSDictionary *query = @{
+        (__bridge id)kSecClass: (__bridge id)kSecClassGenericPassword,
+        (__bridge id)kSecAttrAccount: key
+    };
+    
+    //删除记录
+    OSStatus status = SecItemDelete((__bridge  CFDictionaryRef)query);
+    
+    return status == errSecSuccess;
+}
 
 /*
 #pragma mark - Navigation
