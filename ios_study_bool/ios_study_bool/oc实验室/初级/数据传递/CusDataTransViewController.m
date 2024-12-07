@@ -10,6 +10,7 @@
 #import "CusDataByDelegateViewController.h"
 #import "CusCompletionViewController.h"
 #import "CusDataByNotificationViewController.h"
+#import "CusDataByKVOViewController.h"
 @interface CusDataTransViewController ()
 @property(nonatomic, strong) UITableView *tableView;
 @property(nonatomic, copy) NSArray *sections;
@@ -39,7 +40,7 @@
     if (_names == nil) {
         _names = @[
           @[@"委托Delegate", @"回调Completion"],
-          @[@"通知Notification", @"KVO", @"RxSwift"],
+          @[@"通知Notification", @"KVO"],
         ];
     }
     return _names;
@@ -88,9 +89,8 @@
         CusDataByNotificationViewController *targetVC = [[CusDataByNotificationViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     } else if([clickTitle isEqualToString:@"KVO"]) {
-        
-    } else if([clickTitle isEqualToString:@"RxSwift"]) {
-        
+        CusDataByKVOViewController *targetVC = [[CusDataByKVOViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
     }
 }
 @end
