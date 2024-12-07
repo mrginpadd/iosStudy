@@ -8,6 +8,7 @@
 #import "CusDataTransViewController.h"
 #import "IntroductionViewController.h"
 #import "CusDataByDelegateViewController.h"
+#import "CusCompletionViewController.h"
 @interface CusDataTransViewController ()
 @property(nonatomic, strong) UITableView *tableView;
 @property(nonatomic, copy) NSArray *sections;
@@ -80,7 +81,8 @@
         CusDataByDelegateViewController *targetVC = [[CusDataByDelegateViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     } else if([clickTitle isEqualToString:@"回调Completion"]) {
-        
+        CusCompletionViewController *targetVC = [[CusCompletionViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
     } else if([clickTitle isEqualToString:@"通知Notificatio"]) {
         
     } else if([clickTitle isEqualToString:@"KVO"]) {

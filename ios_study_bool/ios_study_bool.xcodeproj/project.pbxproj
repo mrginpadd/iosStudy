@@ -77,6 +77,7 @@
 		A0C1EFEE2B86419C004EE0AE /* CusKeyChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFED2B86419C004EE0AE /* CusKeyChainViewController.m */; };
 		A0E3295C2D031FE700E5EEB3 /* CusDataTransViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E3295B2D031FE700E5EEB3 /* CusDataTransViewController.m */; };
 		A0E3295F2D032AF200E5EEB3 /* CusDataByDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E3295E2D032AF200E5EEB3 /* CusDataByDelegateViewController.m */; };
+		A0E329622D03E0C500E5EEB3 /* CusCompletionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E329612D03E0C500E5EEB3 /* CusCompletionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,6 +232,8 @@
 		A0E3295B2D031FE700E5EEB3 /* CusDataTransViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusDataTransViewController.m; sourceTree = "<group>"; };
 		A0E3295D2D032AF200E5EEB3 /* CusDataByDelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusDataByDelegateViewController.h; sourceTree = "<group>"; };
 		A0E3295E2D032AF200E5EEB3 /* CusDataByDelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusDataByDelegateViewController.m; sourceTree = "<group>"; };
+		A0E329602D03E0C500E5EEB3 /* CusCompletionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusCompletionViewController.h; sourceTree = "<group>"; };
+		A0E329612D03E0C500E5EEB3 /* CusCompletionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusCompletionViewController.m; sourceTree = "<group>"; };
 		E92F4BAD3A2EEECF87152C21 /* Pods_ios_study_bool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_study_bool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -709,6 +712,8 @@
 			children = (
 				A0E3295D2D032AF200E5EEB3 /* CusDataByDelegateViewController.h */,
 				A0E3295E2D032AF200E5EEB3 /* CusDataByDelegateViewController.m */,
+				A0E329602D03E0C500E5EEB3 /* CusCompletionViewController.h */,
+				A0E329612D03E0C500E5EEB3 /* CusCompletionViewController.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -899,6 +904,7 @@
 			files = (
 				A07DF4A92B5427EE00D0275E /* main.m in Sources */,
 				A0C1EFDF2B80D916004EE0AE /* CusFileManagerViewController.m in Sources */,
+				A0E329622D03E0C500E5EEB3 /* CusCompletionViewController.m in Sources */,
 				A0C1EF732B7C4517004EE0AE /* ToastUtil.m in Sources */,
 				A0C1EFEE2B86419C004EE0AE /* CusKeyChainViewController.m in Sources */,
 				A076B2892B5CF55B00AAE9C5 /* UIComponentsViewController.m in Sources */,
