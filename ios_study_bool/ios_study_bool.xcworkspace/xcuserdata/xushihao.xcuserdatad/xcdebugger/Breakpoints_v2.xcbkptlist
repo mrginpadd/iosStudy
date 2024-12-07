@@ -769,5 +769,85 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47ACCF6E-7E6A-4748-89F9-B7F9B2152FD3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios_study_bool/oc&#x5b9e;&#x9a8c;&#x5ba4;/&#x521d;&#x7ea7;/&#x6570;&#x636e;&#x4f20;&#x9012;/CusDataTransViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "47ACCF6E-7E6A-4748-89F9-B7F9B2152FD3 - 2f9989e55ea591dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CusDataTransViewController tableView:cellForRowAtIndexPath:]"
+                  moduleName = "ios_study_bool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/oc%E5%AE%9E%E9%AA%8C%E5%AE%A4/%E5%88%9D%E7%BA%A7/%E6%95%B0%E6%8D%AE%E4%BC%A0%E9%80%92/CusDataTransViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "47ACCF6E-7E6A-4748-89F9-B7F9B2152FD3 - 2f9989e55ea591dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[CusDataTransViewController tableView:cellForRowAtIndexPath:]"
+                  moduleName = "ios_study_bool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/oc%E5%AE%9E%E9%AA%8C%E5%AE%A4/%E5%88%9D%E7%BA%A7/%E6%95%B0%E6%8D%AE%E4%BC%A0%E9%80%92/CusDataTransViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9AEBBB07-8F19-4867-ABC9-A00672DF395C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios_study_bool/oc&#x5b9e;&#x9a8c;&#x5ba4;/&#x521d;&#x7ea7;/UI&#x7ec4;&#x4ef6;/src/CusUICollectionViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A04508AB-F924-45EA-8F0F-0D2C699DDD85"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios_study_bool/oc&#x5b9e;&#x9a8c;&#x5ba4;/&#x521d;&#x7ea7;/&#x6570;&#x636e;&#x4f20;&#x9012;/src/CusDataByDelegateViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "-didReceiveData:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

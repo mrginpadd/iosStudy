@@ -15,6 +15,7 @@
 #import "CusRouteViewController.h"
 #import "CusAnimateViewController.h"
 #import "CusStorageViewController.h"
+#import "CusDataTransViewController.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray<NSArray*> *functions;
@@ -118,6 +119,9 @@
         [self.navigationController pushViewController:targetVC animated:YES];
     } else if([selectedStr hasPrefix:@"存储"]) {
         CusStorageViewController *targetVC = [[CusStorageViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([selectedStr hasPrefix:@"数据传递"]) {
+        CusDataTransViewController *targetVC = [[CusDataTransViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }

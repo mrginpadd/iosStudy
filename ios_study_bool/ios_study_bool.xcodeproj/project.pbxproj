@@ -75,6 +75,8 @@
 		A0C1EFE82B8229D8004EE0AE /* CusArchiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFE72B8229D8004EE0AE /* CusArchiveViewController.m */; };
 		A0C1EFEB2B82DA63004EE0AE /* CusSqLiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFEA2B82DA63004EE0AE /* CusSqLiteViewController.m */; };
 		A0C1EFEE2B86419C004EE0AE /* CusKeyChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFED2B86419C004EE0AE /* CusKeyChainViewController.m */; };
+		A0E3295C2D031FE700E5EEB3 /* CusDataTransViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E3295B2D031FE700E5EEB3 /* CusDataTransViewController.m */; };
+		A0E3295F2D032AF200E5EEB3 /* CusDataByDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E3295E2D032AF200E5EEB3 /* CusDataByDelegateViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,6 +227,10 @@
 		A0C1EFEA2B82DA63004EE0AE /* CusSqLiteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusSqLiteViewController.m; sourceTree = "<group>"; };
 		A0C1EFEC2B86419C004EE0AE /* CusKeyChainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusKeyChainViewController.h; sourceTree = "<group>"; };
 		A0C1EFED2B86419C004EE0AE /* CusKeyChainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusKeyChainViewController.m; sourceTree = "<group>"; };
+		A0E3295A2D031FE700E5EEB3 /* CusDataTransViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusDataTransViewController.h; sourceTree = "<group>"; };
+		A0E3295B2D031FE700E5EEB3 /* CusDataTransViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusDataTransViewController.m; sourceTree = "<group>"; };
+		A0E3295D2D032AF200E5EEB3 /* CusDataByDelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusDataByDelegateViewController.h; sourceTree = "<group>"; };
+		A0E3295E2D032AF200E5EEB3 /* CusDataByDelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusDataByDelegateViewController.m; sourceTree = "<group>"; };
 		E92F4BAD3A2EEECF87152C21 /* Pods_ios_study_bool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_study_bool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -476,6 +482,7 @@
 		A0C1EF972B7DC509004EE0AE /* 初级 */ = {
 			isa = PBXGroup;
 			children = (
+				A0E329582D031FAA00E5EEB3 /* 数据传递 */,
 				A0C1EFD32B805F82004EE0AE /* 存储 */,
 				A0AE535A2B5572270075EAA4 /* 语言基础 */,
 				A0C1EFCE2B7F9A05004EE0AE /* 动画 */,
@@ -683,6 +690,25 @@
 				A0C1EFEA2B82DA63004EE0AE /* CusSqLiteViewController.m */,
 				A0C1EFEC2B86419C004EE0AE /* CusKeyChainViewController.h */,
 				A0C1EFED2B86419C004EE0AE /* CusKeyChainViewController.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A0E329582D031FAA00E5EEB3 /* 数据传递 */ = {
+			isa = PBXGroup;
+			children = (
+				A0E329592D031FC300E5EEB3 /* src */,
+				A0E3295A2D031FE700E5EEB3 /* CusDataTransViewController.h */,
+				A0E3295B2D031FE700E5EEB3 /* CusDataTransViewController.m */,
+			);
+			path = "数据传递";
+			sourceTree = "<group>";
+		};
+		A0E329592D031FC300E5EEB3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A0E3295D2D032AF200E5EEB3 /* CusDataByDelegateViewController.h */,
+				A0E3295E2D032AF200E5EEB3 /* CusDataByDelegateViewController.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -914,6 +940,7 @@
 				A076B2862B5B8CA400AAE9C5 /* ScreenUtil.m in Sources */,
 				A0C1EFB02B7E04C6004EE0AE /* TripleTapGestureRecognizer.m in Sources */,
 				A07DF4982B5427ED00D0275E /* SceneDelegate.m in Sources */,
+				A0E3295C2D031FE700E5EEB3 /* CusDataTransViewController.m in Sources */,
 				A0C1EF822B7CFA43004EE0AE /* CusUIWebViewViewController.m in Sources */,
 				A0C1EF3E2B628A99004EE0AE /* UITextViewController.m in Sources */,
 				A0C1EF562B6DE196004EE0AE /* CusScrollViewController.m in Sources */,
@@ -926,6 +953,7 @@
 				A0C1EFCA2B7F54BD004EE0AE /* ANewViewController.m in Sources */,
 				A0C1EFD22B7F9BE9004EE0AE /* CusAnimateViewController.m in Sources */,
 				A0C1EFC02B7F02DA004EE0AE /* CusRouteCaseViewController.m in Sources */,
+				A0E3295F2D032AF200E5EEB3 /* CusDataByDelegateViewController.m in Sources */,
 				A0C1EFCD2B7F83EB004EE0AE /* BNewViewController.m in Sources */,
 				A0C1EF472B64A14E004EE0AE /* CusUITableViewController.m in Sources */,
 				A0C1EFA92B7DF788004EE0AE /* CusTargetActionViewController.m in Sources */,
