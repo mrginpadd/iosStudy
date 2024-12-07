@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		08A67298486B4562E2D7A34D /* Pods_ios_study_bool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92F4BAD3A2EEECF87152C21 /* Pods_ios_study_bool.framework */; };
+		A00ADE932D042AC500475128 /* CusDataByNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A00ADE922D042AC500475128 /* CusDataByNotificationViewController.m */; };
 		A076B27C2B5B732400AAE9C5 /* LangManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B27B2B5B732400AAE9C5 /* LangManager.m */; };
 		A076B2832B5B8C5200AAE9C5 /* UILabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B2822B5B8C5200AAE9C5 /* UILabelViewController.m */; };
 		A076B2862B5B8CA400AAE9C5 /* ScreenUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B2852B5B8CA400AAE9C5 /* ScreenUtil.m */; };
@@ -100,6 +101,8 @@
 /* Begin PBXFileReference section */
 		1E9FE7C685B53FB9B64634EE /* Pods-ios_study_bool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_study_bool.debug.xcconfig"; path = "Target Support Files/Pods-ios_study_bool/Pods-ios_study_bool.debug.xcconfig"; sourceTree = "<group>"; };
 		7ACC0FDE30B9677E90B67120 /* Pods-ios_study_bool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios_study_bool.release.xcconfig"; path = "Target Support Files/Pods-ios_study_bool/Pods-ios_study_bool.release.xcconfig"; sourceTree = "<group>"; };
+		A00ADE912D042AC500475128 /* CusDataByNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusDataByNotificationViewController.h; sourceTree = "<group>"; };
+		A00ADE922D042AC500475128 /* CusDataByNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusDataByNotificationViewController.m; sourceTree = "<group>"; };
 		A076B27A2B5B732400AAE9C5 /* LangManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LangManager.h; sourceTree = "<group>"; };
 		A076B27B2B5B732400AAE9C5 /* LangManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LangManager.m; sourceTree = "<group>"; };
 		A076B2812B5B8C5200AAE9C5 /* UILabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelViewController.h; sourceTree = "<group>"; };
@@ -714,6 +717,8 @@
 				A0E3295E2D032AF200E5EEB3 /* CusDataByDelegateViewController.m */,
 				A0E329602D03E0C500E5EEB3 /* CusCompletionViewController.h */,
 				A0E329612D03E0C500E5EEB3 /* CusCompletionViewController.m */,
+				A00ADE912D042AC500475128 /* CusDataByNotificationViewController.h */,
+				A00ADE922D042AC500475128 /* CusDataByNotificationViewController.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -908,6 +913,7 @@
 				A0C1EF732B7C4517004EE0AE /* ToastUtil.m in Sources */,
 				A0C1EFEE2B86419C004EE0AE /* CusKeyChainViewController.m in Sources */,
 				A076B2892B5CF55B00AAE9C5 /* UIComponentsViewController.m in Sources */,
+				A00ADE932D042AC500475128 /* CusDataByNotificationViewController.m in Sources */,
 				A076B28C2B5D07A900AAE9C5 /* CustomTableViewCell.m in Sources */,
 				A0C1EF7C2B7CE00B004EE0AE /* CusUIDatePickerViewController.m in Sources */,
 				A0C1EFE82B8229D8004EE0AE /* CusArchiveViewController.m in Sources */,
