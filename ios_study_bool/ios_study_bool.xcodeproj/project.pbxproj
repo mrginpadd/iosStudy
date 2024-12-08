@@ -10,6 +10,10 @@
 		08A67298486B4562E2D7A34D /* Pods_ios_study_bool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92F4BAD3A2EEECF87152C21 /* Pods_ios_study_bool.framework */; };
 		A00ADE932D042AC500475128 /* CusDataByNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A00ADE922D042AC500475128 /* CusDataByNotificationViewController.m */; };
 		A00ADE982D042EA300475128 /* CusDataByKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A00ADE972D042EA300475128 /* CusDataByKVOViewController.m */; };
+		A00ADE9F2D05327300475128 /* CusNetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A00ADE9E2D05327300475128 /* CusNetWorkViewController.m */; };
+		A00ADEA32D0532B500475128 /* CusNetworkUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A00ADEA22D0532B500475128 /* CusNetworkUserModel.m */; };
+		A00ADEA62D05914600475128 /* CusNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A00ADEA52D05914600475128 /* CusNetworkManager.m */; };
+		A00ADEA92D05BA9500475128 /* CusAFNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A00ADEA82D05BA9500475128 /* CusAFNetworkManager.m */; };
 		A076B27C2B5B732400AAE9C5 /* LangManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B27B2B5B732400AAE9C5 /* LangManager.m */; };
 		A076B2832B5B8C5200AAE9C5 /* UILabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B2822B5B8C5200AAE9C5 /* UILabelViewController.m */; };
 		A076B2862B5B8CA400AAE9C5 /* ScreenUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B2852B5B8CA400AAE9C5 /* ScreenUtil.m */; };
@@ -107,6 +111,14 @@
 		A00ADE962D042EA300475128 /* CusDataByKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusDataByKVOViewController.h; sourceTree = "<group>"; };
 		A00ADE972D042EA300475128 /* CusDataByKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusDataByKVOViewController.m; sourceTree = "<group>"; };
 		A00ADE992D043E4900475128 /* ios_study_bool-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios_study_bool-Bridging-Header.h"; sourceTree = "<group>"; };
+		A00ADE9D2D05327300475128 /* CusNetWorkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusNetWorkViewController.h; sourceTree = "<group>"; };
+		A00ADE9E2D05327300475128 /* CusNetWorkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusNetWorkViewController.m; sourceTree = "<group>"; };
+		A00ADEA12D0532B500475128 /* CusNetworkUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusNetworkUserModel.h; sourceTree = "<group>"; };
+		A00ADEA22D0532B500475128 /* CusNetworkUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusNetworkUserModel.m; sourceTree = "<group>"; };
+		A00ADEA42D05914600475128 /* CusNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusNetworkManager.h; sourceTree = "<group>"; };
+		A00ADEA52D05914600475128 /* CusNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusNetworkManager.m; sourceTree = "<group>"; };
+		A00ADEA72D05BA9500475128 /* CusAFNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusAFNetworkManager.h; sourceTree = "<group>"; };
+		A00ADEA82D05BA9500475128 /* CusAFNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusAFNetworkManager.m; sourceTree = "<group>"; };
 		A076B27A2B5B732400AAE9C5 /* LangManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LangManager.h; sourceTree = "<group>"; };
 		A076B27B2B5B732400AAE9C5 /* LangManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LangManager.m; sourceTree = "<group>"; };
 		A076B2812B5B8C5200AAE9C5 /* UILabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelViewController.h; sourceTree = "<group>"; };
@@ -277,6 +289,29 @@
 				7ACC0FDE30B9677E90B67120 /* Pods-ios_study_bool.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A00ADE9C2D05325600475128 /* 网络 */ = {
+			isa = PBXGroup;
+			children = (
+				A00ADEA02D05327800475128 /* src */,
+				A00ADE9D2D05327300475128 /* CusNetWorkViewController.h */,
+				A00ADE9E2D05327300475128 /* CusNetWorkViewController.m */,
+			);
+			path = "网络";
+			sourceTree = "<group>";
+		};
+		A00ADEA02D05327800475128 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A00ADEA12D0532B500475128 /* CusNetworkUserModel.h */,
+				A00ADEA22D0532B500475128 /* CusNetworkUserModel.m */,
+				A00ADEA42D05914600475128 /* CusNetworkManager.h */,
+				A00ADEA52D05914600475128 /* CusNetworkManager.m */,
+				A00ADEA72D05BA9500475128 /* CusAFNetworkManager.h */,
+				A00ADEA82D05BA9500475128 /* CusAFNetworkManager.m */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		A076B2792B5B72E500AAE9C5 /* ToolBox */ = {
@@ -492,6 +527,7 @@
 		A0C1EF972B7DC509004EE0AE /* 初级 */ = {
 			isa = PBXGroup;
 			children = (
+				A00ADE9C2D05325600475128 /* 网络 */,
 				A0E329582D031FAA00E5EEB3 /* 数据传递 */,
 				A0C1EFD32B805F82004EE0AE /* 存储 */,
 				A0AE535A2B5572270075EAA4 /* 语言基础 */,
@@ -919,6 +955,7 @@
 				A0C1EFDF2B80D916004EE0AE /* CusFileManagerViewController.m in Sources */,
 				A0E329622D03E0C500E5EEB3 /* CusCompletionViewController.m in Sources */,
 				A0C1EF732B7C4517004EE0AE /* ToastUtil.m in Sources */,
+				A00ADEA62D05914600475128 /* CusNetworkManager.m in Sources */,
 				A0C1EFEE2B86419C004EE0AE /* CusKeyChainViewController.m in Sources */,
 				A076B2892B5CF55B00AAE9C5 /* UIComponentsViewController.m in Sources */,
 				A00ADE982D042EA300475128 /* CusDataByKVOViewController.m in Sources */,
@@ -949,9 +986,11 @@
 				A076B2952B60014400AAE9C5 /* UIImageViewController.m in Sources */,
 				A0C1EFB82B7E2FAF004EE0AE /* CusUINavigationViewController.m in Sources */,
 				A0C1EFD62B805F8F004EE0AE /* CusStorageViewController.m in Sources */,
+				A00ADEA92D05BA9500475128 /* CusAFNetworkManager.m in Sources */,
 				A0C1EFD92B8080F6004EE0AE /* CusUserDefaultViewController.m in Sources */,
 				A0C1EFE22B821C2E004EE0AE /* CusPropertyListViewController.m in Sources */,
 				A0C1EFBC2B7E33F7004EE0AE /* CusRouteViewController.m in Sources */,
+				A00ADE9F2D05327300475128 /* CusNetWorkViewController.m in Sources */,
 				A0C1EF6C2B7B6052004EE0AE /* UIAlertViewController.m in Sources */,
 				A0C1EF5C2B75EB39004EE0AE /* CusSegmentedControlViewController.m in Sources */,
 				A0C1EF3B2B6139A4004EE0AE /* UITextFieldViewController.m in Sources */,
@@ -961,6 +1000,7 @@
 				A076B2862B5B8CA400AAE9C5 /* ScreenUtil.m in Sources */,
 				A0C1EFB02B7E04C6004EE0AE /* TripleTapGestureRecognizer.m in Sources */,
 				A07DF4982B5427ED00D0275E /* SceneDelegate.m in Sources */,
+				A00ADEA32D0532B500475128 /* CusNetworkUserModel.m in Sources */,
 				A0E3295C2D031FE700E5EEB3 /* CusDataTransViewController.m in Sources */,
 				A0C1EF822B7CFA43004EE0AE /* CusUIWebViewViewController.m in Sources */,
 				A0C1EF3E2B628A99004EE0AE /* UITextViewController.m in Sources */,
