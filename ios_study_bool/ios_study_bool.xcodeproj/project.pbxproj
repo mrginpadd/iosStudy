@@ -14,6 +14,7 @@
 		A00ADEA32D0532B500475128 /* CusNetworkUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A00ADEA22D0532B500475128 /* CusNetworkUserModel.m */; };
 		A00ADEA62D05914600475128 /* CusNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A00ADEA52D05914600475128 /* CusNetworkManager.m */; };
 		A00ADEA92D05BA9500475128 /* CusAFNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A00ADEA82D05BA9500475128 /* CusAFNetworkManager.m */; };
+		A00ADEB22D05CD1300475128 /* CusThreadAsyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A00ADEB12D05CD1300475128 /* CusThreadAsyncViewController.m */; };
 		A076B27C2B5B732400AAE9C5 /* LangManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B27B2B5B732400AAE9C5 /* LangManager.m */; };
 		A076B2832B5B8C5200AAE9C5 /* UILabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B2822B5B8C5200AAE9C5 /* UILabelViewController.m */; };
 		A076B2862B5B8CA400AAE9C5 /* ScreenUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B2852B5B8CA400AAE9C5 /* ScreenUtil.m */; };
@@ -119,6 +120,8 @@
 		A00ADEA52D05914600475128 /* CusNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusNetworkManager.m; sourceTree = "<group>"; };
 		A00ADEA72D05BA9500475128 /* CusAFNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusAFNetworkManager.h; sourceTree = "<group>"; };
 		A00ADEA82D05BA9500475128 /* CusAFNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusAFNetworkManager.m; sourceTree = "<group>"; };
+		A00ADEB02D05CD1300475128 /* CusThreadAsyncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CusThreadAsyncViewController.h; path = "ios_study_bool/oc实验室/中级/多线程与异步/CusThreadAsyncViewController.h"; sourceTree = SOURCE_ROOT; };
+		A00ADEB12D05CD1300475128 /* CusThreadAsyncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CusThreadAsyncViewController.m; path = "ios_study_bool/oc实验室/中级/多线程与异步/CusThreadAsyncViewController.m"; sourceTree = SOURCE_ROOT; };
 		A076B27A2B5B732400AAE9C5 /* LangManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LangManager.h; sourceTree = "<group>"; };
 		A076B27B2B5B732400AAE9C5 /* LangManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LangManager.m; sourceTree = "<group>"; };
 		A076B2812B5B8C5200AAE9C5 /* UILabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelViewController.h; sourceTree = "<group>"; };
@@ -310,6 +313,31 @@
 				A00ADEA52D05914600475128 /* CusNetworkManager.m */,
 				A00ADEA72D05BA9500475128 /* CusAFNetworkManager.h */,
 				A00ADEA82D05BA9500475128 /* CusAFNetworkManager.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A00ADEAA2D05C9F500475128 /* 中级 */ = {
+			isa = PBXGroup;
+			children = (
+				A00ADEAB2D05CA0600475128 /* 多线程与异步 */,
+			);
+			path = "中级";
+			sourceTree = "<group>";
+		};
+		A00ADEAB2D05CA0600475128 /* 多线程与异步 */ = {
+			isa = PBXGroup;
+			children = (
+				A00ADEB02D05CD1300475128 /* CusThreadAsyncViewController.h */,
+				A00ADEB12D05CD1300475128 /* CusThreadAsyncViewController.m */,
+				A00ADEAC2D05CAC400475128 /* src */,
+			);
+			path = "多线程与异步";
+			sourceTree = "<group>";
+		};
+		A00ADEAC2D05CAC400475128 /* src */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -519,6 +547,7 @@
 		A0C1EF962B7DC4F0004EE0AE /* oc实验室 */ = {
 			isa = PBXGroup;
 			children = (
+				A00ADEAA2D05C9F500475128 /* 中级 */,
 				A0C1EF972B7DC509004EE0AE /* 初级 */,
 			);
 			path = "oc实验室";
@@ -1017,6 +1046,7 @@
 				A0E3295F2D032AF200E5EEB3 /* CusDataByDelegateViewController.m in Sources */,
 				A0C1EFCD2B7F83EB004EE0AE /* BNewViewController.m in Sources */,
 				A0C1EF472B64A14E004EE0AE /* CusUITableViewController.m in Sources */,
+				A00ADEB22D05CD1300475128 /* CusThreadAsyncViewController.m in Sources */,
 				A0C1EFA92B7DF788004EE0AE /* CusTargetActionViewController.m in Sources */,
 				A0C1EFB42B7E2377004EE0AE /* CusEventTransferViewController.m in Sources */,
 			);
