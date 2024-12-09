@@ -18,6 +18,7 @@
 #import "CusDataTransViewController.h"
 #import "CusNetWorkViewController.h"
 #import "CusThreadAsyncViewController.h"
+#import "CusRunLoopEventViewController.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray<NSArray*> *functions;
@@ -130,6 +131,9 @@
         [self.navigationController pushViewController:targetVC animated:YES];
     } else if([selectedStr hasPrefix:@"多线程和异步"]) {
         CusThreadAsyncViewController *targetVC = [[CusThreadAsyncViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([selectedStr hasPrefix:@"事件循环机制"]) {
+        CusRunLoopEventViewController *targetVC = [[CusRunLoopEventViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }

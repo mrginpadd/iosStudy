@@ -36,6 +36,8 @@
 		A07DF4BF2B5427EE00D0275E /* ios_study_boolUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A07DF4BE2B5427EE00D0275E /* ios_study_boolUITestsLaunchTests.m */; };
 		A0AE535D2B5572740075EAA4 /* KeyWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AE535C2B5572740075EAA4 /* KeyWordViewController.m */; };
 		A0AE53682B5573C20075EAA4 /* PartCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AE53672B5573C20075EAA4 /* PartCellModel.m */; };
+		A0BBD36A2D06FE3500947154 /* CusRunLoopEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BBD3692D06FE3500947154 /* CusRunLoopEventViewController.m */; };
+		A0BBD36D2D07134800947154 /* RUNLoop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0BBD36C2D07134800947154 /* RUNLoop.jpg */; };
 		A0C1EF382B613448004EE0AE /* UISwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF372B613448004EE0AE /* UISwitchViewController.m */; };
 		A0C1EF3B2B6139A4004EE0AE /* UITextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF3A2B6139A4004EE0AE /* UITextFieldViewController.m */; };
 		A0C1EF3E2B628A99004EE0AE /* UITextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF3D2B628A99004EE0AE /* UITextViewController.m */; };
@@ -159,6 +161,9 @@
 		A0AE535C2B5572740075EAA4 /* KeyWordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyWordViewController.m; sourceTree = "<group>"; };
 		A0AE53662B5573C20075EAA4 /* PartCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartCellModel.h; sourceTree = "<group>"; };
 		A0AE53672B5573C20075EAA4 /* PartCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartCellModel.m; sourceTree = "<group>"; };
+		A0BBD3682D06FE3500947154 /* CusRunLoopEventViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusRunLoopEventViewController.h; sourceTree = "<group>"; };
+		A0BBD3692D06FE3500947154 /* CusRunLoopEventViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusRunLoopEventViewController.m; sourceTree = "<group>"; };
+		A0BBD36C2D07134800947154 /* RUNLoop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RUNLoop.jpg; sourceTree = "<group>"; };
 		A0C1EF362B613448004EE0AE /* UISwitchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISwitchViewController.h; sourceTree = "<group>"; };
 		A0C1EF372B613448004EE0AE /* UISwitchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISwitchViewController.m; sourceTree = "<group>"; };
 		A0C1EF392B6139A4004EE0AE /* UITextFieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextFieldViewController.h; sourceTree = "<group>"; };
@@ -320,6 +325,7 @@
 		A00ADEAA2D05C9F500475128 /* 中级 */ = {
 			isa = PBXGroup;
 			children = (
+				A0BBD3672D06F57300947154 /* 事件循环 */,
 				A00ADEAB2D05CA0600475128 /* 多线程与异步 */,
 			);
 			path = "中级";
@@ -487,6 +493,24 @@
 			children = (
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A0BBD3672D06F57300947154 /* 事件循环 */ = {
+			isa = PBXGroup;
+			children = (
+				A0BBD36C2D07134800947154 /* RUNLoop.jpg */,
+				A0BBD36B2D06FE4800947154 /* src */,
+				A0BBD3682D06FE3500947154 /* CusRunLoopEventViewController.h */,
+				A0BBD3692D06FE3500947154 /* CusRunLoopEventViewController.m */,
+			);
+			path = "事件循环";
+			sourceTree = "<group>";
+		};
+		A0BBD36B2D06FE4800947154 /* src */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		A0C1EF482B64E36B004EE0AE /* 适配 */ = {
@@ -914,6 +938,7 @@
 				A07DF4A62B5427EE00D0275E /* LaunchScreen.storyboard in Resources */,
 				A07DF4A32B5427EE00D0275E /* Assets.xcassets in Resources */,
 				A07DF49E2B5427ED00D0275E /* Main.storyboard in Resources */,
+				A0BBD36D2D07134800947154 /* RUNLoop.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1045,6 +1070,7 @@
 				A0C1EFC02B7F02DA004EE0AE /* CusRouteCaseViewController.m in Sources */,
 				A0E3295F2D032AF200E5EEB3 /* CusDataByDelegateViewController.m in Sources */,
 				A0C1EFCD2B7F83EB004EE0AE /* BNewViewController.m in Sources */,
+				A0BBD36A2D06FE3500947154 /* CusRunLoopEventViewController.m in Sources */,
 				A0C1EF472B64A14E004EE0AE /* CusUITableViewController.m in Sources */,
 				A00ADEB22D05CD1300475128 /* CusThreadAsyncViewController.m in Sources */,
 				A0C1EFA92B7DF788004EE0AE /* CusTargetActionViewController.m in Sources */,
