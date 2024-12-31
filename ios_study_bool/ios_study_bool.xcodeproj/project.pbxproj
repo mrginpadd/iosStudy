@@ -15,6 +15,8 @@
 		A00ADEA62D05914600475128 /* CusNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A00ADEA52D05914600475128 /* CusNetworkManager.m */; };
 		A00ADEA92D05BA9500475128 /* CusAFNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A00ADEA82D05BA9500475128 /* CusAFNetworkManager.m */; };
 		A00ADEB22D05CD1300475128 /* CusThreadAsyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A00ADEB12D05CD1300475128 /* CusThreadAsyncViewController.m */; };
+		A0630BE62D23798600712E9F /* CusRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0630BE52D23798600712E9F /* CusRunTimeViewController.m */; };
+		A0630BE92D23F3B600712E9F /* UIView+AssociatedProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = A0630BE82D23F3B600712E9F /* UIView+AssociatedProperty.m */; };
 		A076B27C2B5B732400AAE9C5 /* LangManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B27B2B5B732400AAE9C5 /* LangManager.m */; };
 		A076B2832B5B8C5200AAE9C5 /* UILabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B2822B5B8C5200AAE9C5 /* UILabelViewController.m */; };
 		A076B2862B5B8CA400AAE9C5 /* ScreenUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B2852B5B8CA400AAE9C5 /* ScreenUtil.m */; };
@@ -38,6 +40,7 @@
 		A0AE53682B5573C20075EAA4 /* PartCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0AE53672B5573C20075EAA4 /* PartCellModel.m */; };
 		A0BBD36A2D06FE3500947154 /* CusRunLoopEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BBD3692D06FE3500947154 /* CusRunLoopEventViewController.m */; };
 		A0BBD36D2D07134800947154 /* RUNLoop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0BBD36C2D07134800947154 /* RUNLoop.jpg */; };
+		A0BBD3712D0BE2BA00947154 /* CusQualityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BBD3702D0BE2BA00947154 /* CusQualityViewController.m */; };
 		A0C1EF382B613448004EE0AE /* UISwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF372B613448004EE0AE /* UISwitchViewController.m */; };
 		A0C1EF3B2B6139A4004EE0AE /* UITextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF3A2B6139A4004EE0AE /* UITextFieldViewController.m */; };
 		A0C1EF3E2B628A99004EE0AE /* UITextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF3D2B628A99004EE0AE /* UITextViewController.m */; };
@@ -124,6 +127,10 @@
 		A00ADEA82D05BA9500475128 /* CusAFNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusAFNetworkManager.m; sourceTree = "<group>"; };
 		A00ADEB02D05CD1300475128 /* CusThreadAsyncViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CusThreadAsyncViewController.h; path = "ios_study_bool/oc实验室/中级/多线程与异步/CusThreadAsyncViewController.h"; sourceTree = SOURCE_ROOT; };
 		A00ADEB12D05CD1300475128 /* CusThreadAsyncViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CusThreadAsyncViewController.m; path = "ios_study_bool/oc实验室/中级/多线程与异步/CusThreadAsyncViewController.m"; sourceTree = SOURCE_ROOT; };
+		A0630BE42D23798600712E9F /* CusRunTimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusRunTimeViewController.h; sourceTree = "<group>"; };
+		A0630BE52D23798600712E9F /* CusRunTimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusRunTimeViewController.m; sourceTree = "<group>"; };
+		A0630BE72D23F3B600712E9F /* UIView+AssociatedProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+AssociatedProperty.h"; sourceTree = "<group>"; };
+		A0630BE82D23F3B600712E9F /* UIView+AssociatedProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+AssociatedProperty.m"; sourceTree = "<group>"; };
 		A076B27A2B5B732400AAE9C5 /* LangManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LangManager.h; sourceTree = "<group>"; };
 		A076B27B2B5B732400AAE9C5 /* LangManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LangManager.m; sourceTree = "<group>"; };
 		A076B2812B5B8C5200AAE9C5 /* UILabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelViewController.h; sourceTree = "<group>"; };
@@ -164,6 +171,8 @@
 		A0BBD3682D06FE3500947154 /* CusRunLoopEventViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusRunLoopEventViewController.h; sourceTree = "<group>"; };
 		A0BBD3692D06FE3500947154 /* CusRunLoopEventViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusRunLoopEventViewController.m; sourceTree = "<group>"; };
 		A0BBD36C2D07134800947154 /* RUNLoop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RUNLoop.jpg; sourceTree = "<group>"; };
+		A0BBD36F2D0BE2BA00947154 /* CusQualityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusQualityViewController.h; sourceTree = "<group>"; };
+		A0BBD3702D0BE2BA00947154 /* CusQualityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusQualityViewController.m; sourceTree = "<group>"; };
 		A0C1EF362B613448004EE0AE /* UISwitchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISwitchViewController.h; sourceTree = "<group>"; };
 		A0C1EF372B613448004EE0AE /* UISwitchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISwitchViewController.m; sourceTree = "<group>"; };
 		A0C1EF392B6139A4004EE0AE /* UITextFieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextFieldViewController.h; sourceTree = "<group>"; };
@@ -325,6 +334,8 @@
 		A00ADEAA2D05C9F500475128 /* 中级 */ = {
 			isa = PBXGroup;
 			children = (
+				A0630BE22D23796900712E9F /* Runtime */,
+				A0BBD36E2D0BE29D00947154 /* 性能优化 */,
 				A0BBD3672D06F57300947154 /* 事件循环 */,
 				A00ADEAB2D05CA0600475128 /* 多线程与异步 */,
 			);
@@ -344,6 +355,25 @@
 		A00ADEAC2D05CAC400475128 /* src */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A0630BE22D23796900712E9F /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				A0630BE32D23797300712E9F /* src */,
+				A0630BE42D23798600712E9F /* CusRunTimeViewController.h */,
+				A0630BE52D23798600712E9F /* CusRunTimeViewController.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		A0630BE32D23797300712E9F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A0630BE72D23F3B600712E9F /* UIView+AssociatedProperty.h */,
+				A0630BE82D23F3B600712E9F /* UIView+AssociatedProperty.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -507,6 +537,23 @@
 			sourceTree = "<group>";
 		};
 		A0BBD36B2D06FE4800947154 /* src */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A0BBD36E2D0BE29D00947154 /* 性能优化 */ = {
+			isa = PBXGroup;
+			children = (
+				A0BBD3722D0BE2BE00947154 /* src */,
+				A0BBD36F2D0BE2BA00947154 /* CusQualityViewController.h */,
+				A0BBD3702D0BE2BA00947154 /* CusQualityViewController.m */,
+			);
+			path = "性能优化";
+			sourceTree = "<group>";
+		};
+		A0BBD3722D0BE2BE00947154 /* src */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -1011,6 +1058,7 @@
 				A0C1EF732B7C4517004EE0AE /* ToastUtil.m in Sources */,
 				A00ADEA62D05914600475128 /* CusNetworkManager.m in Sources */,
 				A0C1EFEE2B86419C004EE0AE /* CusKeyChainViewController.m in Sources */,
+				A0630BE92D23F3B600712E9F /* UIView+AssociatedProperty.m in Sources */,
 				A076B2892B5CF55B00AAE9C5 /* UIComponentsViewController.m in Sources */,
 				A00ADE982D042EA300475128 /* CusDataByKVOViewController.m in Sources */,
 				A00ADE932D042AC500475128 /* CusDataByNotificationViewController.m in Sources */,
@@ -1032,6 +1080,7 @@
 				A0C1EF7F2B7CEC76004EE0AE /* CusActivityIndicatorViewController.m in Sources */,
 				A0C1EF8E2B7DAD5F004EE0AE /* CusPresentationViewController.m in Sources */,
 				A07DF4952B5427ED00D0275E /* AppDelegate.m in Sources */,
+				A0630BE62D23798600712E9F /* CusRunTimeViewController.m in Sources */,
 				A0C1EFC72B7F5007004EE0AE /* CTMediator.m in Sources */,
 				A0C1EF382B613448004EE0AE /* UISwitchViewController.m in Sources */,
 				A076B27C2B5B732400AAE9C5 /* LangManager.m in Sources */,
@@ -1039,6 +1088,7 @@
 				A0C1EFEB2B82DA63004EE0AE /* CusSqLiteViewController.m in Sources */,
 				A076B2952B60014400AAE9C5 /* UIImageViewController.m in Sources */,
 				A0C1EFB82B7E2FAF004EE0AE /* CusUINavigationViewController.m in Sources */,
+				A0BBD3712D0BE2BA00947154 /* CusQualityViewController.m in Sources */,
 				A0C1EFD62B805F8F004EE0AE /* CusStorageViewController.m in Sources */,
 				A00ADEA92D05BA9500475128 /* CusAFNetworkManager.m in Sources */,
 				A0C1EFD92B8080F6004EE0AE /* CusUserDefaultViewController.m in Sources */,

@@ -19,6 +19,8 @@
 #import "CusNetWorkViewController.h"
 #import "CusThreadAsyncViewController.h"
 #import "CusRunLoopEventViewController.h"
+#import "CusQualityViewController.h"
+#import "CusRunTimeViewController.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray<NSArray*> *functions;
@@ -31,7 +33,7 @@
     if (_functions == nil) {
       _functions = @[
           @[@"语言基础", @"UI组件", @"事件交互", @"路由与导航", @"动画", @"存储", @"数据传递", @"网络与Json"],
-          @[@"多线程和异步", @"事件循环机制", @"性能优化", @"常用第三方库", @"Extensions"],
+          @[@"多线程和异步", @"事件循环机制", @"性能优化", @"Runtime", @"常用第三方库", @"Extensions"],
           @[@"Jekins", @"自动化编译", @"Xcode配置"]
       ];
     }
@@ -134,6 +136,12 @@
         [self.navigationController pushViewController:targetVC animated:YES];
     } else if([selectedStr hasPrefix:@"事件循环机制"]) {
         CusRunLoopEventViewController *targetVC = [[CusRunLoopEventViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([selectedStr hasPrefix:@"性能优化"]) {
+        CusQualityViewController *targetVC = [[CusQualityViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if([selectedStr hasPrefix:@"Runtime"]) {
+        CusRunTimeViewController *targetVC = [[CusRunTimeViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
     }
 }
