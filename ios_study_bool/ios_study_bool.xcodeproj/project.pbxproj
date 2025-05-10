@@ -17,6 +17,7 @@
 		A00ADEB22D05CD1300475128 /* CusThreadAsyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A00ADEB12D05CD1300475128 /* CusThreadAsyncViewController.m */; };
 		A0630BE62D23798600712E9F /* CusRunTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0630BE52D23798600712E9F /* CusRunTimeViewController.m */; };
 		A0630BE92D23F3B600712E9F /* UIView+AssociatedProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = A0630BE82D23F3B600712E9F /* UIView+AssociatedProperty.m */; };
+		A0630C032D24CCBC00712E9F /* CusExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0630C022D24CCBC00712E9F /* CusExtensionViewController.swift */; };
 		A076B27C2B5B732400AAE9C5 /* LangManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B27B2B5B732400AAE9C5 /* LangManager.m */; };
 		A076B2832B5B8C5200AAE9C5 /* UILabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B2822B5B8C5200AAE9C5 /* UILabelViewController.m */; };
 		A076B2862B5B8CA400AAE9C5 /* ScreenUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A076B2852B5B8CA400AAE9C5 /* ScreenUtil.m */; };
@@ -87,9 +88,13 @@
 		A0C1EFE82B8229D8004EE0AE /* CusArchiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFE72B8229D8004EE0AE /* CusArchiveViewController.m */; };
 		A0C1EFEB2B82DA63004EE0AE /* CusSqLiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFEA2B82DA63004EE0AE /* CusSqLiteViewController.m */; };
 		A0C1EFEE2B86419C004EE0AE /* CusKeyChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EFED2B86419C004EE0AE /* CusKeyChainViewController.m */; };
+		A0DEF9F02DCFA130005633EE /* Demo01Part1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DEF9EF2DCFA130005633EE /* Demo01Part1ViewController.m */; };
 		A0E3295C2D031FE700E5EEB3 /* CusDataTransViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E3295B2D031FE700E5EEB3 /* CusDataTransViewController.m */; };
 		A0E3295F2D032AF200E5EEB3 /* CusDataByDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E3295E2D032AF200E5EEB3 /* CusDataByDelegateViewController.m */; };
 		A0E329622D03E0C500E5EEB3 /* CusCompletionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E329612D03E0C500E5EEB3 /* CusCompletionViewController.m */; };
+		A0F945E42DCFA653009970C6 /* Demo01Part2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F945E32DCFA653009970C6 /* Demo01Part2ViewController.m */; };
+		A0F945E72DCFA689009970C6 /* Demo01Item.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F945E62DCFA689009970C6 /* Demo01Item.m */; };
+		A0F945EA2DCFA7C8009970C6 /* Demo01ListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F945E92DCFA7C8009970C6 /* Demo01ListViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +136,7 @@
 		A0630BE52D23798600712E9F /* CusRunTimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusRunTimeViewController.m; sourceTree = "<group>"; };
 		A0630BE72D23F3B600712E9F /* UIView+AssociatedProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+AssociatedProperty.h"; sourceTree = "<group>"; };
 		A0630BE82D23F3B600712E9F /* UIView+AssociatedProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+AssociatedProperty.m"; sourceTree = "<group>"; };
+		A0630C022D24CCBC00712E9F /* CusExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CusExtensionViewController.swift; sourceTree = "<group>"; };
 		A076B27A2B5B732400AAE9C5 /* LangManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LangManager.h; sourceTree = "<group>"; };
 		A076B27B2B5B732400AAE9C5 /* LangManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LangManager.m; sourceTree = "<group>"; };
 		A076B2812B5B8C5200AAE9C5 /* UILabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UILabelViewController.h; sourceTree = "<group>"; };
@@ -264,12 +270,21 @@
 		A0C1EFEA2B82DA63004EE0AE /* CusSqLiteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusSqLiteViewController.m; sourceTree = "<group>"; };
 		A0C1EFEC2B86419C004EE0AE /* CusKeyChainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusKeyChainViewController.h; sourceTree = "<group>"; };
 		A0C1EFED2B86419C004EE0AE /* CusKeyChainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusKeyChainViewController.m; sourceTree = "<group>"; };
+		A0DEF9EE2DCFA130005633EE /* Demo01Part1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo01Part1ViewController.h; sourceTree = "<group>"; };
+		A0DEF9EF2DCFA130005633EE /* Demo01Part1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo01Part1ViewController.m; sourceTree = "<group>"; };
 		A0E3295A2D031FE700E5EEB3 /* CusDataTransViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusDataTransViewController.h; sourceTree = "<group>"; };
 		A0E3295B2D031FE700E5EEB3 /* CusDataTransViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusDataTransViewController.m; sourceTree = "<group>"; };
 		A0E3295D2D032AF200E5EEB3 /* CusDataByDelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusDataByDelegateViewController.h; sourceTree = "<group>"; };
 		A0E3295E2D032AF200E5EEB3 /* CusDataByDelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusDataByDelegateViewController.m; sourceTree = "<group>"; };
 		A0E329602D03E0C500E5EEB3 /* CusCompletionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusCompletionViewController.h; sourceTree = "<group>"; };
 		A0E329612D03E0C500E5EEB3 /* CusCompletionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusCompletionViewController.m; sourceTree = "<group>"; };
+		A0F945E22DCFA653009970C6 /* Demo01Part2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo01Part2ViewController.h; sourceTree = "<group>"; };
+		A0F945E32DCFA653009970C6 /* Demo01Part2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo01Part2ViewController.m; sourceTree = "<group>"; };
+		A0F945E52DCFA689009970C6 /* Demo01Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo01Item.h; sourceTree = "<group>"; };
+		A0F945E62DCFA689009970C6 /* Demo01Item.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo01Item.m; sourceTree = "<group>"; };
+		A0F945E82DCFA7C8009970C6 /* Demo01ListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo01ListViewModel.h; sourceTree = "<group>"; };
+		A0F945E92DCFA7C8009970C6 /* Demo01ListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo01ListViewModel.m; sourceTree = "<group>"; };
+		A0F945EB2DCFB237009970C6 /* 使用ViewModel的好处.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "使用ViewModel的好处.md"; sourceTree = "<group>"; };
 		E92F4BAD3A2EEECF87152C21 /* Pods_ios_study_bool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_study_bool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -334,6 +349,7 @@
 		A00ADEAA2D05C9F500475128 /* 中级 */ = {
 			isa = PBXGroup;
 			children = (
+				A0630BFE2D24CC7C00712E9F /* Extensions */,
 				A0630BE22D23796900712E9F /* Runtime */,
 				A0BBD36E2D0BE29D00947154 /* 性能优化 */,
 				A0BBD3672D06F57300947154 /* 事件循环 */,
@@ -374,6 +390,22 @@
 			children = (
 				A0630BE72D23F3B600712E9F /* UIView+AssociatedProperty.h */,
 				A0630BE82D23F3B600712E9F /* UIView+AssociatedProperty.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A0630BFE2D24CC7C00712E9F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A0630C012D24CCAD00712E9F /* src */,
+				A0630C022D24CCBC00712E9F /* CusExtensionViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A0630C012D24CCAD00712E9F /* src */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -618,6 +650,7 @@
 		A0C1EF962B7DC4F0004EE0AE /* oc实验室 */ = {
 			isa = PBXGroup;
 			children = (
+				A0DEF9E32DCF98D7005633EE /* Demos */,
 				A00ADEAA2D05C9F500475128 /* 中级 */,
 				A0C1EF972B7DC509004EE0AE /* 初级 */,
 			);
@@ -838,6 +871,46 @@
 				A0C1EFED2B86419C004EE0AE /* CusKeyChainViewController.m */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		A0DEF9E32DCF98D7005633EE /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				A0DEF9E82DCF9939005633EE /* Demo01 */,
+			);
+			path = Demos;
+			sourceTree = "<group>";
+		};
+		A0DEF9E82DCF9939005633EE /* Demo01 */ = {
+			isa = PBXGroup;
+			children = (
+				A0DEF9ED2DCFA0F5005633EE /* 不使用ViewModel */,
+				A0DEF9EC2DCFA0E4005633EE /* 使用ViewModel */,
+				A0F945E52DCFA689009970C6 /* Demo01Item.h */,
+				A0F945E62DCFA689009970C6 /* Demo01Item.m */,
+				A0F945EB2DCFB237009970C6 /* 使用ViewModel的好处.md */,
+			);
+			path = Demo01;
+			sourceTree = "<group>";
+		};
+		A0DEF9EC2DCFA0E4005633EE /* 使用ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0F945E22DCFA653009970C6 /* Demo01Part2ViewController.h */,
+				A0F945E32DCFA653009970C6 /* Demo01Part2ViewController.m */,
+				A0F945E82DCFA7C8009970C6 /* Demo01ListViewModel.h */,
+				A0F945E92DCFA7C8009970C6 /* Demo01ListViewModel.m */,
+			);
+			path = "使用ViewModel";
+			sourceTree = "<group>";
+		};
+		A0DEF9ED2DCFA0F5005633EE /* 不使用ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A0DEF9EE2DCFA130005633EE /* Demo01Part1ViewController.h */,
+				A0DEF9EF2DCFA130005633EE /* Demo01Part1ViewController.m */,
+			);
+			path = "不使用ViewModel";
 			sourceTree = "<group>";
 		};
 		A0E329582D031FAA00E5EEB3 /* 数据传递 */ = {
@@ -1065,6 +1138,7 @@
 				A076B28C2B5D07A900AAE9C5 /* CustomTableViewCell.m in Sources */,
 				A0C1EF7C2B7CE00B004EE0AE /* CusUIDatePickerViewController.m in Sources */,
 				A0C1EFE82B8229D8004EE0AE /* CusArchiveViewController.m in Sources */,
+				A0F945E42DCFA653009970C6 /* Demo01Part2ViewController.m in Sources */,
 				A0C1EF882B7D0EDB004EE0AE /* CusWKWebViewController.m in Sources */,
 				A076B2922B5D38AE00AAE9C5 /* UIButtonViewController.m in Sources */,
 				A07DF49B2B5427ED00D0275E /* ViewController.m in Sources */,
@@ -1077,6 +1151,7 @@
 				A0C1EF532B661DE4004EE0AE /* CusUICollectionViewController.m in Sources */,
 				A0C1EF592B6E3F15004EE0AE /* CusPageControlViewController.m in Sources */,
 				A0C1EFA12B7DD29F004EE0AE /* CusDelegationViewController.m in Sources */,
+				A0F945E72DCFA689009970C6 /* Demo01Item.m in Sources */,
 				A0C1EF7F2B7CEC76004EE0AE /* CusActivityIndicatorViewController.m in Sources */,
 				A0C1EF8E2B7DAD5F004EE0AE /* CusPresentationViewController.m in Sources */,
 				A07DF4952B5427ED00D0275E /* AppDelegate.m in Sources */,
@@ -1092,11 +1167,13 @@
 				A0C1EFD62B805F8F004EE0AE /* CusStorageViewController.m in Sources */,
 				A00ADEA92D05BA9500475128 /* CusAFNetworkManager.m in Sources */,
 				A0C1EFD92B8080F6004EE0AE /* CusUserDefaultViewController.m in Sources */,
+				A0630C032D24CCBC00712E9F /* CusExtensionViewController.swift in Sources */,
 				A0C1EFE22B821C2E004EE0AE /* CusPropertyListViewController.m in Sources */,
 				A0C1EFBC2B7E33F7004EE0AE /* CusRouteViewController.m in Sources */,
 				A00ADE9F2D05327300475128 /* CusNetWorkViewController.m in Sources */,
 				A0C1EF6C2B7B6052004EE0AE /* UIAlertViewController.m in Sources */,
 				A0C1EF5C2B75EB39004EE0AE /* CusSegmentedControlViewController.m in Sources */,
+				A0DEF9F02DCFA130005633EE /* Demo01Part1ViewController.m in Sources */,
 				A0C1EF3B2B6139A4004EE0AE /* UITextFieldViewController.m in Sources */,
 				A0C1EF412B63DCFD004EE0AE /* UISliderViewController.m in Sources */,
 				A0C1EF442B63F6DC004EE0AE /* UIProgressViewController.m in Sources */,
@@ -1112,6 +1189,7 @@
 				A0C1EF952B7DB2D1004EE0AE /* MyPopupViewController.m in Sources */,
 				A0C1EF622B78FD20004EE0AE /* UINavigationViewController.m in Sources */,
 				A0C1EF702B7B612F004EE0AE /* IntroductionViewController.m in Sources */,
+				A0F945EA2DCFA7C8009970C6 /* Demo01ListViewModel.m in Sources */,
 				A0C1EF762B7C6F74004EE0AE /* CusUIPickerViewController.m in Sources */,
 				A076B2832B5B8C5200AAE9C5 /* UILabelViewController.m in Sources */,
 				A0C1EF5F2B78C999004EE0AE /* CusUITabbarViewController.m in Sources */,
@@ -1376,6 +1454,7 @@
 		A07DF4C62B5427EE00D0275E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1394,6 +1473,7 @@
 		A07DF4C72B5427EE00D0275E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1412,6 +1492,7 @@
 		A07DF4C92B5427EE00D0275E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q798TC6D2D;
@@ -1428,6 +1509,7 @@
 		A07DF4CA2B5427EE00D0275E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q798TC6D2D;

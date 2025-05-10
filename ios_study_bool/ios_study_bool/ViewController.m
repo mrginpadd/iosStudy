@@ -21,6 +21,8 @@
 #import "CusRunLoopEventViewController.h"
 #import "CusQualityViewController.h"
 #import "CusRunTimeViewController.h"
+#import "Demo01Part1ViewController.h"
+#import "Demo01Part2ViewController.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray<NSArray*> *functions;
@@ -32,8 +34,9 @@
 - (NSArray *) functions {
     if (_functions == nil) {
       _functions = @[
+          @[@"ViewModel管理列表数据"],
           @[@"语言基础", @"UI组件", @"事件交互", @"路由与导航", @"动画", @"存储", @"数据传递", @"网络与Json"],
-          @[@"多线程和异步", @"事件循环机制", @"性能优化", @"Runtime", @"常用第三方库", @"Extensions"],
+          @[@"多线程和异步", @"事件循环机制", @"性能优化", @"Runtime", @"Extensions"],
           @[@"Jekins", @"自动化编译", @"Xcode配置"]
       ];
     }
@@ -43,7 +46,7 @@
 
 - (NSArray *) sections {
     if (_sections == nil) {
-       _sections = @[@"初级", @"中级", @"高级"];
+       _sections = @[@"Demos", @"初级", @"中级", @"高级"];
     }
 
     return _sections;
@@ -108,7 +111,12 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *selectedStr = self.functions[indexPath.section][indexPath.row];
-    if ([selectedStr isEqualToString:@"语言基础"]) {
+    if ([selectedStr isEqualToString:@"ViewModel管理列表数据"]) {
+//        Demo01Part1ViewController *targetVC = [[Demo01Part1ViewController alloc] init];
+        Demo01Part2ViewController *targetVC = [[Demo01Part2ViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    }
+    else if ([selectedStr isEqualToString:@"语言基础"]) {
         [LangManager perform:STR];
     } else if([selectedStr isEqualToString:@"UI组件"]) {
         UIComponentsViewController *targetVC = [[UIComponentsViewController alloc] init];
