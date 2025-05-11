@@ -1374,6 +1374,134 @@
             endingLineNumber = "23"
             landmarkName = "-_loadData"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BAA9205B-A4E0-40B9-9BB1-932273D14EFD - 9dc9613d1fb2d9a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[Demo01Part1ViewController _loadData]"
+                  moduleName = "ios_study_bool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/oc%E5%AE%9E%E9%AA%8C%E5%AE%A4/Demos/Demo01/%E4%B8%8D%E4%BD%BF%E7%94%A8ViewModel/Demo01Part1ViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "BAA9205B-A4E0-40B9-9BB1-932273D14EFD - 9dc9613d1fb2d987"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[Demo01Part1ViewController _loadData]"
+                  moduleName = "ios_study_bool"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/xushihao/Desktop/ios_study_book/ios_study_bool/ios_study_bool/oc%E5%AE%9E%E9%AA%8C%E5%AE%A4/Demos/Demo01/%E4%B8%8D%E4%BD%BF%E7%94%A8ViewModel/Demo01Part1ViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "236">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "721EE126-7350-4806-9927-6DA75DFDAF4E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios_study_bool/oc&#x5b9e;&#x9a8c;&#x5ba4;/Demos/Demo02/Demo02View.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "-handleTap"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D89CAEA2-4B75-4D20-87F2-3E448899C932"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios_study_bool/oc&#x5b9e;&#x9a8c;&#x5ba4;/Demos/Demo02/Demo02View.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "-handleTap"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "635E53F8-610D-4590-802A-51C15C34F467"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios_study_bool/oc&#x5b9e;&#x9a8c;&#x5ba4;/Demos/Demo02/Demo02ViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "-_buildViews"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C61E15ED-BD88-4A84-B96E-0720FB83FE88"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios_study_bool/oc&#x5b9e;&#x9a8c;&#x5ba4;/Demos/Demo02/Demo02ViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "-_buildViews"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B5B81FD9-F704-4341-B9B7-09906D167755"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios_study_bool/oc&#x5b9e;&#x9a8c;&#x5ba4;/Demos/Demo02/Demo02ViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "-_buildViews"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "03A0DD3E-8071-473F-8990-62052B4D503B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ios_study_bool/oc&#x5b9e;&#x9a8c;&#x5ba4;/Demos/Demo02/Demo02ViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "-_buildViews"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

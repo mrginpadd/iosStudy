@@ -23,6 +23,7 @@
 #import "CusRunTimeViewController.h"
 #import "Demo01Part1ViewController.h"
 #import "Demo01Part2ViewController.h"
+#import "Demo02ViewController.h"
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray<NSArray*> *functions;
@@ -34,7 +35,7 @@
 - (NSArray *) functions {
     if (_functions == nil) {
       _functions = @[
-          @[@"ViewModel管理列表数据"],
+          @[@"ViewModel管理列表数据", @"UIView和UIViewController的区别"],
           @[@"语言基础", @"UI组件", @"事件交互", @"路由与导航", @"动画", @"存储", @"数据传递", @"网络与Json"],
           @[@"多线程和异步", @"事件循环机制", @"性能优化", @"Runtime", @"Extensions"],
           @[@"Jekins", @"自动化编译", @"Xcode配置"]
@@ -88,7 +89,7 @@
     self.navigationItem.leftBarButtonItem = avatarBarButtonItem;
     
 
-    self.navigationItem.title = @"徐さんの実験室";
+    self.navigationItem.title = @"世豪的実験室";
     // 创建一个字典，用于设置导航栏标题的样式
     NSDictionary *titleAttributes = @{
         NSForegroundColorAttributeName: [UIColor whiteColor], // 设置标题颜色为红色
@@ -115,8 +116,11 @@
 //        Demo01Part1ViewController *targetVC = [[Demo01Part1ViewController alloc] init];
         Demo01Part2ViewController *targetVC = [[Demo01Part2ViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
-    }
-    else if ([selectedStr isEqualToString:@"语言基础"]) {
+    } else if ([selectedStr isEqualToString:@"UIView和UIViewController的区别"]) {
+   
+        Demo02ViewController *targetVC = [[Demo02ViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if ([selectedStr isEqualToString:@"语言基础"]) {
         [LangManager perform:STR];
     } else if([selectedStr isEqualToString:@"UI组件"]) {
         UIComponentsViewController *targetVC = [[UIComponentsViewController alloc] init];

@@ -95,6 +95,8 @@
 		A0F945E42DCFA653009970C6 /* Demo01Part2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F945E32DCFA653009970C6 /* Demo01Part2ViewController.m */; };
 		A0F945E72DCFA689009970C6 /* Demo01Item.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F945E62DCFA689009970C6 /* Demo01Item.m */; };
 		A0F945EA2DCFA7C8009970C6 /* Demo01ListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F945E92DCFA7C8009970C6 /* Demo01ListViewModel.m */; };
+		A0F945EF2DD0460E009970C6 /* Demo02View.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F945EE2DD0460E009970C6 /* Demo02View.m */; };
+		A0F945F22DD0462C009970C6 /* Demo02ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F945F12DD0462C009970C6 /* Demo02ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -285,6 +287,10 @@
 		A0F945E82DCFA7C8009970C6 /* Demo01ListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo01ListViewModel.h; sourceTree = "<group>"; };
 		A0F945E92DCFA7C8009970C6 /* Demo01ListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo01ListViewModel.m; sourceTree = "<group>"; };
 		A0F945EB2DCFB237009970C6 /* 使用ViewModel的好处.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "使用ViewModel的好处.md"; sourceTree = "<group>"; };
+		A0F945ED2DD0460E009970C6 /* Demo02View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo02View.h; sourceTree = "<group>"; };
+		A0F945EE2DD0460E009970C6 /* Demo02View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo02View.m; sourceTree = "<group>"; };
+		A0F945F02DD0462C009970C6 /* Demo02ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo02ViewController.h; sourceTree = "<group>"; };
+		A0F945F12DD0462C009970C6 /* Demo02ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo02ViewController.m; sourceTree = "<group>"; };
 		E92F4BAD3A2EEECF87152C21 /* Pods_ios_study_bool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_study_bool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -876,6 +882,7 @@
 		A0DEF9E32DCF98D7005633EE /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				A0F945EC2DD045F4009970C6 /* Demo02 */,
 				A0DEF9E82DCF9939005633EE /* Demo01 */,
 			);
 			path = Demos;
@@ -937,6 +944,17 @@
 				A00ADE992D043E4900475128 /* ios_study_bool-Bridging-Header.h */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		A0F945EC2DD045F4009970C6 /* Demo02 */ = {
+			isa = PBXGroup;
+			children = (
+				A0F945ED2DD0460E009970C6 /* Demo02View.h */,
+				A0F945EE2DD0460E009970C6 /* Demo02View.m */,
+				A0F945F02DD0462C009970C6 /* Demo02ViewController.h */,
+				A0F945F12DD0462C009970C6 /* Demo02ViewController.m */,
+			);
+			path = Demo02;
 			sourceTree = "<group>";
 		};
 		D4299B3122CE24120E24FBD2 /* Frameworks */ = {
@@ -1132,6 +1150,7 @@
 				A00ADEA62D05914600475128 /* CusNetworkManager.m in Sources */,
 				A0C1EFEE2B86419C004EE0AE /* CusKeyChainViewController.m in Sources */,
 				A0630BE92D23F3B600712E9F /* UIView+AssociatedProperty.m in Sources */,
+				A0F945F22DD0462C009970C6 /* Demo02ViewController.m in Sources */,
 				A076B2892B5CF55B00AAE9C5 /* UIComponentsViewController.m in Sources */,
 				A00ADE982D042EA300475128 /* CusDataByKVOViewController.m in Sources */,
 				A00ADE932D042AC500475128 /* CusDataByNotificationViewController.m in Sources */,
@@ -1144,6 +1163,7 @@
 				A07DF49B2B5427ED00D0275E /* ViewController.m in Sources */,
 				A0C1EFA52B7DEA67004EE0AE /* CusNotificationViewController.m in Sources */,
 				A0C1EFAD2B7DFF19004EE0AE /* CusGesRegViewController.m in Sources */,
+				A0F945EF2DD0460E009970C6 /* Demo02View.m in Sources */,
 				A0C1EF4D2B64EB5C004EE0AE /* FakeUtil.m in Sources */,
 				A07DF4A12B5427ED00D0275E /* ios_study_bool.xcdatamodeld in Sources */,
 				A0C1EF662B7B1619004EE0AE /* TipUtil.m in Sources */,
