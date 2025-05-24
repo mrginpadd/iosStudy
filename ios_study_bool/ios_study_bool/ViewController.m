@@ -25,6 +25,10 @@
 #import "Demo01Part2ViewController.h"
 #import "Demo02ViewController.h"
 #import "Demo03ViewController.h"
+#import "Demo04Part1ViewController.h"
+#import "Demo05ViewController.h"
+#import "Demo06ViewController.h"
+
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong, readwrite) UITableView *tableView;
 @property(nonatomic, strong, readwrite) NSArray<NSArray*> *functions;
@@ -36,7 +40,7 @@
 - (NSArray *) functions {
     if (_functions == nil) {
       _functions = @[
-          @[@"ViewModel管理列表数据", @"UIView和UIViewController的区别", @"组件实现点击回调"],
+          @[@"ViewModel管理列表数据", @"UIView和UIViewController的区别", @"组件实现点击回调", @"class的使用", @"关联对象", @"消息转发机制"],
           @[@"语言基础", @"UI组件", @"事件交互", @"路由与导航", @"动画", @"存储", @"数据传递", @"网络与Json"],
           @[@"多线程和异步", @"事件循环机制", @"性能优化", @"Runtime", @"Extensions"],
           @[@"Jekins", @"自动化编译", @"Xcode配置"]
@@ -123,6 +127,15 @@
     } else if ([selectedStr isEqualToString:@"组件实现点击回调"]) {
         Demo03ViewController *targetVC = [[Demo03ViewController alloc] init];
         [self.navigationController pushViewController:targetVC animated:YES];
+    } else if ([selectedStr isEqualToString:@"@class的使用"]) {
+        Demo04Part1ViewController *targetVC = [[Demo04Part1ViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    } else if ([selectedStr isEqualToString:@"关联对象"]) {
+        Demo05ViewController *targetVC = [[Demo05ViewController alloc] init];
+        [self.navigationController pushViewController:targetVC animated:YES];
+    }  else if ([selectedStr isEqualToString:@"消息转发机制"]) {
+        Demo06ViewController *targetVC = [[Demo06ViewController alloc] init];
+        [targetVC playPiano];
     } else if ([selectedStr isEqualToString:@"语言基础"]) {
         [LangManager perform:STR];
     } else if([selectedStr isEqualToString:@"UI组件"]) {

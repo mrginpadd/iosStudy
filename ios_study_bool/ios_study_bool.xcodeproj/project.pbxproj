@@ -44,6 +44,12 @@
 		A0BBD3712D0BE2BA00947154 /* CusQualityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BBD3702D0BE2BA00947154 /* CusQualityViewController.m */; };
 		A0BCEC762DD0E72F007E6799 /* Demo03Part1.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BCEC752DD0E72F007E6799 /* Demo03Part1.m */; };
 		A0BCEC792DD0E927007E6799 /* Demo03ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BCEC782DD0E927007E6799 /* Demo03ViewController.m */; };
+		A0BCEC7D2DDA3BAF007E6799 /* Demo04Part1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BCEC7C2DDA3BAF007E6799 /* Demo04Part1ViewController.m */; };
+		A0BCEC802DDA3BBC007E6799 /* Demo04Part2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BCEC7F2DDA3BBC007E6799 /* Demo04Part2ViewController.m */; };
+		A0BCEC842DE197C8007E6799 /* Demo05ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BCEC832DE197C8007E6799 /* Demo05ViewController.m */; };
+		A0BCEC872DE1981D007E6799 /* UIButton+CustomTag.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BCEC862DE1981D007E6799 /* UIButton+CustomTag.m */; };
+		A0BCEC8B2DE1C3EA007E6799 /* Demo06ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BCEC8A2DE1C3EA007E6799 /* Demo06ViewController.m */; };
+		A0BCEC8E2DE1C5B8007E6799 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = A0BCEC8D2DE1C5B8007E6799 /* Student.m */; };
 		A0C1EF382B613448004EE0AE /* UISwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF372B613448004EE0AE /* UISwitchViewController.m */; };
 		A0C1EF3B2B6139A4004EE0AE /* UITextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF3A2B6139A4004EE0AE /* UITextFieldViewController.m */; };
 		A0C1EF3E2B628A99004EE0AE /* UITextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C1EF3D2B628A99004EE0AE /* UITextViewController.m */; };
@@ -189,6 +195,18 @@
 		A0BCEC752DD0E72F007E6799 /* Demo03Part1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo03Part1.m; sourceTree = "<group>"; };
 		A0BCEC772DD0E927007E6799 /* Demo03ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo03ViewController.h; sourceTree = "<group>"; };
 		A0BCEC782DD0E927007E6799 /* Demo03ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo03ViewController.m; sourceTree = "<group>"; };
+		A0BCEC7B2DDA3BAF007E6799 /* Demo04Part1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo04Part1ViewController.h; sourceTree = "<group>"; };
+		A0BCEC7C2DDA3BAF007E6799 /* Demo04Part1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo04Part1ViewController.m; sourceTree = "<group>"; };
+		A0BCEC7E2DDA3BBC007E6799 /* Demo04Part2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo04Part2ViewController.h; sourceTree = "<group>"; };
+		A0BCEC7F2DDA3BBC007E6799 /* Demo04Part2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo04Part2ViewController.m; sourceTree = "<group>"; };
+		A0BCEC822DE197C8007E6799 /* Demo05ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo05ViewController.h; sourceTree = "<group>"; };
+		A0BCEC832DE197C8007E6799 /* Demo05ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo05ViewController.m; sourceTree = "<group>"; };
+		A0BCEC852DE1981D007E6799 /* UIButton+CustomTag.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+CustomTag.h"; sourceTree = "<group>"; };
+		A0BCEC862DE1981D007E6799 /* UIButton+CustomTag.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CustomTag.m"; sourceTree = "<group>"; };
+		A0BCEC892DE1C3EA007E6799 /* Demo06ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo06ViewController.h; sourceTree = "<group>"; };
+		A0BCEC8A2DE1C3EA007E6799 /* Demo06ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo06ViewController.m; sourceTree = "<group>"; };
+		A0BCEC8C2DE1C5B8007E6799 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		A0BCEC8D2DE1C5B8007E6799 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		A0C1EF362B613448004EE0AE /* UISwitchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISwitchViewController.h; sourceTree = "<group>"; };
 		A0C1EF372B613448004EE0AE /* UISwitchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISwitchViewController.m; sourceTree = "<group>"; };
 		A0C1EF392B6139A4004EE0AE /* UITextFieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITextFieldViewController.h; sourceTree = "<group>"; };
@@ -618,6 +636,39 @@
 			path = Demo03;
 			sourceTree = "<group>";
 		};
+		A0BCEC7A2DDA3B9C007E6799 /* Demo04 */ = {
+			isa = PBXGroup;
+			children = (
+				A0BCEC7B2DDA3BAF007E6799 /* Demo04Part1ViewController.h */,
+				A0BCEC7C2DDA3BAF007E6799 /* Demo04Part1ViewController.m */,
+				A0BCEC7E2DDA3BBC007E6799 /* Demo04Part2ViewController.h */,
+				A0BCEC7F2DDA3BBC007E6799 /* Demo04Part2ViewController.m */,
+			);
+			path = Demo04;
+			sourceTree = "<group>";
+		};
+		A0BCEC812DE197B2007E6799 /* Demo05关联对象 */ = {
+			isa = PBXGroup;
+			children = (
+				A0BCEC822DE197C8007E6799 /* Demo05ViewController.h */,
+				A0BCEC832DE197C8007E6799 /* Demo05ViewController.m */,
+				A0BCEC852DE1981D007E6799 /* UIButton+CustomTag.h */,
+				A0BCEC862DE1981D007E6799 /* UIButton+CustomTag.m */,
+			);
+			path = "Demo05关联对象";
+			sourceTree = "<group>";
+		};
+		A0BCEC882DE1C3C7007E6799 /* Demo06 消息转发机制 */ = {
+			isa = PBXGroup;
+			children = (
+				A0BCEC892DE1C3EA007E6799 /* Demo06ViewController.h */,
+				A0BCEC8A2DE1C3EA007E6799 /* Demo06ViewController.m */,
+				A0BCEC8C2DE1C5B8007E6799 /* Student.h */,
+				A0BCEC8D2DE1C5B8007E6799 /* Student.m */,
+			);
+			path = "Demo06 消息转发机制";
+			sourceTree = "<group>";
+		};
 		A0C1EF482B64E36B004EE0AE /* 适配 */ = {
 			isa = PBXGroup;
 			children = (
@@ -902,6 +953,9 @@
 		A0DEF9E32DCF98D7005633EE /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				A0BCEC882DE1C3C7007E6799 /* Demo06 消息转发机制 */,
+				A0BCEC812DE197B2007E6799 /* Demo05关联对象 */,
+				A0BCEC7A2DDA3B9C007E6799 /* Demo04 */,
 				A0BCEC6E2DD0E540007E6799 /* Demo03 */,
 				A0F945EC2DD045F4009970C6 /* Demo02 */,
 				A0DEF9E82DCF9939005633EE /* Demo01 */,
@@ -1171,11 +1225,14 @@
 				A0C1EF732B7C4517004EE0AE /* ToastUtil.m in Sources */,
 				A00ADEA62D05914600475128 /* CusNetworkManager.m in Sources */,
 				A0C1EFEE2B86419C004EE0AE /* CusKeyChainViewController.m in Sources */,
+				A0BCEC842DE197C8007E6799 /* Demo05ViewController.m in Sources */,
 				A0630BE92D23F3B600712E9F /* UIView+AssociatedProperty.m in Sources */,
 				A0F945F22DD0462C009970C6 /* Demo02ViewController.m in Sources */,
 				A076B2892B5CF55B00AAE9C5 /* UIComponentsViewController.m in Sources */,
 				A00ADE982D042EA300475128 /* CusDataByKVOViewController.m in Sources */,
+				A0BCEC8E2DE1C5B8007E6799 /* Student.m in Sources */,
 				A00ADE932D042AC500475128 /* CusDataByNotificationViewController.m in Sources */,
+				A0BCEC802DDA3BBC007E6799 /* Demo04Part2ViewController.m in Sources */,
 				A076B28C2B5D07A900AAE9C5 /* CustomTableViewCell.m in Sources */,
 				A0BCEC762DD0E72F007E6799 /* Demo03Part1.m in Sources */,
 				A0C1EF7C2B7CE00B004EE0AE /* CusUIDatePickerViewController.m in Sources */,
@@ -1195,6 +1252,8 @@
 				A0C1EF592B6E3F15004EE0AE /* CusPageControlViewController.m in Sources */,
 				A0C1EFA12B7DD29F004EE0AE /* CusDelegationViewController.m in Sources */,
 				A0F945E72DCFA689009970C6 /* Demo01Item.m in Sources */,
+				A0BCEC8B2DE1C3EA007E6799 /* Demo06ViewController.m in Sources */,
+				A0BCEC7D2DDA3BAF007E6799 /* Demo04Part1ViewController.m in Sources */,
 				A0C1EF7F2B7CEC76004EE0AE /* CusActivityIndicatorViewController.m in Sources */,
 				A0C1EF8E2B7DAD5F004EE0AE /* CusPresentationViewController.m in Sources */,
 				A07DF4952B5427ED00D0275E /* AppDelegate.m in Sources */,
@@ -1211,6 +1270,7 @@
 				A00ADEA92D05BA9500475128 /* CusAFNetworkManager.m in Sources */,
 				A0C1EFD92B8080F6004EE0AE /* CusUserDefaultViewController.m in Sources */,
 				A0630C032D24CCBC00712E9F /* CusExtensionViewController.swift in Sources */,
+				A0BCEC872DE1981D007E6799 /* UIButton+CustomTag.m in Sources */,
 				A0C1EFE22B821C2E004EE0AE /* CusPropertyListViewController.m in Sources */,
 				A0C1EFBC2B7E33F7004EE0AE /* CusRouteViewController.m in Sources */,
 				A00ADE9F2D05327300475128 /* CusNetWorkViewController.m in Sources */,
