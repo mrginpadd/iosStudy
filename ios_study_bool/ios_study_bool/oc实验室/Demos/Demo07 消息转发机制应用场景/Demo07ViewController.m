@@ -6,7 +6,8 @@
 //
 
 #import "Demo07ViewController.h"
-
+#import "Demo07TableViewCell.h"
+#import "Demo07Model1.h"
 @interface Demo07ViewController ()
 
 @end
@@ -24,16 +25,37 @@
      3. 日志记录与性能监控
      你可能想要在不修改原始方法的情况下，为某些方法调用添加日志记录或性能监控逻辑。
      */
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem];
+    btn.frame = CGRectMake(100, 200, 100, 100);
+    [btn setTitle:@"测试消息转发应用场景" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(test1) forControlEvents:UIControlEventTouchUpInside];
+    
+    btn.backgroundColor = [UIColor redColor];
+    [self.view addSubview:btn];
+    
+    UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeSystem];
+    btn2.frame = CGRectMake(300, 200, 100, 100);
+    [btn2 setTitle:@"测试消息转发应用场景2" forState:UIControlStateNormal];
+    [btn2 addTarget:self action:@selector(test2) forControlEvents:UIControlEventTouchUpInside];
+    
+    btn2.backgroundColor = [UIColor redColor];
+    [self.view addSubview:btn2];
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+
+- (void)test1 {
+    Demo07TableViewCell *cell = [[Demo07TableViewCell alloc] init];
+    cell.multipleChoice = true;
 }
-*/
+
+- (void)test2 {
+    Demo07Model2 *model = [[Demo07Model2 alloc] init];
+    Demo07Model1 *detailModel = [[Demo07Model1 alloc] init];
+    model.detail = detailModel;
+    model.detail.price = 12;
+}
 
 @end

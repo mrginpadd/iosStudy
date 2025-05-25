@@ -16,7 +16,7 @@
     NSLog(@"Student 实现travel");
 }
 
-- (void)travel:(NSString*)destionation {
-    
-}
+//- (void)travel:(NSString*)destionation {
+//    
+//}
 @end
