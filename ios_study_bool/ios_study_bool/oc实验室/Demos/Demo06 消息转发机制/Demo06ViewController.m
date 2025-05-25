@@ -86,11 +86,11 @@
     
     NSLog(@"[ForwardInvocation] 开始处理未识别的消息: %@", NSStringFromSelector(anInvocation.selector));
     
-    SEL sel = @selector(travel);
+    SEL sel = @selector(travel:);
     NSMethodSignature *signature = [NSMethodSignature signatureWithObjCTypes:"v@:@"];
     anInvocation = [NSInvocation invocationWithMethodSignature:signature];
     [anInvocation setTarget:self];
-    [anInvocation setSelector:@selector(travel)];
+    [anInvocation setSelector:@selector(travel:)];
     NSString *city = @"北京";
     // 消息的第一个参数是self，第二个参数是选择子，所以"北京"是第三个参数
     [anInvocation setArgument:&city atIndex:2];
